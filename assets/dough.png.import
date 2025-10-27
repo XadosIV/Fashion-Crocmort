@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvs6062s6pwcx"
-path="res://.godot/imported/clothespin.png-9af48e9aa1e81b75242355da781fb718.ctex"
+uid="uid://dadxn3gwse73i"
+path="res://.godot/imported/dough.png-703a477db7711d9bd1849065ec172ac6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://clothespin.png"
-dest_files=["res://.godot/imported/clothespin.png-9af48e9aa1e81b75242355da781fb718.ctex"]
+source_file="res://assets/dough.png"
+dest_files=["res://.godot/imported/dough.png-703a477db7711d9bd1849065ec172ac6.ctex"]
 
 [params]
 

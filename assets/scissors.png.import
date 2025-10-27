@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxa4qt46o6won"
-path="res://.godot/imported/tweezers.png-89edb40f5d74efce5b3418d79ea814ee.ctex"
+uid="uid://dgj4h283xdryj"
+path="res://.godot/imported/scissors.png-9715baf1c9711b5d235b262f4089af69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tweezers.png"
-dest_files=["res://.godot/imported/tweezers.png-89edb40f5d74efce5b3418d79ea814ee.ctex"]
+source_file="res://assets/scissors.png"
+dest_files=["res://.godot/imported/scissors.png-9715baf1c9711b5d235b262f4089af69.ctex"]
 
 [params]
 

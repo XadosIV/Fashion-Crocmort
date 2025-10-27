@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p161rkltqv7w"
-path="res://.godot/imported/la TABLE.png-5537b0dd807f26969f5702571b671d3a.ctex"
+uid="uid://bvs6062s6pwcx"
+path="res://.godot/imported/clothespin.png-be2640d71483f71cc94f12b0cc529e93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://la TABLE.png"
-dest_files=["res://.godot/imported/la TABLE.png-5537b0dd807f26969f5702571b671d3a.ctex"]
+source_file="res://assets/clothespin.png"
+dest_files=["res://.godot/imported/clothespin.png-be2640d71483f71cc94f12b0cc529e93.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6wfgnopcetdg"
-path="res://.godot/imported/scotch.png-da8f2fe8dcb8e7506a18e00d4f10ac09.ctex"
+path="res://.godot/imported/scotch.png-c0292e618ba668ab7c16abecc34ef45b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scotch.png"
-dest_files=["res://.godot/imported/scotch.png-da8f2fe8dcb8e7506a18e00d4f10ac09.ctex"]
+source_file="res://assets/scotch.png"
+dest_files=["res://.godot/imported/scotch.png-c0292e618ba668ab7c16abecc34ef45b.ctex"]
 
 [params]
 

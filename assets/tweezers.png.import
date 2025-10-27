@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dadxn3gwse73i"
-path="res://.godot/imported/dough.png-7aee42c6011d7fea3380da22cb1e245d.ctex"
+uid="uid://dxa4qt46o6won"
+path="res://.godot/imported/tweezers.png-0d9711490840522676fa3ee749af0084.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dough.png"
-dest_files=["res://.godot/imported/dough.png-7aee42c6011d7fea3380da22cb1e245d.ctex"]
+source_file="res://assets/tweezers.png"
+dest_files=["res://.godot/imported/tweezers.png-0d9711490840522676fa3ee749af0084.ctex"]
 
 [params]
 
