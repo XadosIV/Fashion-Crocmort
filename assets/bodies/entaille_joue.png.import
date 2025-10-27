@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brou0260wwis3"
-path="res://.godot/imported/bras_gauche.png-2fcfa6b824135dc97d166b1e56b6d556.ctex"
+uid="uid://cefjfxnrruiwd"
+path="res://.godot/imported/entaille_joue.png-33f0ac2a7ba5907dd07a4f6b8b8c758f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bras_gauche.png"
-dest_files=["res://.godot/imported/bras_gauche.png-2fcfa6b824135dc97d166b1e56b6d556.ctex"]
+source_file="res://assets/bodies/entaille_joue.png"
+dest_files=["res://.godot/imported/entaille_joue.png-33f0ac2a7ba5907dd07a4f6b8b8c758f.ctex"]
 
 [params]
 

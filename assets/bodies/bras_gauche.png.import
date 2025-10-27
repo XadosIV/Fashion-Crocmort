@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dltis7cjudin7"
-path="res://.godot/imported/bras_sectionné.png-7c148a92125d9f1c5fdf654852431e4e.ctex"
+uid="uid://brou0260wwis3"
+path="res://.godot/imported/bras_gauche.png-520c7bc5797ec3c21af6a6c3434c7913.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bras_sectionné.png"
-dest_files=["res://.godot/imported/bras_sectionné.png-7c148a92125d9f1c5fdf654852431e4e.ctex"]
+source_file="res://assets/bodies/bras_gauche.png"
+dest_files=["res://.godot/imported/bras_gauche.png-520c7bc5797ec3c21af6a6c3434c7913.ctex"]
 
 [params]
 

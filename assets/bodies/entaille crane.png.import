@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnnkdqipxk7j"
-path="res://.godot/imported/bras_droit.png-94fe8ef2448c7d215f2452056fe137eb.ctex"
+uid="uid://cildp7nhbbg1f"
+path="res://.godot/imported/entaille crane.png-2624da58fbcab8a2c986bd8e437e0916.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bras_droit.png"
-dest_files=["res://.godot/imported/bras_droit.png-94fe8ef2448c7d215f2452056fe137eb.ctex"]
+source_file="res://assets/bodies/entaille crane.png"
+dest_files=["res://.godot/imported/entaille crane.png-2624da58fbcab8a2c986bd8e437e0916.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cefjfxnrruiwd"
-path="res://.godot/imported/entaille_joue.png-49177e53bbb1c1fdefb8e3fb4df117cc.ctex"
+uid="uid://bttd0chd5fl8t"
+path="res://.godot/imported/impact_de_balle.png-878e78537717634eb2e423443444798a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/entaille_joue.png"
-dest_files=["res://.godot/imported/entaille_joue.png-49177e53bbb1c1fdefb8e3fb4df117cc.ctex"]
+source_file="res://assets/bodies/impact_de_balle.png"
+dest_files=["res://.godot/imported/impact_de_balle.png-878e78537717634eb2e423443444798a.ctex"]
 
 [params]
 

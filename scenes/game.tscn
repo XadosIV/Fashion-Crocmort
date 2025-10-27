@@ -8,6 +8,13 @@ size = Vector2(640, 1080)
 
 [node name="Body" type="Node2D"]
 
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+script = ExtResource("2_feb5d")
+
+[node name="Henry" parent="." instance=ExtResource("1_e2o6t")]
+position = Vector2(960, 540.5)
+
 [node name="PasTouche" type="Sprite2D" parent="."]
 position = Vector2(320, 540)
 texture = SubResource("PlaceholderTexture2D_tg1dk")
@@ -15,10 +22,3 @@ texture = SubResource("PlaceholderTexture2D_tg1dk")
 [node name="PasTouche2" type="Sprite2D" parent="."]
 position = Vector2(1600, 540)
 texture = SubResource("PlaceholderTexture2D_tg1dk")
-
-[node name="Jean" parent="." instance=ExtResource("1_e2o6t")]
-position = Vector2(960, 540.5)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(960, 540)
-script = ExtResource("2_feb5d")

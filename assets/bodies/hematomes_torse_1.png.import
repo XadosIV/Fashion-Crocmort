@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuf2yxbab6wco"
-path="res://.godot/imported/corps_couleur.png-2b93190bb7a5017457cafcd4195296e2.ctex"
+uid="uid://bf7vhwlwwklkd"
+path="res://.godot/imported/hematomes_torse_1.png-0e7dcf24613a7003fcd918dd7521ca0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/corps_couleur.png"
-dest_files=["res://.godot/imported/corps_couleur.png-2b93190bb7a5017457cafcd4195296e2.ctex"]
+source_file="res://assets/bodies/hematomes_torse_1.png"
+dest_files=["res://.godot/imported/hematomes_torse_1.png-0e7dcf24613a7003fcd918dd7521ca0c.ctex"]
 
 [params]
 

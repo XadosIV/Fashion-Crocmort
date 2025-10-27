@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cildp7nhbbg1f"
-path="res://.godot/imported/entaille crane.png-851c2235f8bbd5b901979e15149a3037.ctex"
+uid="uid://dwjtt673ji1of"
+path="res://.godot/imported/hematomes_torse_2.png-32b21c2e0078cc418b64e978b5fc384d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/entaille crane.png"
-dest_files=["res://.godot/imported/entaille crane.png-851c2235f8bbd5b901979e15149a3037.ctex"]
+source_file="res://assets/bodies/hematomes_torse_2.png"
+dest_files=["res://.godot/imported/hematomes_torse_2.png-32b21c2e0078cc418b64e978b5fc384d.ctex"]
 
 [params]
 
