@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxa4qt46o6won"
-path="res://.godot/imported/tweezers.png-0d9711490840522676fa3ee749af0084.ctex"
+uid="uid://d1evg1qleyri1"
+path="res://.godot/imported/eyes1.png-5c8d5d640c647a135d0550e2867a4978.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tweezers.png"
-dest_files=["res://.godot/imported/tweezers.png-0d9711490840522676fa3ee749af0084.ctex"]
+source_file="res://assets/drawer/eyes1.png"
+dest_files=["res://.godot/imported/eyes1.png-5c8d5d640c647a135d0550e2867a4978.ctex"]
 
 [params]
 

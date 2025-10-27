@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvs6062s6pwcx"
-path="res://.godot/imported/clothespin.png-be2640d71483f71cc94f12b0cc529e93.ctex"
+uid="uid://cop7371xwyo6v"
+path="res://.godot/imported/hair3.png-8e695f526c14378e1436f0d0d2caf59a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/clothespin.png"
-dest_files=["res://.godot/imported/clothespin.png-be2640d71483f71cc94f12b0cc529e93.ctex"]
+source_file="res://assets/drawer/hair3.png"
+dest_files=["res://.godot/imported/hair3.png-8e695f526c14378e1436f0d0d2caf59a.ctex"]
 
 [params]
 

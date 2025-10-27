@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://878oabv57gd1"]
+[gd_scene load_steps=3 format=3 uid="uid://878oabv57gd1"]
 
+[ext_resource type="PackedScene" uid="uid://bhxq78cchur7p" path="res://drawer.tscn" id="1_fve1s"]
 [ext_resource type="PackedScene" uid="uid://rd46st71405r" path="res://table.tscn" id="1_lskbr"]
 
 [node name="ToolsUi" type="Control"]
@@ -58,12 +59,16 @@ offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="table" parent="Control" instance=ExtResource("1_lskbr")]
+[node name="drawer" parent="Control" instance=ExtResource("1_fve1s")]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_right = 0.0
 offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="table" parent="Control" instance=ExtResource("1_lskbr")]
+visible = false
+layout_mode = 1

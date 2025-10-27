@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6wfgnopcetdg"
-path="res://.godot/imported/scotch.png-c0292e618ba668ab7c16abecc34ef45b.ctex"
+uid="uid://ylnhvclktsln"
+path="res://.godot/imported/hair1.png-c3b14e4e7440efb0b5c459b78eb28004.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/scotch.png"
-dest_files=["res://.godot/imported/scotch.png-c0292e618ba668ab7c16abecc34ef45b.ctex"]
+source_file="res://assets/drawer/hair1.png"
+dest_files=["res://.godot/imported/hair1.png-c3b14e4e7440efb0b5c459b78eb28004.ctex"]
 
 [params]
 

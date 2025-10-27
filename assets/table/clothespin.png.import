@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgj4h283xdryj"
-path="res://.godot/imported/scissors.png-9715baf1c9711b5d235b262f4089af69.ctex"
+uid="uid://bvs6062s6pwcx"
+path="res://.godot/imported/clothespin.png-9516eae1990e37d8d68c6c089f1a26d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/scissors.png"
-dest_files=["res://.godot/imported/scissors.png-9715baf1c9711b5d235b262f4089af69.ctex"]
+source_file="res://assets/table/clothespin.png"
+dest_files=["res://.godot/imported/clothespin.png-9516eae1990e37d8d68c6c089f1a26d5.ctex"]
 
 [params]
 

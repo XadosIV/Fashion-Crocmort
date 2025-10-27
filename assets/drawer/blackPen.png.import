@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p161rkltqv7w"
-path="res://.godot/imported/la TABLE.png-9113e04f6e76c00aef5be2399e976d8d.ctex"
+uid="uid://ds4vdn6p1uugi"
+path="res://.godot/imported/blackPen.png-7d8a6883b0885c930b37dec425c62512.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/la TABLE.png"
-dest_files=["res://.godot/imported/la TABLE.png-9113e04f6e76c00aef5be2399e976d8d.ctex"]
+source_file="res://assets/drawer/blackPen.png"
+dest_files=["res://.godot/imported/blackPen.png-7d8a6883b0885c930b37dec425c62512.ctex"]
 
 [params]
 

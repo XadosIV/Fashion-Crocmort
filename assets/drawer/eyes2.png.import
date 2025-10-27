@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crj47a14dym0n"
-path="res://.godot/imported/nails.png-ae9c845f7d866963efb7cc47813ae532.ctex"
+uid="uid://b1lp4puyfx5ft"
+path="res://.godot/imported/eyes2.png-37c52f04560b0d9baad6dce4538b9d62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/nails.png"
-dest_files=["res://.godot/imported/nails.png-ae9c845f7d866963efb7cc47813ae532.ctex"]
+source_file="res://assets/drawer/eyes2.png"
+dest_files=["res://.godot/imported/eyes2.png-37c52f04560b0d9baad6dce4538b9d62.ctex"]
 
 [params]
 

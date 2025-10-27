@@ -1,0 +1,119 @@
+[gd_scene load_steps=13 format=3 uid="uid://bhxq78cchur7p"]
+
+[ext_resource type="Texture2D" uid="uid://bo50pu7kql2c" path="res://assets/drawer/le TIROIR.png" id="1_qe6j5"]
+[ext_resource type="Texture2D" uid="uid://ylnhvclktsln" path="res://assets/drawer/hair1.png" id="2_lt7lr"]
+[ext_resource type="Texture2D" uid="uid://c5ihduq6slcfg" path="res://assets/drawer/hair2.png" id="3_o3ddy"]
+[ext_resource type="Texture2D" uid="uid://cop7371xwyo6v" path="res://assets/drawer/hair3.png" id="4_e7edr"]
+[ext_resource type="Texture2D" uid="uid://d1evg1qleyri1" path="res://assets/drawer/eyes1.png" id="5_hvipv"]
+[ext_resource type="Texture2D" uid="uid://b1lp4puyfx5ft" path="res://assets/drawer/eyes2.png" id="6_rsjwq"]
+[ext_resource type="Texture2D" uid="uid://vqbikxsit5bs" path="res://assets/drawer/eyes3.png" id="7_tp1gl"]
+[ext_resource type="Texture2D" uid="uid://bwljcpcfglktf" path="res://assets/drawer/makeup1.png" id="8_17w61"]
+[ext_resource type="Texture2D" uid="uid://cktfhkdohiycb" path="res://assets/drawer/makeup2.png" id="9_apvov"]
+[ext_resource type="Texture2D" uid="uid://c4hjtbobjr6rk" path="res://assets/drawer/makeup3.png" id="10_gb12j"]
+[ext_resource type="Texture2D" uid="uid://ds4vdn6p1uugi" path="res://assets/drawer/blackPen.png" id="11_muc5m"]
+[ext_resource type="Texture2D" uid="uid://c8yvyr740diwa" path="res://assets/drawer/whitePen.png" id="12_gu7o8"]
+
+[node name="drawer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 940.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5132329, 0.5132329, 0.5132329, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qe6j5")
+expand_mode = 1
+
+[node name="GridContainer2" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="GridContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 3
+
+[node name="Button" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("2_lt7lr")
+flat = true
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("3_o3ddy")
+flat = true
+icon_alignment = 1
+
+[node name="Button3" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("4_e7edr")
+flat = true
+icon_alignment = 1
+
+[node name="Button4" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("5_hvipv")
+flat = true
+icon_alignment = 1
+
+[node name="Button5" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("6_rsjwq")
+flat = true
+icon_alignment = 1
+
+[node name="Button6" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("7_tp1gl")
+flat = true
+icon_alignment = 1
+
+[node name="Button7" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("8_17w61")
+flat = true
+icon_alignment = 1
+
+[node name="Button8" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("9_apvov")
+flat = true
+icon_alignment = 1
+
+[node name="Button9" type="Button" parent="GridContainer2/GridContainer"]
+layout_mode = 2
+icon = ExtResource("10_gb12j")
+flat = true
+icon_alignment = 1
+
+[node name="Button10" type="Button" parent="GridContainer2"]
+layout_mode = 2
+icon = ExtResource("11_muc5m")
+flat = true
+icon_alignment = 1
+
+[node name="Button11" type="Button" parent="GridContainer2"]
+layout_mode = 2
+icon = ExtResource("12_gu7o8")
+flat = true
+icon_alignment = 1
