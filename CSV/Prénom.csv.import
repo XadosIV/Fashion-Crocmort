@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dl57ommva5fr1"
+
+[deps]
+
+files=["res://CSV/Prénom.masculin.translation"]
+
+source_file="res://CSV/Prénom.csv"
+dest_files=["res://CSV/Prénom.masculin.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bndqu2wpq0iq8"]
+[gd_scene load_steps=5 format=3 uid="uid://5ij60s7vok3p"]
 
 [ext_resource type="PackedScene" uid="uid://d3ffr7mdqyvya" path="res://body.tscn" id="1_e2o6t"]
 [ext_resource type="Texture2D" uid="uid://cuf2yxbab6wco" path="res://assets/corps_couleur.png" id="2_fc0e3"]

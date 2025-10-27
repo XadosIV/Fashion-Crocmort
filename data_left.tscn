@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://stc24fpildg6"]
+
+[ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://pense_bete.tscn" id="1_lfdws"]
+[ext_resource type="Texture2D" uid="uid://bd0nusstpms75" path="res://PlaceHolderImage/fond_liege.png" id="1_xpfre"]
+[ext_resource type="PackedScene" uid="uid://qoxr2777yvsl" path="res://carnet_preview.tscn" id="2_fahuq"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 627.0
+offset_bottom = 1013.0
+texture = ExtResource("1_xpfre")
+
+[node name="Pense_bete" parent="." instance=ExtResource("1_lfdws")]
+layout_mode = 0
+offset_left = 115.52
+offset_top = 586.0
+offset_right = 115.52
+offset_bottom = 586.0
+scale = Vector2(1.015, 0.695)
+
+[node name="Carnet" parent="." instance=ExtResource("2_fahuq")]
+layout_mode = 0
+offset_left = 108.99999
+offset_top = 50.0
+offset_right = 108.99999
+offset_bottom = 50.0
+scale = Vector2(0.67, 0.785)
