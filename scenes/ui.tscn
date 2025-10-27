@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://i7vjnp0yx88l"]
+[gd_scene load_steps=3 format=3 uid="uid://i7vjnp0yx88l"]
 
 [ext_resource type="PackedScene" uid="uid://878oabv57gd1" path="res://scenes/tools_ui.tscn" id="1_fyqef"]
+[ext_resource type="PackedScene" uid="uid://stc24fpildg6" path="res://scenes/data_left.tscn" id="1_x4jx1"]
 
 [node name="Ui" type="Control"]
 layout_mode = 3
@@ -9,6 +10,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Node2D" parent="." instance=ExtResource("1_x4jx1")]
+layout_mode = 0
 
 [node name="ToolsUi" parent="." instance=ExtResource("1_fyqef")]
 layout_mode = 1

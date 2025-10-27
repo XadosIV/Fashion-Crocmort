@@ -1,4 +1,5 @@
 @tool
+class_name Henry
 extends Sprite2D
 
 @export_range(0.0, 1.0) var difficulty := 0.5
@@ -7,19 +8,10 @@ extends Sprite2D
 @export var create_dictionnary := false:
 	set(value):
 		if value and Engine.is_editor_hint():
-			var new_dict = {}
 			create_dictionnary = false
-			for child in get_children():
-				var base_chance = 0.5
-				var adjusted = clamp(base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5), 0.05, 0.95)
-				new_dict[child.name] = adjusted
+			generateChances()
+			notify_property_list_changed()
 
-				if child.get_child_count() > 0 and child.visible:
-					for c in child.get_children():
-						var sub_adjusted = clamp(base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5), 0.05, 0.95)
-						new_dict[c.name] = sub_adjusted
-				chances = new_dict
-				notify_property_list_changed()
 
 # Si jamais tout explose, ça, ça marche, mais ça prend pas en compte
 # La difficulté
@@ -74,7 +66,26 @@ func randomizeHenry():
 				var sub_chance = chances.get(c.name, 0.5)
 				c.visible = randf() < sub_chance
 
+func generateChances():
+	var new_dict = {}
+	for child in get_children():
+		var base_chance = 0.5
+		var adjusted = clamp(base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5), 0.05, 0.95)
+		new_dict[child.name] = adjusted
+
+		if child.get_child_count() > 0 and child.visible:
+			for c in child.get_children():
+				var sub_adjusted = clamp(base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5), 0.05, 0.95)
+				new_dict[c.name] = sub_adjusted
+		chances = new_dict
+
+
+func loadBody(dif):
+	difficulty = dif
+	generateChances()
+	randomizeHenry()
 
 func _process(delta):
-	if Input.is_action_just_pressed("ui_accept"):
-		randomizeHenry()
+	if not Engine.is_editor_hint():
+		if Input.is_action_just_pressed("ui_accept"):
+			randomizeHenry()

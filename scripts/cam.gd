@@ -1,7 +1,7 @@
 extends Camera2D
 
 var zoomed = false
-@export var zoomSize = 2
+@export var zoomSize = 1.5
 
 var limUp
 var limDown

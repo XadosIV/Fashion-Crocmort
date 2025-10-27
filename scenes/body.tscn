@@ -15,20 +15,18 @@
 scale = Vector2(0.7223476, 0.7223477)
 texture = ExtResource("1_2i6y6")
 script = ExtResource("1_in4ii")
-difficulty = 0.0
 chances = {
-&"BalleCoeur": 0.16211469769477843,
-&"BalleTete": 0.2250771328806877,
-&"BrasDroit": 0.2243295669555664,
-&"BrasGauche": 0.1991798996925354,
-&"EntailleCrane": 0.19343331,
-&"EntailleJoue": 0.17568450570106506,
-&"HematomeTorseBas": 0.23419444859027863,
-&"HematomeTorseHaut": 0.2144867092370987
+&"BalleCoeur": 0.5,
+&"BalleTete": 0.5,
+&"BrasDroit": 0.5,
+&"BrasGauche": 0.5,
+&"EntailleCrane": 0.5,
+&"EntailleJoue": 0.5,
+&"HematomeTorseBas": 0.5,
+&"HematomeTorseHaut": 0.5
 }
 
 [node name="BrasGauche" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(-200.7344, -80.29375)
 texture = ExtResource("3_nbwkk")
 
@@ -46,31 +44,25 @@ position = Vector2(-13.84375, -80.29378)
 texture = ExtResource("9_uqfi8")
 
 [node name="EntailleCrane" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(16.612501, -665.88434)
 texture = ExtResource("2_y1ill")
 
 [node name="EntailleJoue" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(-33.225002, -566.20935)
 texture = ExtResource("3_2ydm4")
 
 [node name="HematomeTorseHaut" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(5.5375023, -336.4031)
 texture = ExtResource("4_nbwkk")
 
 [node name="HematomeTorseBas" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(41.531254, -153.66562)
 texture = ExtResource("5_qcqav")
 
 [node name="BalleTete" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(-29.071875, -656.1937)
 texture = ExtResource("6_udrba")
 
 [node name="BalleCoeur" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(60.912506, -354.4)
 texture = ExtResource("6_udrba")
