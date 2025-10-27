@@ -1,14 +1,58 @@
-[gd_scene load_steps=2 format=3 uid="uid://bndqu2wpq0iq8"]
+[gd_scene load_steps=11 format=3 uid="uid://d3ffr7mdqyvya"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
-size = Vector2(640, 1080)
+[ext_resource type="Texture2D" uid="uid://cuf2yxbab6wco" path="res://assets/corps_couleur.png" id="1_2i6y6"]
+[ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://body.gd" id="1_in4ii"]
+[ext_resource type="Texture2D" uid="uid://cildp7nhbbg1f" path="res://assets/entaille crane.png" id="2_y1ill"]
+[ext_resource type="Texture2D" uid="uid://cefjfxnrruiwd" path="res://assets/entaille_joue.png" id="3_2ydm4"]
+[ext_resource type="Texture2D" uid="uid://brou0260wwis3" path="res://assets/bras_gauche.png" id="3_nbwkk"]
+[ext_resource type="Texture2D" uid="uid://bf7vhwlwwklkd" path="res://assets/hematomes_torse_1.png" id="4_nbwkk"]
+[ext_resource type="Texture2D" uid="uid://dwjtt673ji1of" path="res://assets/hematomes_torse_2.png" id="5_qcqav"]
+[ext_resource type="Texture2D" uid="uid://bnnkdqipxk7j" path="res://assets/bras_droit.png" id="5_udrba"]
+[ext_resource type="Texture2D" uid="uid://bttd0chd5fl8t" path="res://assets/impact_de_balle.png" id="6_udrba"]
+[ext_resource type="Texture2D" uid="uid://djh3fhwn23umt" path="res://assets/bleue_bras.png" id="9_uqfi8"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Henry" type="Sprite2D"]
+scale = Vector2(0.7223476, 0.7223477)
+texture = ExtResource("1_2i6y6")
+script = ExtResource("1_in4ii")
 
-[node name="PasTouche" type="Sprite2D" parent="."]
-position = Vector2(320, 540)
-texture = SubResource("PlaceholderTexture2D_tg1dk")
+[node name="BrasGauche" type="Sprite2D" parent="."]
+position = Vector2(-200.7344, -80.29375)
+texture = ExtResource("3_nbwkk")
 
-[node name="PasTouche2" type="Sprite2D" parent="."]
-position = Vector2(1600, 540)
-texture = SubResource("PlaceholderTexture2D_tg1dk")
+[node name="BleuBrasGauche" type="Sprite2D" parent="BrasGauche"]
+position = Vector2(15.228149, -103.828125)
+texture = ExtResource("9_uqfi8")
+flip_h = true
+
+[node name="BrasDroit" type="Sprite2D" parent="."]
+position = Vector2(202.11876, -83.062485)
+texture = ExtResource("5_udrba")
+
+[node name="BleuBrasDroit" type="Sprite2D" parent="BrasDroit"]
+position = Vector2(-13.84375, -80.29378)
+texture = ExtResource("9_uqfi8")
+
+[node name="EntailleCrane" type="Sprite2D" parent="."]
+position = Vector2(16.612501, -665.88434)
+texture = ExtResource("2_y1ill")
+
+[node name="EntailleJoue" type="Sprite2D" parent="."]
+position = Vector2(-33.225002, -566.20935)
+texture = ExtResource("3_2ydm4")
+
+[node name="HematomeTorseHaut" type="Sprite2D" parent="."]
+position = Vector2(5.5375023, -336.4031)
+texture = ExtResource("4_nbwkk")
+
+[node name="HematomeTorseBas" type="Sprite2D" parent="."]
+position = Vector2(41.531254, -153.66562)
+texture = ExtResource("5_qcqav")
+
+[node name="BalleTete" type="Sprite2D" parent="."]
+position = Vector2(-29.071875, -656.1937)
+texture = ExtResource("6_udrba")
+
+[node name="BalleCoeur" type="Sprite2D" parent="."]
+position = Vector2(60.912506, -354.4)
+texture = ExtResource("6_udrba")

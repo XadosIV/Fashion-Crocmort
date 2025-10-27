@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bndqu2wpq0iq8"]
+
+[ext_resource type="PackedScene" uid="uid://d3ffr7mdqyvya" path="res://body.tscn" id="1_e2o6t"]
+[ext_resource type="Texture2D" uid="uid://cuf2yxbab6wco" path="res://assets/corps_couleur.png" id="2_fc0e3"]
+[ext_resource type="Script" uid="uid://kka72ddrcgiq" path="res://cam.gd" id="2_feb5d"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
+size = Vector2(640, 1080)
+
+[node name="Body" type="Node2D"]
+
+[node name="PasTouche" type="Sprite2D" parent="."]
+position = Vector2(320, 540)
+texture = SubResource("PlaceholderTexture2D_tg1dk")
+
+[node name="PasTouche2" type="Sprite2D" parent="."]
+position = Vector2(1600, 540)
+texture = SubResource("PlaceholderTexture2D_tg1dk")
+
+[node name="Jean" parent="." instance=ExtResource("1_e2o6t")]
+position = Vector2(960, 540.5)
+texture = ExtResource("2_fc0e3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+script = ExtResource("2_feb5d")
