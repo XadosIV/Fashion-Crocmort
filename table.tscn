@@ -1,0 +1,191 @@
+[gd_scene load_steps=11 format=3 uid="uid://rd46st71405r"]
+
+[ext_resource type="Texture2D" uid="uid://p161rkltqv7w" path="res://la TABLE.png" id="1_jd0nb"]
+[ext_resource type="Script" uid="uid://eowo04fs30tm" path="res://table.gd" id="1_ormek"]
+[ext_resource type="Texture2D" uid="uid://dgj4h283xdryj" path="res://scissors.png" id="2_64sdq"]
+[ext_resource type="Texture2D" uid="uid://dxa4qt46o6won" path="res://tweezers.png" id="3_ormek"]
+[ext_resource type="Texture2D" uid="uid://bvs6062s6pwcx" path="res://clothespin.png" id="4_ibia0"]
+[ext_resource type="Script" uid="uid://osbft1cnd1if" path="res://button.gd" id="4_xnpc2"]
+[ext_resource type="Texture2D" uid="uid://3acnsjouosgg" path="res://saw.png" id="5_xnpc2"]
+[ext_resource type="Texture2D" uid="uid://dadxn3gwse73i" path="res://dough.png" id="6_urxxv"]
+[ext_resource type="Texture2D" uid="uid://c6wfgnopcetdg" path="res://scotch.png" id="7_2us7a"]
+[ext_resource type="Texture2D" uid="uid://crj47a14dym0n" path="res://nails.png" id="8_ojgvt"]
+
+[node name="table" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1280.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ormek")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5716493, 0.5716493, 0.57164925, 1)
+
+[node name="tableRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.25
+offset_top = -463.46576
+offset_right = 192.25
+offset_bottom = 463.46576
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jd0nb")
+expand_mode = 1
+
+[node name="tool0" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.0
+offset_top = -327.5
+offset_right = -47.0
+offset_bottom = -214.5
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_64sdq")
+flat = true
+script = ExtResource("4_xnpc2")
+
+[node name="tool1" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 64.0
+offset_top = -335.0
+offset_right = 150.0
+offset_bottom = -207.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_ormek")
+flat = true
+script = ExtResource("4_xnpc2")
+ID = 1
+
+[node name="tool2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.0
+offset_top = -192.0
+offset_right = -38.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("4_ibia0")
+flat = true
+script = ExtResource("4_xnpc2")
+ID = 2
+
+[node name="tool3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 25.0
+offset_top = -181.0
+offset_right = 313.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5199939, 0.5199939)
+icon = ExtResource("5_xnpc2")
+flat = true
+script = ExtResource("4_xnpc2")
+ID = 3
+
+[node name="tool4" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = -44.0
+offset_right = 12.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.74033546, 0.74033546)
+icon = ExtResource("6_urxxv")
+flat = true
+script = ExtResource("4_xnpc2")
+ID = 4
+
+[node name="tool5" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 23.0
+offset_top = -18.0
+offset_right = 281.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5200025, 0.5200025)
+icon = ExtResource("7_2us7a")
+flat = true
+script = ExtResource("4_xnpc2")
+ID = 5
+
+[node name="tool6" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = 110.0
+offset_right = -23.0
+offset_bottom = 248.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("8_ojgvt")
+flat = true
+script = ExtResource("4_xnpc2")
+ID = 6
+
+[node name="tool7" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 67.0
+offset_top = 139.0
+offset_right = 147.0
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
