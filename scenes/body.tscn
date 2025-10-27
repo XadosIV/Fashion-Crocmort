@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://d3ffr7mdqyvya"]
 
 [ext_resource type="Texture2D" uid="uid://cuf2yxbab6wco" path="res://assets/corps_couleur.png" id="1_2i6y6"]
-[ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://body.gd" id="1_in4ii"]
+[ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_in4ii"]
 [ext_resource type="Texture2D" uid="uid://cildp7nhbbg1f" path="res://assets/entaille crane.png" id="2_y1ill"]
 [ext_resource type="Texture2D" uid="uid://cefjfxnrruiwd" path="res://assets/entaille_joue.png" id="3_2ydm4"]
 [ext_resource type="Texture2D" uid="uid://brou0260wwis3" path="res://assets/bras_gauche.png" id="3_nbwkk"]

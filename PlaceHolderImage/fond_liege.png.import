@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd0nusstpms75"
-path="res://.godot/imported/fond_liege.png-b42774669ecc2c61b4e93030b7fd08bd.ctex"
+path="res://.godot/imported/fond_liege.png-99dd239ed02c6eca3bbd01d49653b2c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PlaceHolderImage/fond_liege.png"
-dest_files=["res://.godot/imported/fond_liege.png-b42774669ecc2c61b4e93030b7fd08bd.ctex"]
+source_file="res://placeHolderImage/fond_liege.png"
+dest_files=["res://.godot/imported/fond_liege.png-99dd239ed02c6eca3bbd01d49653b2c4.ctex"]
 
 [params]
 

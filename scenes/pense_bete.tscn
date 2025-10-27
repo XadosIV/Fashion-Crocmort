@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cxc3tqrifnuvo"]
 
-[ext_resource type="Texture2D" uid="uid://7u6b4lju884j" path="res://PlaceHolderImage/post_it.png" id="1_q51lx"]
+[ext_resource type="Texture2D" uid="uid://7u6b4lju884j" path="res://placeHolderImage/post_it.png" id="1_q51lx"]
 
 [node name="Pense_bete" type="Control"]
 layout_mode = 3

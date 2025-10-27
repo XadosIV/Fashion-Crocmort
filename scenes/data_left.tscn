@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://stc24fpildg6"]
 
-[ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://pense_bete.tscn" id="1_lfdws"]
-[ext_resource type="Texture2D" uid="uid://bd0nusstpms75" path="res://PlaceHolderImage/fond_liege.png" id="1_xpfre"]
-[ext_resource type="PackedScene" uid="uid://qoxr2777yvsl" path="res://carnet_preview.tscn" id="2_fahuq"]
+[ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
+[ext_resource type="Texture2D" uid="uid://bd0nusstpms75" path="res://placeHolderImage/fond_liege.png" id="1_xpfre"]
+[ext_resource type="PackedScene" uid="uid://qoxr2777yvsl" path="res://scenes/carnet_preview.tscn" id="2_fahuq"]
 
 [node name="Node2D" type="Control"]
 layout_mode = 3
