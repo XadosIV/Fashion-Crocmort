@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3acnsjouosgg"
-path="res://.godot/imported/saw.png-bd85368f8d56b39f7afe5e111598c412.ctex"
+uid="uid://c65ss8tj1pg0q"
+path="res://.godot/imported/scotchMouse.png-2a4f1b0fe6af9ac5c39013d5c7f7cf4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/saw.png"
-dest_files=["res://.godot/imported/saw.png-bd85368f8d56b39f7afe5e111598c412.ctex"]
+source_file="res://assets/table/scotchMouse.png"
+dest_files=["res://.godot/imported/scotchMouse.png-2a4f1b0fe6af9ac5c39013d5c7f7cf4c.ctex"]
 
 [params]
 
