@@ -15,8 +15,6 @@ func _ready() -> void:
 	var texture_rect = $Photo 
 	texture_rect.texture = tex
 	
-	
-	
 	select_gender()
 	
 	import_ressource_data()

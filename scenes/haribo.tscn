@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=38 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -14,9 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://5xvgb0775pyt" path="res://assets/bodies/haribo/moignon_bras_droit.png" id="11_hbqd8"]
 [ext_resource type="Texture2D" uid="uid://b1ctvqnb2w0pr" path="res://assets/bodies/haribo/moignon_bras_gauche.png" id="12_orvnu"]
 [ext_resource type="Texture2D" uid="uid://bonb3msap5v81" path="res://assets/bodies/haribo/moignon_jambe_droite.png" id="13_bf1hk"]
+[ext_resource type="Script" uid="uid://butvaw2488lut" path="res://scripts/moignon.gd" id="13_d8bkp"]
 [ext_resource type="Texture2D" uid="uid://bx1o74cg2hhtt" path="res://assets/bodies/haribo/moignon_jambe_gauche.png" id="14_u1inb"]
 [ext_resource type="Texture2D" uid="uid://dq4qq8qs4tuuy" path="res://assets/bodies/haribo/torse_et_tete_de_henry.png" id="15_383x3"]
-[ext_resource type="Script" uid="uid://fn53b1o0gaaq" path="res://scenes/poils.gd" id="17_n3rji"]
+[ext_resource type="Script" uid="uid://fn53b1o0gaaq" path="res://scripts/poils.gd" id="17_n3rji"]
 [ext_resource type="Script" uid="uid://dbu8lv3l4hkji" path="res://scripts/poils_removable.gd" id="18_xm0tk"]
 [ext_resource type="Texture2D" uid="uid://fc2jqepjf4qw" path="res://assets/bodies/clothes/bandeau_hippie.png" id="19_mfpbq"]
 [ext_resource type="Texture2D" uid="uid://mbq2c4h776rk" path="res://assets/bodies/clothes/clown_perruque.png" id="20_d8bkp"]
@@ -170,21 +171,25 @@ flip_h = true
 z_index = 2
 position = Vector2(139, -267)
 texture = ExtResource("11_hbqd8")
+script = ExtResource("13_d8bkp")
 
 [node name="BrasGauche" type="Sprite2D" parent="Membres/Coupés"]
 z_index = 2
 position = Vector2(-144, -272)
 texture = ExtResource("12_orvnu")
+script = ExtResource("13_d8bkp")
 
 [node name="JambeDroite" type="Sprite2D" parent="Membres/Coupés"]
 z_index = 2
 position = Vector2(75, 87)
 texture = ExtResource("13_bf1hk")
+script = ExtResource("13_d8bkp")
 
 [node name="JambeGauche" type="Sprite2D" parent="Membres/Coupés"]
 z_index = 2
 position = Vector2(-79, 71)
 texture = ExtResource("14_u1inb")
+script = ExtResource("13_d8bkp")
 
 [node name="Corps" type="Node2D" parent="."]
 

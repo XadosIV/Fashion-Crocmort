@@ -1,7 +1,8 @@
 extends Line2D
 
-var s = 5
+var s = 10
 var conv
+var global
 
 func create_collision():
 	var area = Area2D.new()
@@ -23,7 +24,9 @@ func dedebug():
 	#add_child(poly)
 
 func _ready():
+	global = get_node("/root/Global")
 	create_collision()
 
 func _on_mouse_entered():
-	queue_free()
+	if global.toolsID == 0 and global.toolTab == 0:
+		queue_free()

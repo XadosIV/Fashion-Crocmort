@@ -1,0 +1,13 @@
+extends Sprite2D
+
+var global
+
+func _ready():
+	set_process_input(true)
+	global = get_node("/root/Global")
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		if get_rect().has_point(to_local(event.position)) and global.toolsID == 3 and global.toolTab == 0:
+			visible = false
+			get_node("../../Attaché/"+name).visible

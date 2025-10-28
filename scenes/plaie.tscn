@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqd5g5f0c7eil"]
 
-[ext_resource type="Script" uid="uid://bipr42re0upqm" path="res://scenes/injuries.gd" id="1_tvs1u"]
+[ext_resource type="Script" uid="uid://bipr42re0upqm" path="res://scripts/injuries.gd" id="1_tvs1u"]
 
 [node name="Plaie" type="Sprite2D"]
 z_index = 3
