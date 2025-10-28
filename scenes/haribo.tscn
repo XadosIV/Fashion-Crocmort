@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=57 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -26,17 +26,17 @@
 [ext_resource type="Texture2D" uid="uid://c7ympl3pxrp5q" path="res://assets/bodies/clothes/naruto_perruque.png" id="23_bqyqd"]
 [ext_resource type="Texture2D" uid="uid://dwnjbbi154n3u" path="res://assets/bodies/clothes/perruque_affro.png" id="24_y64vu"]
 [ext_resource type="Texture2D" uid="uid://2v3cv2p2ifau" path="res://assets/bodies/clothes/perruque_hippie.png" id="25_k6b4l"]
-[ext_resource type="Texture2D" uid="uid://bbpog55yupe7v" path="res://assets/bodies/clothes/motard_chaussures.png" id="27_lides"]
 [ext_resource type="Texture2D" uid="uid://bpayaicgn47m6" path="res://assets/bodies/clothes/clown_bas.png" id="28_kp1hk"]
 [ext_resource type="Texture2D" uid="uid://chnhg8beu7bay" path="res://assets/bodies/shoes/pied_gauche_costard.png" id="28_tbyw1"]
 [ext_resource type="Texture2D" uid="uid://cmoflsud13uih" path="res://assets/bodies/shoes/pied_droit_costard.png" id="29_d5nyt"]
 [ext_resource type="Texture2D" uid="uid://bxwtwdbk7fnv5" path="res://assets/bodies/clothes/costard_bas.png" id="29_jq74x"]
+[ext_resource type="Texture2D" uid="uid://bky86utcp34mg" path="res://assets/bodies/shoes/pied_gauche_metal.png" id="30_d5nyt"]
 [ext_resource type="Texture2D" uid="uid://3q6xofsre426" path="res://assets/bodies/clothes/disco_bas.png" id="30_tbyw1"]
 [ext_resource type="Texture2D" uid="uid://cjm60xrvoslwm" path="res://assets/bodies/clothes/motard_bas.png" id="31_d5nyt"]
+[ext_resource type="Texture2D" uid="uid://dmpvf7net6u2e" path="res://assets/bodies/shoes/pied_droite_metal.png" id="31_u8l80"]
 [ext_resource type="Texture2D" uid="uid://cpdaft81b4s6u" path="res://assets/bodies/shoes/pied_gauche_clown.png" id="31_utm7u"]
 [ext_resource type="Texture2D" uid="uid://bg1ufmqkomeq3" path="res://assets/bodies/shoes/pied_droit_clown.png" id="32_u8l80"]
 [ext_resource type="Texture2D" uid="uid://b40uoftyg6nbb" path="res://assets/bodies/clothes/clown_haut.png" id="32_utm7u"]
-[ext_resource type="Texture2D" uid="uid://q4ndm801p7y6" path="res://assets/bodies/shoes/pieds_disco.png" id="33_1hn23"]
 [ext_resource type="Script" uid="uid://mo2on2l5s5cg" path="res://scenes/clothes_collection.gd" id="33_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://nkauixv40uyb" path="res://assets/bodies/clothes/costard_haut.png" id="33_u8l80"]
 [ext_resource type="Texture2D" uid="uid://cguvovft6cqbw" path="res://assets/bodies/clothes/disco_haut.png" id="34_1hn23"]
@@ -46,6 +46,7 @@
 [ext_resource type="Texture2D" uid="uid://b08wwxne73d4p" path="res://assets/bodies/clothes/motard_haut.png" id="35_keawo"]
 [ext_resource type="Texture2D" uid="uid://dea1srdff8c5e" path="res://assets/bodies/shoes/pied_droite_naruto.png" id="36_6tpb1"]
 [ext_resource type="Texture2D" uid="uid://ofy4rnqdrsny" path="res://assets/bodies/clothes/makeup_clown.png" id="36_36jj5"]
+[ext_resource type="Texture2D" uid="uid://c0c7ku7gjv4e7" path="res://assets/bodies/shoes/pied_gauche_discopng.png" id="36_d5nyt"]
 [ext_resource type="Texture2D" uid="uid://biujshbqjfaei" path="res://assets/bodies/clothes/naruto_top.png" id="39_y64vu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8bkp"]
@@ -410,13 +411,13 @@ texture = ExtResource("29_d5nyt")
 visible = false
 z_index = 3
 position = Vector2(-7, 574)
-texture = ExtResource("27_lides")
+texture = ExtResource("30_d5nyt")
 
 [node name="MotardD" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
 position = Vector2(-7, 574)
-texture = ExtResource("27_lides")
+texture = ExtResource("31_u8l80")
 
 [node name="NarutoG" type="Sprite2D" parent="Chaussure"]
 visible = false
@@ -446,7 +447,7 @@ texture = ExtResource("32_u8l80")
 visible = false
 z_index = 3
 position = Vector2(-7, 574)
-texture = ExtResource("33_1hn23")
+texture = ExtResource("36_d5nyt")
 
 [node name="DiscoD" type="Sprite2D" parent="Chaussure"]
 visible = false
