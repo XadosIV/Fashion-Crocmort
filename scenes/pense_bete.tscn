@@ -1,16 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxc3tqrifnuvo"]
-
-[ext_resource type="Texture2D" uid="uid://7u6b4lju884j" path="res://placeHolderImage/post_it.png" id="1_q51lx"]
+[gd_scene format=3 uid="uid://cxc3tqrifnuvo"]
 
 [node name="Pense_bete" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 400.0
-offset_bottom = 400.0
-texture = ExtResource("1_q51lx")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

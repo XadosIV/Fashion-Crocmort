@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://878oabv57gd1" path="res://scenes/tools_ui.tscn" id="1_fyqef"]
 [ext_resource type="PackedScene" uid="uid://stc24fpildg6" path="res://scenes/data_left.tscn" id="1_x4jx1"]
-[ext_resource type="Script" uid="uid://7ns1xp4nrcgj" path="res://scenes/zoombutton.gd" id="3_yev5y"]
+[ext_resource type="Script" path="res://scenes/zoombutton.gd" id="3_yev5y"]
 
 [node name="Ui" type="Control"]
 layout_mode = 3
@@ -11,9 +11,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Node2D" parent="." instance=ExtResource("1_x4jx1")]
-layout_mode = 0
 
 [node name="ToolsUi" parent="." instance=ExtResource("1_fyqef")]
 layout_mode = 1
@@ -28,3 +25,6 @@ offset_right = 1280.0
 offset_bottom = 1080.0
 text = "Zoom"
 script = ExtResource("3_yev5y")
+
+[node name="Node2D" parent="." instance=ExtResource("1_x4jx1")]
+layout_mode = 0

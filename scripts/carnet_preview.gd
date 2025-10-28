@@ -9,7 +9,7 @@ var name_selected = ""
 
 func _ready() -> void:
 	
-	var photo = Image.load_from_file("res://PlaceHolderImage/PhotoJean.png")
+	var photo = Image.load_from_file("res://PlaceHolderImage/PhotoPierre.png")
 	var tex = ImageTexture.create_from_image(photo)
 	
 	var texture_rect = $Photo 
