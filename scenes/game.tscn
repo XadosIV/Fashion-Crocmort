@@ -1,16 +1,16 @@
 [gd_scene load_steps=6 format=3 uid="uid://5ij60s7vok3p"]
 
-[ext_resource type="Script" path="res://scenes/game.gd" id="1_lbhrr"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://i7vjnp0yx88l" path="res://scenes/ui.tscn" id="1_lnu2h"]
 [ext_resource type="Script" uid="uid://kka72ddrcgiq" path="res://scripts/cam.gd" id="2_feb5d"]
-[ext_resource type="PackedScene" path="res://scenes/haribo.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://cqk4einaamnnh" path="res://scenes/haribo.tscn" id="4_lbhrr"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
 size = Vector2(640, 1080)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_lbhrr")
-difficulty = 0.0
+difficulty = 1.0
 
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(960, 540)
@@ -35,24 +35,25 @@ texture = SubResource("PlaceholderTexture2D_tg1dk")
 [node name="Henry2" parent="Corpulence" instance=ExtResource("4_lbhrr")]
 position = Vector2(960, 540)
 scale = Vector2(0.722, 0.722)
+difficulty = 0.686
 chances = {
-&"B_BD_Bas": 0.0,
-&"B_BG_Haut": 0.0,
-&"B_JD_Bas": 0.0,
-&"B_JD_Milieu": 0.0,
-&"B_JD_PiedHaut": 0.0,
-&"B_JG_Bas": 0.0,
-&"B_JG_Haut": 0.0,
-&"B_JG_PiedBas": 0.0,
-&"BalleBasDroite": 0.0,
-&"BalleCrane": 0.0,
-&"BalleHautGauche": 0.0,
-&"BrasDroit": 0.0,
-&"BrasGauche": 0.0,
-&"JambeDroite": 0.0,
-&"JambeGauche": 0.0,
-&"PlaieBasseDroite": 0.0,
-&"PlaieBasseGauche": 0.0,
-&"PlaieCranienne": 1.0,
-&"PlaieTorse": 0.0
+&"B_BD_Bas": 0.3050650844037533,
+&"B_BG_Haut": 0.29653171153087166,
+&"B_BasDroite": 0.2992162870436907,
+&"B_Crane": 0.31038155438899995,
+&"B_HautGauche": 0.2971057873934507,
+&"B_JD_Bas": 0.3029482294380665,
+&"B_JD_Milieu": 0.30165115972161294,
+&"B_JD_PiedHaut2": 0.3089736000776291,
+&"B_JG_Bas": 0.29807031515985727,
+&"B_JG_Haut": 0.3127710033297539,
+&"B_JG_PiedBas": 0.3079557906270027,
+&"BrasDroit": 0.302812500077486,
+&"BrasGauche": 0.3066687541604042,
+&"JambeDroite": 0.3149023017406464,
+&"JambeGauche": 0.30763153927326203,
+&"PlaieBasseDroite": 0.30494116101860996,
+&"PlaieBasseGauche": 0.30495288828015327,
+&"PlaieCranienne": 0.29704010317809876,
+&"PlaieTorse": 0.30994773883819576
 }

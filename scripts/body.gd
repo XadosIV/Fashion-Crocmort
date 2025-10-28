@@ -60,7 +60,17 @@ func randomizeHenry():
 			var rand = randf()
 			child.visible = rand < 1-chance
 			
-			$"Membres/Coupés".get_node_or_null(str(child.name)).visible = not child.visible
+			if child.visible:
+				$"Membres/Coupés".get_node_or_null(str(child.name)).visible = false
+				var polygonPoils = $"Poils".get_node_or_null(str(child.name))
+				polygonPoils.visible = true
+				polygonPoils.generate_poils()
+				
+			else:
+				$"Membres/Coupés".get_node_or_null(str(child.name)).visible = true
+				var polygonPoils = $"Poils".get_node_or_null(str(child.name))
+				polygonPoils.visible = false
+				polygonPoils.remove_poils()
 		else:
 			var rand = randf()
 			child.visible = rand < chance
@@ -91,8 +101,6 @@ func generateChances():
 				var sub_adjusted = clamp((base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5)) * global_factor, 0.05, 0.95)
 				new_dict[c.name] = sub_adjusted
 	chances = new_dict
-
-
 
 func loadBody(dif=-1):
 	if dif != -1:

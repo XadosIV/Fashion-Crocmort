@@ -12,8 +12,6 @@ func _ready() -> void:
 	limDown = limUp * (entier -1)
 
 func _process(delta: float) -> void:
-	#if Input.is_action_just_pressed("click"):
-	#	toggleZoom()
 	if zoomed:
 		if Input.is_action_just_pressed("up_scroll"):
 			position = Vector2(960, position.y - 40)
@@ -24,14 +22,11 @@ func _process(delta: float) -> void:
 			position = Vector2(960, limUp)
 		if position.y > limDown:
 			position = Vector2(960, limDown)
-			
-		
 
 func toggleZoom():
 	zoomed = not zoomed
 	if zoomed:
 		zoom = Vector2(zoomSize,zoomSize)
-		position = Vector2(960, get_viewport().get_mouse_position().y)
 	else:
 		zoom = Vector2(1,1)
 		position = Vector2(960,540)
