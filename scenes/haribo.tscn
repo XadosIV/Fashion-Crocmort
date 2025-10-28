@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://cpdaft81b4s6u" path="res://assets/bodies/shoes/pied_gauche_clown.png" id="31_utm7u"]
 [ext_resource type="Texture2D" uid="uid://bg1ufmqkomeq3" path="res://assets/bodies/shoes/pied_droit_clown.png" id="32_u8l80"]
 [ext_resource type="Texture2D" uid="uid://b40uoftyg6nbb" path="res://assets/bodies/clothes/clown_haut.png" id="32_utm7u"]
-[ext_resource type="Script" uid="uid://mo2on2l5s5cg" path="res://scenes/clothes_collection.gd" id="33_lyuu2"]
+[ext_resource type="Script" uid="uid://mo2on2l5s5cg" path="res://scripts/clothes_collection.gd" id="33_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://nkauixv40uyb" path="res://assets/bodies/clothes/costard_haut.png" id="33_u8l80"]
 [ext_resource type="Texture2D" uid="uid://cguvovft6cqbw" path="res://assets/bodies/clothes/disco_haut.png" id="34_1hn23"]
 [ext_resource type="Texture2D" uid="uid://bn1ss1demellh" path="res://assets/bodies/clothes/naruto.png" id="34_bqyqd"]
