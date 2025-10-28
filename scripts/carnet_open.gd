@@ -17,6 +17,7 @@ var commande = "commande"
 
 
 @onready var commande_list := $CommandeList
+@onready var photo_exemple := $Photo_exemple
 
 
 func _ready() -> void:
@@ -110,6 +111,9 @@ func select_id_and_attribute_value():
 	resume = example_dict_story[resume_id] 
 	commande = example_dict_description[resume_id]
 	lien = example_dict_link[lien_id]
+	
+	if (resume_id == 5):
+		photo_exemple.visible = true
 	
 
 func import_link():
