@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=20 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -18,6 +18,9 @@
 [ext_resource type="Texture2D" uid="uid://dq4qq8qs4tuuy" path="res://assets/bodies/haribo/torse_et_tete_de_henry.png" id="15_383x3"]
 [ext_resource type="Script" uid="uid://fn53b1o0gaaq" path="res://scenes/poils.gd" id="17_n3rji"]
 [ext_resource type="Script" uid="uid://dbu8lv3l4hkji" path="res://scripts/poils_removable.gd" id="18_xm0tk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xm0tk"]
+size = Vector2(1089, 1214)
 
 [node name="Henry" type="Node2D"]
 script = ExtResource("1_5unh3")
@@ -181,7 +184,6 @@ color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(102, -315, 131, -238, 148, -212, 164, -151, 196, -92, 210, -65, 244, -54, 228, -92, 206, -166, 174, -243, 141, -331)
 script = ExtResource("17_n3rji")
 poilsColor = Color(0.22745098, 0.15686275, 0.21960784, 0.6392157)
-nb_poils = 1
 scriptPoils = ExtResource("18_xm0tk")
 
 [node name="BrasGauche" type="Polygon2D" parent="Poils"]
@@ -189,7 +191,6 @@ color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(-114, -301, -150, -337, -193, -223, -218, -157, -242, -76, -250, -66, -213, -48, -213, -83, -180, -146, -160, -216)
 script = ExtResource("17_n3rji")
 poilsColor = Color(0.22745098, 0.15686275, 0.21960784, 0.6392157)
-nb_poils = 1
 scriptPoils = ExtResource("18_xm0tk")
 
 [node name="JambeDroite" type="Polygon2D" parent="Poils"]
@@ -197,7 +198,6 @@ color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(99, -59, 9, 19, 44, 163, 78, 246, 91, 293, 85, 370, 109, 440, 129, 507, 136, 565, 188, 559, 160, 393, 130, 241, 121, 110, 105, -13)
 script = ExtResource("17_n3rji")
 poilsColor = Color(0.22745098, 0.15686275, 0.21960784, 0.6392157)
-nb_poils = 1
 scriptPoils = ExtResource("18_xm0tk")
 
 [node name="JambeGauche" type="Polygon2D" parent="Poils"]
@@ -205,7 +205,6 @@ color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(-153, 568, -128, 426, -103, 363, -106, 283, -68, 164, -28, 52, -21, 14, -112, -40, -131, 85, -142, 179, -148, 281, -173, 354, -186, 462, -201, 557)
 script = ExtResource("17_n3rji")
 poilsColor = Color(0.22745098, 0.15686275, 0.21960784, 0.6392157)
-nb_poils = 1
 scriptPoils = ExtResource("18_xm0tk")
 
 [node name="Torse" type="Polygon2D" parent="Poils"]
@@ -214,7 +213,6 @@ antialiased = true
 polygon = PackedVector2Array(-89, -400, 83, -400, 88, -334, 52, -304, 27, -307, 7, -322, 4, -356, -17, -352, -21, -317, -42, -301, -75, -308, -99, -328, -109, -367, -101, -387)
 script = ExtResource("17_n3rji")
 poilsColor = Color(0.22745098, 0.15686275, 0.21960784, 0.6392157)
-nb_poils = 1
 scriptPoils = ExtResource("18_xm0tk")
 
 [node name="Pubis" type="Polygon2D" parent="Poils"]
@@ -222,5 +220,13 @@ color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(-7, -137, -53, -102, -20, -93, 14, -94, 40, -100)
 script = ExtResource("17_n3rji")
 poilsColor = Color(0.22745098, 0.15686275, 0.21960784, 0.6392157)
-nb_poils = 1
 scriptPoils = ExtResource("18_xm0tk")
+
+[node name="Line2D2" type="Line2D" parent="."]
+script = ExtResource("18_xm0tk")
+
+[node name="Area2D" type="Area2D" parent="Line2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Line2D2/Area2D"]
+position = Vector2(14.5, -324)
+shape = SubResource("RectangleShape2D_xm0tk")

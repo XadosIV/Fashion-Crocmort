@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5322nevauf1b"]
+
+[ext_resource type="Script" uid="uid://dbu8lv3l4hkji" path="res://scripts/poils_removable.gd" id="1_6e84v"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2(280, 375)
+points = PackedVector2Array(-67, -41, 317, 39)
+script = ExtResource("1_6e84v")
