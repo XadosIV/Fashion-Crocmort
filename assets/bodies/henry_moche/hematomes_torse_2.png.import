@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwjtt673ji1of"
-path="res://.godot/imported/hematomes_torse_2.png-32b21c2e0078cc418b64e978b5fc384d.ctex"
+path="res://.godot/imported/hematomes_torse_2.png-d75d3c12c66157a85d432ffe37a888b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/hematomes_torse_2.png"
-dest_files=["res://.godot/imported/hematomes_torse_2.png-32b21c2e0078cc418b64e978b5fc384d.ctex"]
+source_file="res://assets/bodies/henry_moche/hematomes_torse_2.png"
+dest_files=["res://.godot/imported/hematomes_torse_2.png-d75d3c12c66157a85d432ffe37a888b9.ctex"]
 
 [params]
 

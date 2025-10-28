@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf7vhwlwwklkd"
-path="res://.godot/imported/hematomes_torse_1.png-0e7dcf24613a7003fcd918dd7521ca0c.ctex"
+uid="uid://dltis7cjudin7"
+path="res://.godot/imported/bras_sectionné.png-3f48d4036fac2593967a9df451f32171.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/hematomes_torse_1.png"
-dest_files=["res://.godot/imported/hematomes_torse_1.png-0e7dcf24613a7003fcd918dd7521ca0c.ctex"]
+source_file="res://assets/bodies/henry_moche/bras_sectionné.png"
+dest_files=["res://.godot/imported/bras_sectionné.png-3f48d4036fac2593967a9df451f32171.ctex"]
 
 [params]
 

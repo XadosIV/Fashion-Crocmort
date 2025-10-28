@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cildp7nhbbg1f"
-path="res://.godot/imported/entaille crane.png-2624da58fbcab8a2c986bd8e437e0916.ctex"
+uid="uid://tf565ykdfsp3"
+path="res://.godot/imported/plaie_torse.png-f75fe16bd80b791e8e5005b156dcffdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/entaille crane.png"
-dest_files=["res://.godot/imported/entaille crane.png-2624da58fbcab8a2c986bd8e437e0916.ctex"]
+source_file="res://assets/bodies/haribo/plaie_torse.png"
+dest_files=["res://.godot/imported/plaie_torse.png-f75fe16bd80b791e8e5005b156dcffdb.ctex"]
 
 [params]
 

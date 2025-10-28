@@ -11,10 +11,9 @@ func _ready() -> void:
 	var entier = 1080 / limUp
 	limDown = limUp * (entier -1)
 
-
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("click"):
-		toggleZoom()
+	#if Input.is_action_just_pressed("click"):
+	#	toggleZoom()
 	if zoomed:
 		if Input.is_action_just_pressed("up_scroll"):
 			position = Vector2(960, position.y - 40)

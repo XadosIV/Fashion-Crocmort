@@ -1,0 +1,189 @@
+[gd_scene load_steps=16 format=3 uid="uid://cqk4einaamnnh"]
+
+[ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
+[ext_resource type="Texture2D" uid="uid://c7yttbs1nh0ec" path="res://assets/bodies/haribo/plaie_cranienne.png" id="2_omeqh"]
+[ext_resource type="Texture2D" uid="uid://tf565ykdfsp3" path="res://assets/bodies/haribo/plaie_torse.png" id="3_n3rji"]
+[ext_resource type="Texture2D" uid="uid://y5t186kp04dw" path="res://assets/bodies/haribo/plaie_haute.png" id="4_xm0tk"]
+[ext_resource type="Texture2D" uid="uid://bq24arqhe5bc8" path="res://assets/bodies/haribo/impact_de_balle.png" id="5_f6vib"]
+[ext_resource type="Texture2D" uid="uid://qo8vlxnlxbc8" path="res://assets/bodies/haribo/bras_droit_de_henry.png" id="6_awaug"]
+[ext_resource type="Texture2D" uid="uid://wfuo357pnb6n" path="res://assets/bodies/haribo/bras_gauche_de_henry.png" id="7_qjam3"]
+[ext_resource type="Texture2D" uid="uid://drbcj7nrh3wkd" path="res://assets/bodies/haribo/jmabe_droite_de_henry.png" id="8_i8fm5"]
+[ext_resource type="Texture2D" uid="uid://cgnnlrfl70ei8" path="res://assets/bodies/haribo/plaie_basse.png" id="9_mf5ka"]
+[ext_resource type="Texture2D" uid="uid://fgkvt5wqb3xn" path="res://assets/bodies/haribo/jmabe_gauche_de_henry.png" id="10_mwakk"]
+[ext_resource type="Texture2D" uid="uid://5xvgb0775pyt" path="res://assets/bodies/haribo/moignon_bras_droit.png" id="11_hbqd8"]
+[ext_resource type="Texture2D" uid="uid://b1ctvqnb2w0pr" path="res://assets/bodies/haribo/moignon_bras_gauche.png" id="12_orvnu"]
+[ext_resource type="Texture2D" uid="uid://bonb3msap5v81" path="res://assets/bodies/haribo/moignon_jambe_droite.png" id="13_bf1hk"]
+[ext_resource type="Texture2D" uid="uid://bx1o74cg2hhtt" path="res://assets/bodies/haribo/moignon_jambe_gauche.png" id="14_u1inb"]
+[ext_resource type="Texture2D" uid="uid://dq4qq8qs4tuuy" path="res://assets/bodies/haribo/torse_et_tete_de_henry.png" id="15_383x3"]
+
+[node name="Henry" type="Node2D"]
+script = ExtResource("1_5unh3")
+chances = {
+&"B_BG_Haut": 0.25,
+&"B_JD_Bas": 0.25,
+&"B_JD_Milieu": 0.25,
+&"B_JD_PiedHaut": 0.25,
+&"BalleBasDroite": 0.25,
+&"BalleCrane": 0.25,
+&"BalleHautGauche": 0.25,
+&"BrasDroit": 0.25,
+&"BrasGauche": 0.25,
+&"JambeDroite": 0.25,
+&"JambeGauche": 0.25,
+&"PlaieBasseDroite": 0.25,
+&"PlaieBasseGauche": 0.25,
+&"PlaieCranienne": 0.25,
+&"PlaieTorse": 0.25
+}
+
+[node name="Plaies" type="Node2D" parent="."]
+
+[node name="PlaieCranienne" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(13, -657)
+texture = ExtResource("2_omeqh")
+
+[node name="PlaieTorse" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(8, -307)
+texture = ExtResource("3_n3rji")
+
+[node name="PlaieBasseDroite" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(63, 27)
+texture = ExtResource("4_xm0tk")
+
+[node name="PlaieBasseGauche" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(-72, 20)
+texture = ExtResource("4_xm0tk")
+flip_h = true
+
+[node name="BalleBasDroite" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(22, -169)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="BalleHautGauche" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(-80, -366)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="BalleCrane" type="Sprite2D" parent="Plaies"]
+z_index = 3
+position = Vector2(-40, -635)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="Membres" type="Node2D" parent="."]
+
+[node name="Attaché" type="Node2D" parent="Membres"]
+
+[node name="BrasDroit" type="Sprite2D" parent="Membres/Attaché"]
+position = Vector2(190, -103)
+texture = ExtResource("6_awaug")
+
+[node name="B_BD_Bas" type="Sprite2D" parent="Membres/Attaché/BrasDroit"]
+z_index = 3
+position = Vector2(35, 84)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="BrasGauche" type="Sprite2D" parent="Membres/Attaché"]
+position = Vector2(-184, -103)
+texture = ExtResource("7_qjam3")
+
+[node name="B_BG_Haut" type="Sprite2D" parent="Membres/Attaché/BrasGauche"]
+z_index = 3
+position = Vector2(-19, -47)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="JambeDroite" type="Sprite2D" parent="Membres/Attaché"]
+position = Vector2(139, 348)
+texture = ExtResource("8_i8fm5")
+
+[node name="PlaieBasseDroite" type="Sprite2D" parent="Membres/Attaché/JambeDroite"]
+z_index = 3
+position = Vector2(-21, 55)
+texture = ExtResource("9_mf5ka")
+
+[node name="B_JD_PiedHaut" type="Sprite2D" parent="Membres/Attaché/JambeDroite"]
+z_index = 3
+position = Vector2(-2, 271)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="B_JD_Bas" type="Sprite2D" parent="Membres/Attaché/JambeDroite"]
+z_index = 3
+position = Vector2(10, 145)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="B_JD_Milieu" type="Sprite2D" parent="Membres/Attaché/JambeDroite"]
+z_index = 3
+position = Vector2(-31, -82)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="JambeGauche" type="Sprite2D" parent="Membres/Attaché"]
+position = Vector2(-154, 343)
+texture = ExtResource("10_mwakk")
+
+[node name="PlaieBasseGauche" type="Sprite2D" parent="Membres/Attaché/JambeGauche"]
+z_index = 3
+position = Vector2(23, 60)
+texture = ExtResource("9_mf5ka")
+flip_h = true
+
+[node name="B_JG_PiedBas" type="Sprite2D" parent="Membres/Attaché/JambeGauche"]
+z_index = 3
+position = Vector2(-67, 295)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="B_JG_Bas" type="Sprite2D" parent="Membres/Attaché/JambeGauche"]
+z_index = 3
+position = Vector2(-18, 135)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="B_JG_Haut" type="Sprite2D" parent="Membres/Attaché/JambeGauche"]
+z_index = 3
+position = Vector2(38, -187)
+texture = ExtResource("5_f6vib")
+flip_h = true
+
+[node name="Coupés" type="Node2D" parent="Membres"]
+
+[node name="BrasDroit" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
+z_index = 2
+position = Vector2(139, -267)
+texture = ExtResource("11_hbqd8")
+
+[node name="BrasGauche" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
+z_index = 2
+position = Vector2(-144, -272)
+texture = ExtResource("12_orvnu")
+
+[node name="JambeDroite" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
+z_index = 2
+position = Vector2(75, 87)
+texture = ExtResource("13_bf1hk")
+
+[node name="JambeGauche" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
+z_index = 2
+position = Vector2(-79, 71)
+texture = ExtResource("14_u1inb")
+
+[node name="Corps" type="Node2D" parent="."]
+
+[node name="Corps" type="Sprite2D" parent="Corps"]
+z_index = 1
+texture = ExtResource("15_383x3")

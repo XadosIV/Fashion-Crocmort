@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dltis7cjudin7"
-path="res://.godot/imported/bras_sectionné.png-e07ce283a6986c0f569b00918bfda52f.ctex"
+uid="uid://bx1o74cg2hhtt"
+path="res://.godot/imported/moignon_jambe_gauche.png-378e35207d4c76dbe622dd1ae5a18bfa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/bras_sectionné.png"
-dest_files=["res://.godot/imported/bras_sectionné.png-e07ce283a6986c0f569b00918bfda52f.ctex"]
+source_file="res://assets/bodies/haribo/moignon_jambe_gauche.png"
+dest_files=["res://.godot/imported/moignon_jambe_gauche.png-378e35207d4c76dbe622dd1ae5a18bfa.ctex"]
 
 [params]
 

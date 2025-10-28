@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bttd0chd5fl8t"
-path="res://.godot/imported/impact_de_balle.png-878e78537717634eb2e423443444798a.ctex"
+uid="uid://cuf2yxbab6wco"
+path="res://.godot/imported/corps_couleur.png-5e23c2329711f331471a323d853c1323.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/impact_de_balle.png"
-dest_files=["res://.godot/imported/impact_de_balle.png-878e78537717634eb2e423443444798a.ctex"]
+source_file="res://assets/bodies/henry_moche/corps_couleur.png"
+dest_files=["res://.godot/imported/corps_couleur.png-5e23c2329711f331471a323d853c1323.ctex"]
 
 [params]
 

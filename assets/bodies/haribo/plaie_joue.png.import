@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djh3fhwn23umt"
-path="res://.godot/imported/bleue_bras.png-20aebce0653b95485b57d6503f7aa088.ctex"
+uid="uid://ds7wdq48fcbd0"
+path="res://.godot/imported/plaie_joue.png-23c15cf19f3b2f56865c17536f3a4af5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/bleue_bras.png"
-dest_files=["res://.godot/imported/bleue_bras.png-20aebce0653b95485b57d6503f7aa088.ctex"]
+source_file="res://assets/bodies/haribo/plaie_joue.png"
+dest_files=["res://.godot/imported/plaie_joue.png-23c15cf19f3b2f56865c17536f3a4af5.ctex"]
 
 [params]
 

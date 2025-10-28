@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnnkdqipxk7j"
-path="res://.godot/imported/bras_droit.png-3562fd86e3b1308edf709c4996e5c881.ctex"
+uid="uid://brou0260wwis3"
+path="res://.godot/imported/bras_gauche.png-962b2733cf1e5fc454013492f93aa987.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bodies/bras_droit.png"
-dest_files=["res://.godot/imported/bras_droit.png-3562fd86e3b1308edf709c4996e5c881.ctex"]
+source_file="res://assets/bodies/henry_moche/bras_gauche.png"
+dest_files=["res://.godot/imported/bras_gauche.png-962b2733cf1e5fc454013492f93aa987.ctex"]
 
 [params]
 

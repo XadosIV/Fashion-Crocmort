@@ -1,29 +1,32 @@
 [gd_scene load_steps=11 format=3 uid="uid://d3ffr7mdqyvya"]
 
-[ext_resource type="Texture2D" uid="uid://cuf2yxbab6wco" path="res://assets/bodies/corps_couleur.png" id="1_2i6y6"]
+[ext_resource type="Texture2D" uid="uid://cuf2yxbab6wco" path="res://assets/bodies/henry_moche/corps_couleur.png" id="1_2i6y6"]
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_in4ii"]
-[ext_resource type="Texture2D" uid="uid://cildp7nhbbg1f" path="res://assets/bodies/entaille crane.png" id="2_y1ill"]
-[ext_resource type="Texture2D" uid="uid://cefjfxnrruiwd" path="res://assets/bodies/entaille_joue.png" id="3_2ydm4"]
-[ext_resource type="Texture2D" uid="uid://brou0260wwis3" path="res://assets/bodies/bras_gauche.png" id="3_nbwkk"]
-[ext_resource type="Texture2D" uid="uid://bf7vhwlwwklkd" path="res://assets/bodies/hematomes_torse_1.png" id="4_nbwkk"]
-[ext_resource type="Texture2D" uid="uid://dwjtt673ji1of" path="res://assets/bodies/hematomes_torse_2.png" id="5_qcqav"]
-[ext_resource type="Texture2D" uid="uid://bnnkdqipxk7j" path="res://assets/bodies/bras_droit.png" id="5_udrba"]
-[ext_resource type="Texture2D" uid="uid://bttd0chd5fl8t" path="res://assets/bodies/impact_de_balle.png" id="6_udrba"]
-[ext_resource type="Texture2D" uid="uid://djh3fhwn23umt" path="res://assets/bodies/bleue_bras.png" id="9_uqfi8"]
+[ext_resource type="Texture2D" uid="uid://cildp7nhbbg1f" path="res://assets/bodies/henry_moche/entaille crane.png" id="2_y1ill"]
+[ext_resource type="Texture2D" uid="uid://cefjfxnrruiwd" path="res://assets/bodies/henry_moche/entaille_joue.png" id="3_2ydm4"]
+[ext_resource type="Texture2D" uid="uid://brou0260wwis3" path="res://assets/bodies/henry_moche/bras_gauche.png" id="3_nbwkk"]
+[ext_resource type="Texture2D" uid="uid://bf7vhwlwwklkd" path="res://assets/bodies/henry_moche/hematomes_torse_1.png" id="4_nbwkk"]
+[ext_resource type="Texture2D" uid="uid://dwjtt673ji1of" path="res://assets/bodies/henry_moche/hematomes_torse_2.png" id="5_qcqav"]
+[ext_resource type="Texture2D" uid="uid://bnnkdqipxk7j" path="res://assets/bodies/henry_moche/bras_droit.png" id="5_udrba"]
+[ext_resource type="Texture2D" uid="uid://bttd0chd5fl8t" path="res://assets/bodies/henry_moche/impact_de_balle.png" id="6_udrba"]
+[ext_resource type="Texture2D" uid="uid://djh3fhwn23umt" path="res://assets/bodies/henry_moche/bleue_bras.png" id="9_uqfi8"]
 
 [node name="Henry" type="Sprite2D"]
 scale = Vector2(0.7223476, 0.7223477)
 texture = ExtResource("1_2i6y6")
 script = ExtResource("1_in4ii")
+difficulty = 1.0
 chances = {
-&"BalleCoeur": 0.5,
-&"BalleTete": 0.5,
-&"BrasDroit": 0.5,
-&"BrasGauche": 0.5,
-&"EntailleCrane": 0.5,
-&"EntailleJoue": 0.5,
-&"HematomeTorseBas": 0.5,
-&"HematomeTorseHaut": 0.5
+&"BalleCoeur": 0.7947273463010788,
+&"BalleTete": 0.8358416438102723,
+&"BleuBrasDroit": 0.768474642932415,
+&"BleuBrasGauche": 1.0,
+&"BrasDroit": 0.8120827913284302,
+&"BrasGauche": 0.797285407781601,
+&"EntailleCrane": 0.808333832025528,
+&"EntailleJoue": 0.81750196,
+&"HematomeTorseBas": 0.7827928692102433,
+&"HematomeTorseHaut": 0.8459148168563843
 }
 
 [node name="BrasGauche" type="Sprite2D" parent="."]
