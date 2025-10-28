@@ -1,9 +1,9 @@
 extends Control
 
-var example_dict_name = {}
 var example_dict_name_female = {}
 var example_dict_name_male = {}
 var gender = "female"
+var target_id = 5
 
 var name_selected = ""
 
@@ -15,25 +15,28 @@ func _ready() -> void:
 	var texture_rect = $Photo 
 	texture_rect.texture = tex
 	
-
+	
+	
+	select_gender()
 	
 	import_ressource_data()
 	select_name()
 	
 	$Name.text = name_selected
-	
-	
-	
+	get_node("/root/Global").name_selected = name_selected
+
+func select_gender():
+	gender = ["female", "male"].pick_random()
 
 func select_name():
 	randomize()
 
-	var random_key = randi() % example_dict_name_female.size()
-	
 	if gender == "female":
-		name_selected = example_dict_name_female[random_key]
+		target_id = randi() % example_dict_name_female.size()
+		name_selected = example_dict_name_female[target_id]
 	if gender == "male":
-		name_selected = example_dict_name_male[random_key]
+		target_id = randi() % example_dict_name_male.size()
+		name_selected = example_dict_name_male[target_id]
 			
 
 func import_ressource_data():
@@ -54,9 +57,13 @@ func import_ressource_data():
 	
 		if data_set.size() >= 2 and data_set[0] != "" and data_set[1] != "" :
 	
-			example_dict_name[line_index] = data_set
-			example_dict_name_female[line_index] = data_set[0]
-			example_dict_name_male[line_index] = data_set[1]
+			if(gender == "female"):
+				example_dict_name_female[line_index] = data_set[0]
+			
+			if(gender == "male"):
+				example_dict_name_male[line_index] = data_set[1]
+				
+
 			line_index += 1
 	
 	file.close()

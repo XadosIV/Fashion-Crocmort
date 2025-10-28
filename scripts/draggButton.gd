@@ -25,10 +25,13 @@ func _followMouse():
 	position = get_global_mouse_position() + offset
 
 func _start_dragging() -> void:
+	Input.set_custom_mouse_cursor(get_node("/root/Global").mouse)
+	top_level = true
 	origin = position
-	offset = position - get_global_mouse_position()
+	offset = position - get_global_mouse_position() + get_parent().global_position
 	is_dragging = true
 	
 func _stop_dragging() -> void:
+	top_level = false
 	is_dragging = false
 	position = origin

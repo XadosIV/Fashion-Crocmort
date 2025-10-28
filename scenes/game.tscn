@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://5ij60s7vok3p"]
 
-[ext_resource type="Script" uid="uid://bmhxvoo47b51m" path="res://scripts/game.gd" id="1_lbhrr"]
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://i7vjnp0yx88l" path="res://scenes/ui.tscn" id="1_lnu2h"]
 [ext_resource type="Script" uid="uid://kka72ddrcgiq" path="res://scripts/cam.gd" id="2_feb5d"]
-[ext_resource type="PackedScene" uid="uid://cqk4einaamnnh" path="res://scenes/haribo.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" path="res://scenes/haribo.tscn" id="4_lbhrr"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
 size = Vector2(640, 1080)

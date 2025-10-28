@@ -1,0 +1,234 @@
+[gd_scene load_steps=19 format=3 uid="uid://bh547r7w1k0k8"]
+
+[ext_resource type="Texture2D" uid="uid://cogcooi5fnb0m" path="res://assets/closet/Closet.png" id="1_7j5ra"]
+[ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scenes/closet.gd" id="1_l4o33"]
+[ext_resource type="Texture2D" uid="uid://cmo0ab7k1mmrk" path="res://assets/closet/glasses/glasses1.png" id="3_71km3"]
+[ext_resource type="Script" uid="uid://cf6l4i7n3jvm" path="res://scenes/toolScroll.gd" id="3_hys0x"]
+[ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_4c2qv"]
+[ext_resource type="Texture2D" uid="uid://dw7gnoch5ri72" path="res://assets/closet/glasses/glasses2.png" id="4_cgwhh"]
+[ext_resource type="Texture2D" uid="uid://v4hmcfebfewh" path="res://assets/closet/top/top.png" id="5_r1k4l"]
+[ext_resource type="Texture2D" uid="uid://iumij0afk4pg" path="res://assets/closet/top/top2.png" id="6_4c2qv"]
+[ext_resource type="Texture2D" uid="uid://djujtdlf3s5y0" path="res://assets/closet/top/top3.png" id="7_hys0x"]
+[ext_resource type="Texture2D" uid="uid://bfpp6c3pvkkja" path="res://assets/closet/bottom/bottom1.png" id="8_tvq3x"]
+[ext_resource type="Texture2D" uid="uid://fkpwelt7hgo1" path="res://assets/closet/bottom/bottom2.png" id="9_iv81w"]
+[ext_resource type="Texture2D" uid="uid://c14em1kg64qfr" path="res://assets/closet/bottom/bottom3.png" id="10_3wuxl"]
+[ext_resource type="Texture2D" uid="uid://b2c8h4j521rwn" path="res://assets/closet/shoes/shoes1.png" id="11_8i737"]
+[ext_resource type="Texture2D" uid="uid://by3e32vgih5mw" path="res://assets/closet/shoes/shoes2.png" id="12_1obfd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r1k4l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4c2qv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hys0x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tvq3x"]
+
+[node name="closet" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 940.0
+script = ExtResource("1_l4o33")
+
+[node name="ARETIRER" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5609549, 0.5609549, 0.5609549, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7j5ra")
+expand_mode = 1
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="glassesScroll" type="ScrollContainer" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 141.0
+grow_horizontal = 2
+scale = Vector2(1, 0.9999998)
+script = ExtResource("3_hys0x")
+
+[node name="glasses" type="HBoxContainer" parent="Buttons/glassesScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Button0" type="Button" parent="Buttons/glassesScroll/glasses"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
+icon = ExtResource("3_71km3")
+flat = true
+script = ExtResource("4_4c2qv")
+
+[node name="Button1" type="Button" parent="Buttons/glassesScroll/glasses"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
+icon = ExtResource("4_cgwhh")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 1
+
+[node name="Button2" type="Button" parent="Buttons/glassesScroll/glasses"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
+icon = ExtResource("4_cgwhh")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 2
+
+[node name="Button3" type="Button" parent="Buttons/glassesScroll/glasses"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
+icon = ExtResource("4_cgwhh")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 3
+
+[node name="topScroll" type="ScrollContainer" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 145.0
+offset_bottom = 424.0
+grow_horizontal = 2
+scale = Vector2(1, 0.8)
+script = ExtResource("3_hys0x")
+clothingID = 1
+
+[node name="top" type="HBoxContainer" parent="Buttons/topScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Button0" type="Button" parent="Buttons/topScroll/top"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4c2qv")
+icon = ExtResource("5_r1k4l")
+flat = true
+script = ExtResource("4_4c2qv")
+
+[node name="Button1" type="Button" parent="Buttons/topScroll/top"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4c2qv")
+icon = ExtResource("6_4c2qv")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 1
+
+[node name="Button2" type="Button" parent="Buttons/topScroll/top"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4c2qv")
+icon = ExtResource("7_hys0x")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 1
+
+[node name="bottomScroll" type="ScrollContainer" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 431.0
+offset_bottom = 710.0
+grow_horizontal = 2
+scale = Vector2(1, 0.8)
+script = ExtResource("3_hys0x")
+clothingID = 2
+
+[node name="bottom" type="HBoxContainer" parent="Buttons/bottomScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Button0" type="Button" parent="Buttons/bottomScroll/bottom"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hys0x")
+icon = ExtResource("8_tvq3x")
+flat = true
+script = ExtResource("4_4c2qv")
+
+[node name="Button1" type="Button" parent="Buttons/bottomScroll/bottom"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hys0x")
+icon = ExtResource("9_iv81w")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 1
+
+[node name="Button2" type="Button" parent="Buttons/bottomScroll/bottom"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hys0x")
+icon = ExtResource("10_3wuxl")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 2
+
+[node name="shoeScroll" type="ScrollContainer" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 2.0
+offset_top = 685.0
+offset_right = 2.0
+offset_bottom = 964.0
+grow_horizontal = 2
+scale = Vector2(1, 0.8809106)
+script = ExtResource("3_hys0x")
+clothingID = 3
+
+[node name="shoes" type="HBoxContainer" parent="Buttons/shoeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Button0" type="Button" parent="Buttons/shoeScroll/shoes"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
+icon = ExtResource("11_8i737")
+flat = true
+script = ExtResource("4_4c2qv")
+
+[node name="Button1" type="Button" parent="Buttons/shoeScroll/shoes"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
+icon = ExtResource("12_1obfd")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 1
+
+[node name="Button2" type="Button" parent="Buttons/shoeScroll/shoes"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
+icon = ExtResource("12_1obfd")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 2
+
+[node name="Button3" type="Button" parent="Buttons/shoeScroll/shoes"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
+icon = ExtResource("11_8i737")
+flat = true
+script = ExtResource("4_4c2qv")
+ID = 3
