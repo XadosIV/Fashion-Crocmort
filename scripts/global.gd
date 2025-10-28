@@ -15,4 +15,3 @@ func _input(event):
 func _tool_changed(tab: int, tool: int) -> void :
 	toolTab = tab
 	toolsID = tool
-	print(str(toolTab) + " " + str(toolsID))

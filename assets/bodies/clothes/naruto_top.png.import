@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd0nusstpms75"
-path="res://.godot/imported/fond_liege.png-99dd239ed02c6eca3bbd01d49653b2c4.ctex"
+uid="uid://biujshbqjfaei"
+path="res://.godot/imported/naruto_top.png-9dc5e354fbdfc3a446b750aca9725d0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://placeHolderImage/fond_liege.png"
-dest_files=["res://.godot/imported/fond_liege.png-99dd239ed02c6eca3bbd01d49653b2c4.ctex"]
+source_file="res://assets/bodies/clothes/naruto_top.png"
+dest_files=["res://.godot/imported/naruto_top.png-9dc5e354fbdfc3a446b750aca9725d0b.ctex"]
 
 [params]
 
