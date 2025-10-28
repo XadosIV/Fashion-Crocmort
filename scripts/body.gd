@@ -48,7 +48,8 @@ func fullHenry():
 func randomizeHenry():
 	for child in $Plaies.get_children():
 		var chance = chances.get(child.name, 0.5)
-		child.visible = randf() < chance
+		var rand = randf()
+		child.visible = rand < chance
 	
 	for child in $"Membres/Attaché".get_children():
 		var chance = chances.get(child.name, 0.5)
@@ -56,19 +57,23 @@ func randomizeHenry():
 			# On inverse la chance pour les bras, sachant
 			# que c'est le seul sprite à être "pas blessé"
 			# quand il est montré, contrairement aux hématomes genre
-			child.visible = randf() < 1-chance
+			var rand = randf()
+			child.visible = rand < 1-chance
 			
 			$"Membres/Coupés".get_node_or_null(str(child.name)).visible = not child.visible
 		else:
-			child.visible = randf() < chance
+			var rand = randf()
+			child.visible = rand < chance
 			
 
 		if child.get_child_count() > 0 and child.visible:
 			for c in child.get_children():
 				var sub_chance = chances.get(c.name, 0.5)
-				c.visible = randf() < sub_chance
+				var rand = randf()
+				c.visible = rand < sub_chance
 
 func generateChances():
+	fullHenry()
 	var global_factor = 0.5 # 0.5 = moitié de chance globale
 	var new_dict = {}
 	for child in $Plaies.get_children():
@@ -89,9 +94,10 @@ func generateChances():
 
 
 
-func loadBody(dif):
-	difficulty = dif
-	generateChances()
+func loadBody(dif=-1):
+	if dif != -1:
+		difficulty = dif
+		generateChances()
 	randomizeHenry()
 
 func _process(delta):

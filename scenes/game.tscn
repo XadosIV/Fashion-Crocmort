@@ -35,3 +35,24 @@ texture = SubResource("PlaceholderTexture2D_tg1dk")
 [node name="Henry2" parent="Corpulence" instance=ExtResource("4_lbhrr")]
 position = Vector2(960, 540)
 scale = Vector2(0.722, 0.722)
+chances = {
+&"B_BD_Bas": 0.0,
+&"B_BG_Haut": 0.0,
+&"B_JD_Bas": 0.0,
+&"B_JD_Milieu": 0.0,
+&"B_JD_PiedHaut": 0.0,
+&"B_JG_Bas": 0.0,
+&"B_JG_Haut": 0.0,
+&"B_JG_PiedBas": 0.0,
+&"BalleBasDroite": 0.0,
+&"BalleCrane": 0.0,
+&"BalleHautGauche": 0.0,
+&"BrasDroit": 0.0,
+&"BrasGauche": 0.0,
+&"JambeDroite": 0.0,
+&"JambeGauche": 0.0,
+&"PlaieBasseDroite": 0.0,
+&"PlaieBasseGauche": 0.0,
+&"PlaieCranienne": 1.0,
+&"PlaieTorse": 0.0
+}
