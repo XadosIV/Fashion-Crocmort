@@ -6,10 +6,10 @@ uid="uid://dfkqg5ehmp8v5"
 
 [deps]
 
-files=["res://csv/Description.masculin.translation", "res://csv/Description.hiddenCriteria.translation"]
+files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation"]
 
-source_file="res://csv/Description.csv"
-dest_files=["res://csv/Description.masculin.translation", "res://csv/Description.hiddenCriteria.translation"]
+source_file="res://CSV/Description.csv"
+dest_files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation"]
 
 [params]
 

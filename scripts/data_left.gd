@@ -10,6 +10,11 @@ var first_click = true
 	
 
 func _ready() -> void:
+	get_node("/root/Global").pb_1 = " "
+	get_node("/root/Global").pb_2 = " "
+	get_node("/root/Global").pb_3 = " "
+	get_node("/root/Global").pb_4 = " "
+	
 	carnet_open.visible = false  
 	close_carnet_button.visible = false
 	
@@ -37,6 +42,10 @@ func _on_button_close()-> void:
 	carnet_open.visible = false
 	close_carnet_button.visible = false
 	carnet_button.visible = true
+	$pense_bete_1.text = get_node("/root/Global").pb_1
+	$pense_bete_2.text = get_node("/root/Global").pb_2
+	$pense_bete_3.text = get_node("/root/Global").pb_3
+	$pense_bete_4.text = get_node("/root/Global").pb_4
 	
 	
 	
