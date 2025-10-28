@@ -5,7 +5,7 @@ var example_dict_story= {}
 var example_dict_description = {}
 var example_dict_link = {}
 
-var gender = "female"
+var gender = "male"
 var lien_id = 5
 var resume_id = 5
 
@@ -14,9 +14,10 @@ var lien = "Mamie"
 var resume = "test"
 var commande = "commande"
 
+@onready var commande_list := $CommandeList
 
 
-	
+
 
 
 func _ready() -> void:
@@ -27,27 +28,83 @@ func _ready() -> void:
 	charge_text()
 	
 	
-
-
 func start():
 	select_id_and_attribute_value()
 	charge_text()
 	
+#func charge_text():
+#	
+#	var replacements = {
+#		"prenom":prenom ,
+#		"lien": lien
+#	}
+#	var resume_formate = resume.format(replacements)
+#	var commande_formatee = "- " + commande.format(replacements).replace("\\n", "\n- ")
+#	
+#	$ch_Name2.text = "Prénom : %s" % prenom
+#	$ch_Name.text = prenom
+#	$ch_Lien.text = "Lien avec le client : %s" % lien.capitalize()
+#	
+#	$ch_Resume.text = resume_formate
+#	$ch_Elem_Commande.text = commande_formatee
+
 func charge_text():
+	var repl := {"prenom": prenom, "lien": lien}
+
+	var raw := commande.format(repl).replace("\\n", "\n")
 	
-	var replacements = {
-		"prenom":prenom ,
-		"lien": lien
-	}
-	var resume_formate = resume.format(replacements)
-	var commande_formatee = "- " + commande.format(replacements).replace("\\n", "\n- ")
+	var resume_formate = resume.format(repl)
+	
 	
 	$ch_Name2.text = "Prénom : %s" % prenom
 	$ch_Name.text = prenom
 	$ch_Lien.text = "Lien avec le client : %s" % lien.capitalize()
 	
 	$ch_Resume.text = resume_formate
-	$ch_Elem_Commande.text = commande_formatee
+
+
+	var lines: Array[String] = []
+	for s in raw.split("\n", false):
+		s = s.strip_edges()
+		if s != "":
+			lines.append(s)
+
+
+
+	_populate_command_buttons(lines)
+
+func _populate_command_buttons(lines: Array[String]) -> void:
+
+	for child in commande_list.get_children():
+		child.queue_free()
+
+	for i in lines.size():
+		var row := HBoxContainer.new()
+		commande_list.add_child(row)
+
+		var bullet := Label.new()
+		bullet.text = "•"
+		row.add_child(bullet)
+
+		var btn := Button.new()
+		btn.text = lines[i]
+		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		btn.flat = true
+		btn.add_theme_color_override("font_color", Color.BLACK)
+		row.add_child(btn)
+
+
+		btn.pressed.connect(_on_command_pressed.bind(i, lines[i]))
+
+func _on_command_pressed(index: int, text: String) -> void:
+	print("Clique sur la ligne", index, ":", text)
+
+
+
+
+
+
+
 
 func select_id_and_attribute_value():
 	
