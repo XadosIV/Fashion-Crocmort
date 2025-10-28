@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://osbft1cnd1if" path="res://scripts/button.gd" id="4_xnpc2"]
 [ext_resource type="Texture2D" uid="uid://dadxn3gwse73i" path="res://assets/table/dough.png" id="6_urxxv"]
 [ext_resource type="Texture2D" uid="uid://c6wfgnopcetdg" path="res://assets/table/scotch.png" id="7_2us7a"]
-[ext_resource type="Texture2D" uid="uid://qo8vlxnlxbc8" path="res://assets/bodies/haribo/bras_droit_de_henry.png" id="7_docs3"]
+[ext_resource type="Texture2D" uid="uid://bo4vpiyrgxcbm" path="res://assets/table/limbs.png" id="7_docs3"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="8_e1moh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5it3b"]
@@ -50,10 +50,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -191.0
-offset_top = -350.0
-offset_right = 260.0
-offset_bottom = 303.0
+offset_left = -199.0
+offset_top = -303.0
+offset_right = 252.0
+offset_bottom = 350.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 2
@@ -84,11 +84,13 @@ icon_alignment = 1
 script = ExtResource("4_xnpc2")
 ID = 2
 
-[node name="tool3" type="Button" parent="Buttons"]
+[node name="TextureButton3" type="TextureButton" parent="Buttons"]
+custom_minimum_size = Vector2(150, 350)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("7_docs3")
-flat = true
-icon_alignment = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_docs3")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("8_e1moh")
 ID = 3

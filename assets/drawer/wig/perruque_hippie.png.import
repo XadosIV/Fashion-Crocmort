@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://com0ec5ua825o"
+path="res://.godot/imported/perruque_hippie.png-cde8a2c902dd8164d636fdb0f0fad3d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/drawer/wig/perruque_hippie.png"
+dest_files=["res://.godot/imported/perruque_hippie.png-cde8a2c902dd8164d636fdb0f0fad3d6.ctex"]
 
 [params]
 

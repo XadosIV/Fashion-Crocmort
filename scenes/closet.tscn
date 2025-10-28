@@ -1,27 +1,23 @@
 [gd_scene load_steps=19 format=3 uid="uid://bh547r7w1k0k8"]
 
 [ext_resource type="Texture2D" uid="uid://cogcooi5fnb0m" path="res://assets/closet/Closet.png" id="1_7j5ra"]
-[ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scenes/closet.gd" id="1_l4o33"]
-[ext_resource type="Texture2D" uid="uid://cmo0ab7k1mmrk" path="res://assets/closet/glasses/glasses1.png" id="3_71km3"]
-[ext_resource type="Script" uid="uid://cf6l4i7n3jvm" path="res://scenes/toolScroll.gd" id="3_hys0x"]
+[ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scripts/closet.gd" id="1_l4o33"]
+[ext_resource type="Script" uid="uid://cf6l4i7n3jvm" path="res://scripts/toolScroll.gd" id="3_hys0x"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_4c2qv"]
-[ext_resource type="Texture2D" uid="uid://dw7gnoch5ri72" path="res://assets/closet/glasses/glasses2.png" id="4_cgwhh"]
-[ext_resource type="Texture2D" uid="uid://v4hmcfebfewh" path="res://assets/closet/top/top.png" id="5_r1k4l"]
-[ext_resource type="Texture2D" uid="uid://iumij0afk4pg" path="res://assets/closet/top/top2.png" id="6_4c2qv"]
-[ext_resource type="Texture2D" uid="uid://djujtdlf3s5y0" path="res://assets/closet/top/top3.png" id="7_hys0x"]
-[ext_resource type="Texture2D" uid="uid://bfpp6c3pvkkja" path="res://assets/closet/bottom/bottom1.png" id="8_tvq3x"]
-[ext_resource type="Texture2D" uid="uid://fkpwelt7hgo1" path="res://assets/closet/bottom/bottom2.png" id="9_iv81w"]
-[ext_resource type="Texture2D" uid="uid://c14em1kg64qfr" path="res://assets/closet/bottom/bottom3.png" id="10_3wuxl"]
-[ext_resource type="Texture2D" uid="uid://b2c8h4j521rwn" path="res://assets/closet/shoes/shoes1.png" id="11_8i737"]
-[ext_resource type="Texture2D" uid="uid://by3e32vgih5mw" path="res://assets/closet/shoes/shoes2.png" id="12_1obfd"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r1k4l"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4c2qv"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hys0x"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tvq3x"]
+[ext_resource type="Texture2D" uid="uid://dfgyrriljlims" path="res://assets/closet/hat/lunette_hippie.png" id="4_tvq3x"]
+[ext_resource type="Texture2D" uid="uid://db4rcj2lm3x4j" path="res://assets/closet/hat/bandeau_hippie.png" id="6_iv81w"]
+[ext_resource type="Texture2D" uid="uid://bfoatblhvmekf" path="res://assets/closet/hat/motard_bandeau.png" id="7_3wuxl"]
+[ext_resource type="Texture2D" uid="uid://dea157wisgwec" path="res://assets/closet/top/clown_haut.png" id="8_iv81w"]
+[ext_resource type="Texture2D" uid="uid://jsqtgqew1ogh" path="res://assets/closet/top/costard_haut.png" id="9_3wuxl"]
+[ext_resource type="Texture2D" uid="uid://dntpiik5fnteq" path="res://assets/closet/top/motard_haut.png" id="10_8i737"]
+[ext_resource type="Texture2D" uid="uid://cn1gg0y2qsapa" path="res://assets/closet/top/disco_haut.png" id="11_1obfd"]
+[ext_resource type="Texture2D" uid="uid://b2kqmsfvu5nxa" path="res://assets/closet/bottom/clown_bas.png" id="12_8i737"]
+[ext_resource type="Texture2D" uid="uid://bilmd6w16q7as" path="res://assets/closet/bottom/costard_bas.png" id="13_1obfd"]
+[ext_resource type="Texture2D" uid="uid://m6f1imbt3uaa" path="res://assets/closet/bottom/motard_bas.png" id="14_fwo5k"]
+[ext_resource type="Texture2D" uid="uid://bru2bi1vl5ut" path="res://assets/closet/bottom/disco_bas.png" id="15_g8h4w"]
+[ext_resource type="Texture2D" uid="uid://cubfmnur6k1vu" path="res://assets/closet/shoes/costard_chaussures.png" id="16_7t2wy"]
+[ext_resource type="Texture2D" uid="uid://dghhlcumyl8y6" path="res://assets/closet/shoes/motard_chaussures.png" id="17_sgxkq"]
+[ext_resource type="Texture2D" uid="uid://dqu6sbni6v1xn" path="res://assets/closet/shoes/naruto_sandales.png" id="18_c0xl4"]
 
 [node name="closet" type="Control"]
 layout_mode = 3
@@ -49,68 +45,64 @@ grow_vertical = 2
 texture = ExtResource("1_7j5ra")
 expand_mode = 1
 
-[node name="Buttons" type="Control" parent="."]
+[node name="Buttons" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -11.0
+offset_bottom = 11.0
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
 
 [node name="glassesScroll" type="ScrollContainer" parent="Buttons"]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 141.0
-grow_horizontal = 2
-scale = Vector2(1, 0.9999998)
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 0
 script = ExtResource("3_hys0x")
 
-[node name="glasses" type="HBoxContainer" parent="Buttons/glassesScroll"]
+[node name="hat" type="HBoxContainer" parent="Buttons/glassesScroll"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Button0" type="Button" parent="Buttons/glassesScroll/glasses"]
+[node name="TextureButton0" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
-icon = ExtResource("3_71km3")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_tvq3x")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 
-[node name="Button1" type="Button" parent="Buttons/glassesScroll/glasses"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
-icon = ExtResource("4_cgwhh")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("6_iv81w")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 1
 
-[node name="Button2" type="Button" parent="Buttons/glassesScroll/glasses"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
-icon = ExtResource("4_cgwhh")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_3wuxl")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 2
 
-[node name="Button3" type="Button" parent="Buttons/glassesScroll/glasses"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_r1k4l")
-icon = ExtResource("4_cgwhh")
-flat = true
-script = ExtResource("4_4c2qv")
-ID = 3
-
 [node name="topScroll" type="ScrollContainer" parent="Buttons"]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 145.0
-offset_bottom = 424.0
-grow_horizontal = 2
-scale = Vector2(1, 0.8)
+custom_minimum_size = Vector2(0, 210)
+layout_mode = 2
 script = ExtResource("3_hys0x")
 clothingID = 1
 
@@ -120,37 +112,52 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Button0" type="Button" parent="Buttons/topScroll/top"]
+[node name="TextureButton0" type="TextureButton" parent="Buttons/topScroll/top"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4c2qv")
-icon = ExtResource("5_r1k4l")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("8_iv81w")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 
-[node name="Button1" type="Button" parent="Buttons/topScroll/top"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/topScroll/top"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4c2qv")
-icon = ExtResource("6_4c2qv")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_3wuxl")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 1
 
-[node name="Button2" type="Button" parent="Buttons/topScroll/top"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/topScroll/top"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4c2qv")
-icon = ExtResource("7_hys0x")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("10_8i737")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
-ID = 1
+ID = 2
+
+[node name="TextureButton3" type="TextureButton" parent="Buttons/topScroll/top"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("11_1obfd")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("4_4c2qv")
+ID = 3
 
 [node name="bottomScroll" type="ScrollContainer" parent="Buttons"]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 431.0
-offset_bottom = 710.0
-grow_horizontal = 2
-scale = Vector2(1, 0.8)
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
 script = ExtResource("3_hys0x")
 clothingID = 2
 
@@ -160,39 +167,52 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Button0" type="Button" parent="Buttons/bottomScroll/bottom"]
+[node name="TextureButton0" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+custom_minimum_size = Vector2(150, 250)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_hys0x")
-icon = ExtResource("8_tvq3x")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("12_8i737")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 
-[node name="Button1" type="Button" parent="Buttons/bottomScroll/bottom"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+custom_minimum_size = Vector2(150, 250)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_hys0x")
-icon = ExtResource("9_iv81w")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("13_1obfd")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 1
 
-[node name="Button2" type="Button" parent="Buttons/bottomScroll/bottom"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+custom_minimum_size = Vector2(150, 250)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_hys0x")
-icon = ExtResource("10_3wuxl")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("14_fwo5k")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 2
 
+[node name="TextureButton3" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("15_g8h4w")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("4_4c2qv")
+ID = 3
+
 [node name="shoeScroll" type="ScrollContainer" parent="Buttons"]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 2.0
-offset_top = 685.0
-offset_right = 2.0
-offset_bottom = 964.0
-grow_horizontal = 2
-scale = Vector2(1, 0.8809106)
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
 script = ExtResource("3_hys0x")
 clothingID = 3
 
@@ -202,33 +222,34 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="Button0" type="Button" parent="Buttons/shoeScroll/shoes"]
+[node name="TextureButton0" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
+custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
-icon = ExtResource("11_8i737")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("16_7t2wy")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 
-[node name="Button1" type="Button" parent="Buttons/shoeScroll/shoes"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
+custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
-icon = ExtResource("12_1obfd")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("17_sgxkq")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 1
 
-[node name="Button2" type="Button" parent="Buttons/shoeScroll/shoes"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
+custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
-icon = ExtResource("12_1obfd")
-flat = true
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("18_c0xl4")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_4c2qv")
 ID = 2
-
-[node name="Button3" type="Button" parent="Buttons/shoeScroll/shoes"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_tvq3x")
-icon = ExtResource("11_8i737")
-flat = true
-script = ExtResource("4_4c2qv")
-ID = 3

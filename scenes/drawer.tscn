@@ -1,29 +1,24 @@
-[gd_scene load_steps=18 format=3 uid="uid://bhxq78cchur7p"]
+[gd_scene load_steps=12 format=3 uid="uid://bhxq78cchur7p"]
 
-[ext_resource type="Script" uid="uid://dx50jy6v3n27p" path="res://scenes/drawer.gd" id="1_8qpdu"]
-[ext_resource type="Texture2D" uid="uid://bo50pu7kql2c" path="res://assets/drawer/le TIROIR.png" id="1_qe6j5"]
-[ext_resource type="Texture2D" uid="uid://ylnhvclktsln" path="res://assets/drawer/hair1.png" id="2_lt7lr"]
-[ext_resource type="Texture2D" uid="uid://c5ihduq6slcfg" path="res://assets/drawer/hair2.png" id="3_o3ddy"]
+[ext_resource type="Script" uid="uid://dx50jy6v3n27p" path="res://scripts/drawer.gd" id="1_8qpdu"]
+[ext_resource type="Texture2D" uid="uid://df51nlp4d475c" path="res://assets/drawer/wig/clown_perruque.png" id="3_8wanr"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_7hrsy"]
-[ext_resource type="Texture2D" uid="uid://cop7371xwyo6v" path="res://assets/drawer/hair3.png" id="4_e7edr"]
-[ext_resource type="Texture2D" uid="uid://d1evg1qleyri1" path="res://assets/drawer/eyes1.png" id="5_hvipv"]
-[ext_resource type="Texture2D" uid="uid://b1lp4puyfx5ft" path="res://assets/drawer/eyes2.png" id="6_rsjwq"]
-[ext_resource type="Texture2D" uid="uid://vqbikxsit5bs" path="res://assets/drawer/eyes3.png" id="7_tp1gl"]
-[ext_resource type="Texture2D" uid="uid://bwljcpcfglktf" path="res://assets/drawer/makeup1.png" id="8_17w61"]
-[ext_resource type="Texture2D" uid="uid://cktfhkdohiycb" path="res://assets/drawer/makeup2.png" id="9_apvov"]
-[ext_resource type="Texture2D" uid="uid://c4hjtbobjr6rk" path="res://assets/drawer/makeup3.png" id="10_gb12j"]
-[ext_resource type="Texture2D" uid="uid://ds4vdn6p1uugi" path="res://assets/drawer/blackPen.png" id="11_muc5m"]
-[ext_resource type="Texture2D" uid="uid://c8yvyr740diwa" path="res://assets/drawer/whitePen.png" id="12_gu7o8"]
-[ext_resource type="Script" uid="uid://osbft1cnd1if" path="res://scripts/button.gd" id="13_u2ru5"]
+[ext_resource type="Texture2D" uid="uid://d1evg1qleyri1" path="res://assets/drawer/eyes/eyes1.png" id="5_hvipv"]
+[ext_resource type="Texture2D" uid="uid://cqxncnjc5hvyf" path="res://assets/drawer/wig/naruto_perruque.png" id="5_x262c"]
+[ext_resource type="Texture2D" uid="uid://cdrcsqf4peyvj" path="res://assets/drawer/wig/perruque_affro.png" id="6_jlc4d"]
+[ext_resource type="Texture2D" uid="uid://b1lp4puyfx5ft" path="res://assets/drawer/eyes/eyes2.png" id="6_rsjwq"]
+[ext_resource type="Texture2D" uid="uid://com0ec5ua825o" path="res://assets/drawer/wig/perruque_hippie.png" id="7_8qpdu"]
+[ext_resource type="Texture2D" uid="uid://vqbikxsit5bs" path="res://assets/drawer/eyes/eyes3.png" id="7_tp1gl"]
+[ext_resource type="Texture2D" uid="uid://ddvfl4sov80op" path="res://assets/drawer/makeup/makeup_clown.png" id="11_u2ru5"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7hrsy"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q0lgr"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8wanr"]
+load_path = "res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
 
 [node name="drawer" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 640.0
+offset_left = 1.0
+offset_right = 641.0
 offset_bottom = 940.0
 script = ExtResource("1_8qpdu")
 
@@ -43,119 +38,126 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_qe6j5")
+texture = SubResource("CompressedTexture2D_8wanr")
 expand_mode = 1
 
-[node name="Buttons" type="GridContainer" parent="."]
+[node name="Buttons" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 138.0
+offset_bottom = -102.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="intButtons" type="GridContainer" parent="Buttons"]
+[node name="wigButtons" type="ScrollContainer" parent="Buttons"]
+custom_minimum_size = Vector2(0, 220)
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-columns = 3
 
-[node name="Button0" type="Button" parent="Buttons/intButtons"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons/wigButtons"]
+layout_mode = 2
+
+[node name="TextureButton0" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/focus = SubResource("StyleBoxEmpty_7hrsy")
-icon = ExtResource("2_lt7lr")
-flat = true
-icon_alignment = 1
+texture_normal = ExtResource("3_8wanr")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
 
-[node name="Button1" type="Button" parent="Buttons/intButtons"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("3_o3ddy")
-flat = true
-icon_alignment = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("5_x262c")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
 ID = 1
 
-[node name="Button2" type="Button" parent="Buttons/intButtons"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("4_e7edr")
-flat = true
-icon_alignment = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("6_jlc4d")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
 ID = 2
 
-[node name="Button3" type="Button" parent="Buttons/intButtons"]
+[node name="TextureButton3" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("5_hvipv")
-flat = true
-icon_alignment = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_8qpdu")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
 ID = 3
 
-[node name="Button4" type="Button" parent="Buttons/intButtons"]
+[node name="EyesButtons" type="ScrollContainer" parent="Buttons"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("6_rsjwq")
-flat = true
-icon_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons/EyesButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="TextureButton0" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
+custom_minimum_size = Vector2(150, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("5_hvipv")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
-ID = 4
 
-[node name="Button5" type="Button" parent="Buttons/intButtons"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
+custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("7_tp1gl")
-flat = true
-icon_alignment = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("6_rsjwq")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
-ID = 5
+ID = 1
 
-[node name="Button6" type="Button" parent="Buttons/intButtons"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
+custom_minimum_size = Vector2(150, 70)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("8_17w61")
-flat = true
-icon_alignment = 1
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_tp1gl")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
-ID = 6
+ID = 2
 
-[node name="Button7" type="Button" parent="Buttons/intButtons"]
+[node name="MakeupButtons" type="ScrollContainer" parent="Buttons"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("9_apvov")
-flat = true
-icon_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons/MakeupButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="TextureButton0" type="TextureButton" parent="Buttons/MakeupButtons/HBoxContainer"]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+texture_normal = ExtResource("11_u2ru5")
+ignore_texture_size = true
+stretch_mode = 4
 script = ExtResource("4_7hrsy")
-ID = 7
-
-[node name="Button8" type="Button" parent="Buttons/intButtons"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("10_gb12j")
-flat = true
-icon_alignment = 1
-script = ExtResource("4_7hrsy")
-ID = 8
-
-[node name="Button9" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("11_muc5m")
-flat = true
-icon_alignment = 1
-script = ExtResource("13_u2ru5")
-ID = 9
-
-[node name="Button10" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_q0lgr")
-icon = ExtResource("12_gu7o8")
-flat = true
-icon_alignment = 1
-script = ExtResource("13_u2ru5")
-ID = 10

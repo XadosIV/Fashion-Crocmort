@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://m6f1imbt3uaa"
+path="res://.godot/imported/motard_bas.png-8736a1ed20e0a489ae6ff2fd38abd496.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/closet/bottom/motard_bas.png"
+dest_files=["res://.godot/imported/motard_bas.png-8736a1ed20e0a489ae6ff2fd38abd496.ctex"]
 
 [params]
 

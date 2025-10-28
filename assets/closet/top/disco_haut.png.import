@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://cn1gg0y2qsapa"
+path="res://.godot/imported/disco_haut.png-993573d085892ea4284a1cf768da6488.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/closet/top/disco_haut.png"
+dest_files=["res://.godot/imported/disco_haut.png-993573d085892ea4284a1cf768da6488.ctex"]
 
 [params]
 

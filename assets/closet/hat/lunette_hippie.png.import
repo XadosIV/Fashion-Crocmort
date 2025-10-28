@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://dfgyrriljlims"
+path="res://.godot/imported/lunette_hippie.png-d62e5043b5cc40fffc026247add29ced.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/closet/hat/lunette_hippie.png"
+dest_files=["res://.godot/imported/lunette_hippie.png-d62e5043b5cc40fffc026247add29ced.ctex"]
 
 [params]
 

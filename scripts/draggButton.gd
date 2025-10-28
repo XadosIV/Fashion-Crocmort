@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 @export var ID: int
 var is_dragging = false
@@ -9,8 +9,8 @@ var offset = Vector2(0,0)
 func _ready() -> void:
 	action_mode = BaseButton.ACTION_MODE_BUTTON_PRESS
 	var path = "../.."
-	if get_node(path).name == "Buttons" :
-		path = "../../.."
+	if get_node(path).name.contains("Buttons") :
+		path = "../../../.."
 	connect("button_down", self._start_dragging)
 	connect("pressed", get_node(path)._on_tool_pressed.bind(ID))
 	connect("button_up", _stop_dragging)

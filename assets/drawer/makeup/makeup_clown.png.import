@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://ddvfl4sov80op"
+path="res://.godot/imported/makeup_clown.png-7f2e65ed6b35a749cb438b3e6fab94b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/drawer/makeup/makeup_clown.png"
+dest_files=["res://.godot/imported/makeup_clown.png-7f2e65ed6b35a749cb438b3e6fab94b6.ctex"]
 
 [params]
 

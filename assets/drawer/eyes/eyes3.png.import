@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://vqbikxsit5bs"
+path="res://.godot/imported/eyes3.png-952162f6b1a8920ea354e04ce21c4b13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/drawer/eyes/eyes3.png"
+dest_files=["res://.godot/imported/eyes3.png-952162f6b1a8920ea354e04ce21c4b13.ctex"]
 
 [params]
 

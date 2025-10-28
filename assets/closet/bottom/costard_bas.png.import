@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://bilmd6w16q7as"
+path="res://.godot/imported/costard_bas.png-38373dda387e95fc3ceceb63226d7863.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/closet/bottom/costard_bas.png"
+dest_files=["res://.godot/imported/costard_bas.png-38373dda387e95fc3ceceb63226d7863.ctex"]
 
 [params]
 

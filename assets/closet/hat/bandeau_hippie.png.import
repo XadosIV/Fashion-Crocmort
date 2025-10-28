@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmi1nfnyockea"
-path="res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
+uid="uid://db4rcj2lm3x4j"
+path="res://.godot/imported/bandeau_hippie.png-252147768a0e8615f4162a3f5e0e2f65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/le TIROIR.png"
-dest_files=["res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"]
+source_file="res://assets/closet/hat/bandeau_hippie.png"
+dest_files=["res://.godot/imported/bandeau_hippie.png-252147768a0e8615f4162a3f5e0e2f65.ctex"]
 
 [params]
 
