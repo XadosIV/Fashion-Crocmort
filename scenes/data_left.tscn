@@ -1,17 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://stc24fpildg6"]
+[gd_scene load_steps=7 format=3 uid="uid://stc24fpildg6"]
 
 [ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
-[ext_resource type="Texture2D" uid="uid://bd0nusstpms75" path="res://placeHolderImage/fond_liege.png" id="1_xpfre"]
+[ext_resource type="Texture2D" uid="uid://bd0nusstpms75" path="res://PlaceHolderImage/fond_liege.png" id="1_xpfre"]
+[ext_resource type="Script" uid="uid://18ds2r57ily2" path="res://scripts/data_left.gd" id="1_ys4et"]
 [ext_resource type="PackedScene" uid="uid://qoxr2777yvsl" path="res://scenes/carnet_preview.tscn" id="2_fahuq"]
+[ext_resource type="PackedScene" uid="uid://d1hme20pyi0mf" path="res://scenes/carnet_open.tscn" id="4_ftyl4"]
+[ext_resource type="Texture2D" uid="uid://bfoau86k0c2ee" path="res://PlaceHolderImage/croix.png" id="6_qxndi"]
 
 [node name="Node2D" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_ys4et")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 627.0
-offset_bottom = 1013.0
+offset_bottom = 1078.0
 texture = ExtResource("1_xpfre")
 
 [node name="Pense_bete" parent="." instance=ExtResource("1_lfdws")]
@@ -29,3 +33,31 @@ offset_top = 50.0
 offset_right = 108.99999
 offset_bottom = 50.0
 scale = Vector2(0.67, 0.785)
+
+[node name="Carnet_Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 44.0
+offset_right = 523.0
+offset_bottom = 557.0
+flat = true
+
+[node name="carnet_open" parent="." instance=ExtResource("4_ftyl4")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -11.999999
+offset_top = -3.0000002
+offset_right = -11.999999
+offset_bottom = -3.0000002
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(1.32, 1.32)
+
+[node name="Close_Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 462.0
+offset_bottom = 470.0
+scale = Vector2(0.325, 0.325)
+icon = ExtResource("6_qxndi")
