@@ -1,6 +1,6 @@
 extends Line2D
 
-var s = 20
+var s = 5
 var conv
 
 func create_collision():
@@ -19,14 +19,11 @@ func create_collision():
 func dedebug():
 	var poly = Polygon2D.new()
 	poly.color = Color.RED
-	poly.polygon = [Vector2(conv.points[0][0]+0,conv.points[0][1]+0), Vector2(conv.points[1][0]+0,conv.points[1][1]+0), Vector2(conv.points[2][0]+0,conv.points[2][1]+0), Vector2(conv.points[3][0]+50,conv.points[3][1]+50)]
+	poly.polygon = [Vector2(conv.points[0][0]+0,conv.points[0][1]+0), Vector2(conv.points[1][0]+0,conv.points[1][1]+0), Vector2(conv.points[2][0]+0,conv.points[2][1]+0), Vector2(conv.points[3][0]+0,conv.points[3][1]+0)]
 	#add_child(poly)
 
 func _ready():
 	create_collision()
-
-
-
 
 func _on_mouse_entered():
 	queue_free()

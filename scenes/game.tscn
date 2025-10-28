@@ -29,6 +29,7 @@ texture = SubResource("PlaceholderTexture2D_tg1dk")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Ui" parent="CanvasLayer" instance=ExtResource("1_lnu2h")]
+mouse_filter = 1
 
 [node name="Corpulence" type="Node2D" parent="."]
 
