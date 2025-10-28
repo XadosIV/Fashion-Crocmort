@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk4i8vgcgu5w4"
-path="res://.godot/imported/Scotch.png-708ab79db7de7694e9e80db97ce19584.ctex"
+uid="uid://c6wfgnopcetdg"
+path="res://.godot/imported/scotche.png-987053a4874480c7e3cbba4dc63be00d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/Scotch.png"
-dest_files=["res://.godot/imported/Scotch.png-708ab79db7de7694e9e80db97ce19584.ctex"]
+source_file="res://assets/table/scotche.png"
+dest_files=["res://.godot/imported/scotche.png-987053a4874480c7e3cbba4dc63be00d.ctex"]
 
 [params]
 

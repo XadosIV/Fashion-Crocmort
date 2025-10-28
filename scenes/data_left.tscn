@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://stc24fpildg6"]
+[gd_scene load_steps=8 format=3 uid="uid://stc24fpildg6"]
 
 [ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
 [ext_resource type="Script" uid="uid://18ds2r57ily2" path="res://scripts/data_left.gd" id="1_ys4et"]
 [ext_resource type="PackedScene" uid="uid://qoxr2777yvsl" path="res://scenes/carnet_preview.tscn" id="2_fahuq"]
-[ext_resource type="Texture2D" uid="uid://cks8j6lpx0r5p" path="res://assets/tier_gauche/tier_gauche.png" id="2_qxndi"]
+[ext_resource type="Texture2D" uid="uid://174tg2fv6286" path="res://assets/tier_gauche/tier_gauche_trasparence.png" id="2_qxndi"]
 [ext_resource type="PackedScene" uid="uid://d1hme20pyi0mf" path="res://scenes/carnet_open.tscn" id="4_ftyl4"]
 [ext_resource type="Texture2D" uid="uid://bfoau86k0c2ee" path="res://PlaceHolderImage/croix.png" id="6_qxndi"]
+[ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="7_etveg"]
 
 [node name="Node2D" type="Control"]
 layout_mode = 3
@@ -63,3 +64,17 @@ offset_right = 462.0
 offset_bottom = 470.0
 scale = Vector2(0.325, 0.325)
 icon = ExtResource("6_qxndi")
+
+[node name="pense_bete_1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 559.0
+offset_right = 211.0
+offset_bottom = 608.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_etveg")
+theme_override_font_sizes/font_size = 22
+text = "OUI"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
