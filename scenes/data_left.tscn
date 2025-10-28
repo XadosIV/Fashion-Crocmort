@@ -94,10 +94,10 @@ autowrap_mode = 3
 
 [node name="Carnet_Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 41.0
-offset_top = 50.0
-offset_right = 553.0
-offset_bottom = 422.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 572.0
+offset_bottom = 1077.0
 flat = true
 
 [node name="carnet_open" parent="." instance=ExtResource("4_ftyl4")]
