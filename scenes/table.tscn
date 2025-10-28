@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://rd46st71405r"]
+[gd_scene load_steps=12 format=3 uid="uid://rd46st71405r"]
 
 [ext_resource type="Texture2D" uid="uid://p161rkltqv7w" path="res://assets/table/la TABLE.png" id="1_jd0nb"]
 [ext_resource type="Script" uid="uid://eowo04fs30tm" path="res://scripts/table.gd" id="1_ormek"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dadxn3gwse73i" path="res://assets/table/dough.png" id="6_urxxv"]
 [ext_resource type="Texture2D" uid="uid://c6wfgnopcetdg" path="res://assets/table/scotch.png" id="7_2us7a"]
 [ext_resource type="Texture2D" uid="uid://crj47a14dym0n" path="res://assets/table/nails.png" id="8_ojgvt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5it3b"]
 
 [node name="table" type="Control"]
 layout_mode = 3
@@ -60,6 +62,7 @@ columns = 2
 
 [node name="tool0" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("2_64sdq")
 flat = true
 icon_alignment = 1
@@ -67,6 +70,7 @@ script = ExtResource("4_xnpc2")
 
 [node name="tool1" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("3_ormek")
 flat = true
 icon_alignment = 1
@@ -75,6 +79,7 @@ ID = 1
 
 [node name="tool2" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("4_ibia0")
 flat = true
 icon_alignment = 1
@@ -83,6 +88,7 @@ ID = 2
 
 [node name="tool3" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("5_xnpc2")
 flat = true
 icon_alignment = 1
@@ -91,6 +97,7 @@ ID = 3
 
 [node name="tool4" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("6_urxxv")
 flat = true
 icon_alignment = 1
@@ -99,6 +106,7 @@ ID = 4
 
 [node name="tool5" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("7_2us7a")
 flat = true
 icon_alignment = 1
@@ -107,6 +115,7 @@ ID = 5
 
 [node name="tool6" type="Button" parent="Buttons"]
 layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
 icon = ExtResource("8_ojgvt")
 flat = true
 icon_alignment = 1
