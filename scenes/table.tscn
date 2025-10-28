@@ -1,15 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://rd46st71405r"]
+[gd_scene load_steps=10 format=3 uid="uid://rd46st71405r"]
 
 [ext_resource type="Texture2D" uid="uid://p161rkltqv7w" path="res://assets/table/la TABLE.png" id="1_jd0nb"]
 [ext_resource type="Script" uid="uid://eowo04fs30tm" path="res://scripts/table.gd" id="1_ormek"]
 [ext_resource type="Texture2D" uid="uid://dgj4h283xdryj" path="res://assets/table/scissors.png" id="2_64sdq"]
-[ext_resource type="Texture2D" uid="uid://dxa4qt46o6won" path="res://assets/table/tweezers.png" id="3_ormek"]
-[ext_resource type="Texture2D" uid="uid://bvs6062s6pwcx" path="res://assets/table/clothespin.png" id="4_ibia0"]
 [ext_resource type="Script" uid="uid://osbft1cnd1if" path="res://scripts/button.gd" id="4_xnpc2"]
-[ext_resource type="Texture2D" uid="uid://3acnsjouosgg" path="res://assets/table/saw.png" id="5_xnpc2"]
 [ext_resource type="Texture2D" uid="uid://dadxn3gwse73i" path="res://assets/table/dough.png" id="6_urxxv"]
 [ext_resource type="Texture2D" uid="uid://c6wfgnopcetdg" path="res://assets/table/scotch.png" id="7_2us7a"]
-[ext_resource type="Texture2D" uid="uid://crj47a14dym0n" path="res://assets/table/nails.png" id="8_ojgvt"]
+[ext_resource type="Texture2D" uid="uid://qo8vlxnlxbc8" path="res://assets/bodies/haribo/bras_droit_de_henry.png" id="7_docs3"]
+[ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="8_e1moh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5it3b"]
 
@@ -71,7 +69,7 @@ script = ExtResource("4_xnpc2")
 [node name="tool1" type="Button" parent="Buttons"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("3_ormek")
+icon = ExtResource("6_urxxv")
 flat = true
 icon_alignment = 1
 script = ExtResource("4_xnpc2")
@@ -80,7 +78,7 @@ ID = 1
 [node name="tool2" type="Button" parent="Buttons"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("4_ibia0")
+icon = ExtResource("7_2us7a")
 flat = true
 icon_alignment = 1
 script = ExtResource("4_xnpc2")
@@ -89,35 +87,8 @@ ID = 2
 [node name="tool3" type="Button" parent="Buttons"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("5_xnpc2")
+icon = ExtResource("7_docs3")
 flat = true
 icon_alignment = 1
-script = ExtResource("4_xnpc2")
+script = ExtResource("8_e1moh")
 ID = 3
-
-[node name="tool4" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("6_urxxv")
-flat = true
-icon_alignment = 1
-script = ExtResource("4_xnpc2")
-ID = 4
-
-[node name="tool5" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("7_2us7a")
-flat = true
-icon_alignment = 1
-script = ExtResource("4_xnpc2")
-ID = 5
-
-[node name="tool6" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5it3b")
-icon = ExtResource("8_ojgvt")
-flat = true
-icon_alignment = 1
-script = ExtResource("4_xnpc2")
-ID = 6

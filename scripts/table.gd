@@ -3,6 +3,7 @@ extends Control
 var toolsID = -1
 signal tableClic(IDtool)
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -22,7 +23,7 @@ func _on_tool_pressed(newID: int) -> void:
 	else :
 		toolsID = newID
 		for childBtn in $Buttons.get_children() :
-			if childBtn.ID == newID :
+			if childBtn.ID == newID && newID <= 2:
 				childBtn.set_self_modulate(Color(1, 1, 1, 0.5))
 				Input.set_custom_mouse_cursor(childBtn.icon)
 			else :
