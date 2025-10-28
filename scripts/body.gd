@@ -117,7 +117,7 @@ func loadBody(dif=-1):
 		generateChances()
 	randomizeHenry()
 
-func _process(delta):
+func _process(_delta):
 	if not Engine.is_editor_hint():
 		if Input.is_action_just_pressed("ui_accept"):
 			randomizeHenry()

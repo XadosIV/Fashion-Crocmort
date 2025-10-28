@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwt4kr6fe6724"]
+[gd_scene load_steps=5 format=3 uid="uid://cwt4kr6fe6724"]
 
 [ext_resource type="Script" uid="uid://dtgyk7borubnf" path="res://scripts/play_button.gd" id="1_ekxnf"]
 [ext_resource type="Script" uid="uid://ceuhi35c6efo3" path="res://scripts/quit.gd" id="1_l6cm7"]
+[ext_resource type="PackedScene" uid="uid://5ij60s7vok3p" path="res://scenes/game.tscn" id="2_bqqt6"]
 
 [sub_resource type="Theme" id="Theme_ekxnf"]
 default_font_size = 45
@@ -38,6 +39,7 @@ offset_bottom = -289.0
 theme = SubResource("Theme_ekxnf")
 text = "Play"
 script = ExtResource("1_ekxnf")
+GameScene = ExtResource("2_bqqt6")
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 1

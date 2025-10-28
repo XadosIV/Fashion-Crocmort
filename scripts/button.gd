@@ -10,5 +10,5 @@ func _ready() -> void:
 	connect("pressed", get_node(path)._on_tool_pressed.bind(ID))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

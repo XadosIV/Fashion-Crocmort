@@ -6,7 +6,7 @@ func _ready() -> void:
 	connect("toolsClic", get_node("/root/Global")._tool_changed)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 #get_node("/root/Global")
