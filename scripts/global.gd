@@ -3,6 +3,10 @@ var mouse = load("res://assets/UI/mouse.png")
 var toolTab = 0
 var toolsID = -1
 var name_selected = "oui"
+var pb_1 = " "
+var pb_2 = " "
+var pb_3 = " "
+var pb_4 = " "
 
 func _ready() -> void:
 	pass

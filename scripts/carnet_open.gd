@@ -14,12 +14,9 @@ var lien = "Mamie"
 var resume = "test"
 var commande = "commande"
 
-var line_texts: Array[String] = []
+
 
 @onready var commande_list := $CommandeList
-
-
-
 
 
 func _ready() -> void:
@@ -34,22 +31,6 @@ func start():
 	select_id_and_attribute_value()
 	charge_text()
 	
-#func charge_text():
-#	
-#	var replacements = {
-#		"prenom":prenom ,
-#		"lien": lien
-#	}
-#	var resume_formate = resume.format(replacements)
-#	var commande_formatee = "- " + commande.format(replacements).replace("\\n", "\n- ")
-#	
-#	$ch_Name2.text = "Prénom : %s" % prenom
-#	$ch_Name.text = prenom
-#	$ch_Lien.text = "Lien avec le client : %s" % lien.capitalize()
-#	
-#	$ch_Resume.text = resume_formate
-#	$ch_Elem_Commande.text = commande_formatee
-
 func charge_text():
 	var repl := {"prenom": prenom, "lien": lien}
 
@@ -57,8 +38,7 @@ func charge_text():
 	
 	var resume_formate = resume.format(repl)
 	var commande_formatee = "- " + commande.format(repl).replace("\\n", "\n- ")
-#	
-	
+#		
 	$ch_Name2.text = "Prénom : %s" % prenom
 	$ch_Name.text = prenom
 	$ch_Lien.text = "Lien avec le client : %s" % lien.capitalize()
@@ -72,7 +52,8 @@ func charge_text():
 		s = s.strip_edges()
 		if s != "":
 			lines.append(s)
-			line_texts.append(s)
+			
+			
 
 
 
@@ -85,8 +66,9 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 
 	for child in commande_list.get_children():
 		child.queue_free()
-
+	
 	for i in lines.size():
+		
 		var row := HBoxContainer.new()
 		commande_list.add_child(row)
 
@@ -101,10 +83,23 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 		row.add_child(btn)
 
 
-		btn.pressed.connect(_on_command_pressed.bind(i))
+		btn.pressed.connect(_on_command_pressed.bind(i, lines))
+	
 
-func _on_command_pressed(index: int) -> void:
-	print("Clique sur la ligne", index, ":", line_texts[index])
+func _on_command_pressed(index: int, lines: Array[String]) -> void:
+	
+	if (index == 0):
+		get_node("/root/Global").pb_1 = lines[index]
+		
+	elif (index == 1):
+		get_node("/root/Global").pb_2 = lines[index]
+		
+	elif (index == 2):
+		get_node("/root/Global").pb_3 = lines[index]
+		
+	elif (index == 3):
+		get_node("/root/Global").pb_4 = lines[index]
+		
 
 
 func select_id_and_attribute_value():

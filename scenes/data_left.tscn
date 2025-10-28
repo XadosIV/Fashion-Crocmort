@@ -22,18 +22,75 @@ texture = ExtResource("2_qxndi")
 [node name="Pense_bete" parent="." instance=ExtResource("1_lfdws")]
 layout_mode = 0
 offset_left = -78.48
-offset_top = 512.00006
+offset_top = 517.00006
 offset_right = -78.48
-offset_bottom = 512.00006
+offset_bottom = 517.00006
+rotation = -0.10646509
 scale = Vector2(1.015, 0.695)
 
 [node name="Carnet" parent="." instance=ExtResource("2_fahuq")]
 layout_mode = 0
-offset_left = 21.0
+offset_left = 55.000015
 offset_top = 54.0
-offset_right = 21.0
+offset_right = 55.000015
 offset_bottom = 54.0
 scale = Vector2(0.67, 0.785)
+
+[node name="pense_bete_2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 565.0
+offset_right = 505.0
+offset_bottom = 630.0
+rotation = -0.10471976
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_etveg")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="pense_bete_3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 637.0
+offset_right = 240.0
+offset_bottom = 702.0
+rotation = -0.10471976
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_etveg")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="pense_bete_4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 650.0
+offset_right = 507.0
+offset_bottom = 715.0
+rotation = -0.10471976
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_etveg")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="pense_bete_1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 554.0
+offset_right = 234.0
+offset_bottom = 619.0
+rotation = -0.10471976
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_etveg")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="Carnet_Button" type="Button" parent="."]
 layout_mode = 0
@@ -64,17 +121,3 @@ offset_right = 462.0
 offset_bottom = 470.0
 scale = Vector2(0.325, 0.325)
 icon = ExtResource("6_qxndi")
-
-[node name="pense_bete_1" type="Label" parent="."]
-layout_mode = 0
-offset_left = 32.0
-offset_top = 559.0
-offset_right = 211.0
-offset_bottom = 608.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_etveg")
-theme_override_font_sizes/font_size = 22
-text = "OUI"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
