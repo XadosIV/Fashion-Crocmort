@@ -1,6 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://bhxq78cchur7p"]
 
-[ext_resource type="Script" path="res://scripts/drawer.gd" id="1_8wanr"]
+[ext_resource type="Script" uid="uid://dx50jy6v3n27p" path="res://scripts/drawer.gd" id="1_8wanr"]
+[ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_x262c"]
 [ext_resource type="Texture2D" uid="uid://df51nlp4d475c" path="res://assets/drawer/wig/clown_perruque.png" id="3_8wanr"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_7hrsy"]
 [ext_resource type="Texture2D" uid="uid://d1evg1qleyri1" path="res://assets/drawer/eyes/eyes1.png" id="5_hvipv"]
@@ -11,9 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://vqbikxsit5bs" path="res://assets/drawer/eyes/eyes3.png" id="7_tp1gl"]
 [ext_resource type="Texture2D" uid="uid://ddvfl4sov80op" path="res://assets/drawer/makeup/makeup_clown.png" id="11_u2ru5"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8wanr"]
-load_path = "res://.godot/imported/le TIROIR.png-f9042305fc470a360701717183893ec1.ctex"
-
 [node name="drawer" type="Control"]
 layout_mode = 3
 anchors_preset = 0
@@ -22,24 +20,18 @@ offset_right = 641.0
 offset_bottom = 940.0
 script = ExtResource("1_8wanr")
 
-[node name="ARETIRER" type="ColorRect" parent="."]
+[node name="tableRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 50.0
+offset_right = 50.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.5132329, 0.5132329, 0.5132329, 1)
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = SubResource("CompressedTexture2D_8wanr")
+texture = ExtResource("2_x262c")
 expand_mode = 1
+stretch_mode = 4
 
 [node name="Buttons" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(0, 200)
@@ -47,8 +39,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 138.0
-offset_bottom = -102.0
+offset_left = 99.0
+offset_top = 135.0
+offset_right = -101.0
+offset_bottom = -105.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -66,7 +60,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("3_8wanr")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
@@ -76,7 +70,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("5_x262c")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 ID = 1
 
@@ -87,7 +81,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("6_jlc4d")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 ID = 2
 
@@ -98,12 +92,12 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("7_8qpdu")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 ID = 3
 
 [node name="EyesButtons" type="ScrollContainer" parent="Buttons"]
-custom_minimum_size = Vector2(0, 200)
+custom_minimum_size = Vector2(0, 220)
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Buttons/EyesButtons"]
@@ -113,39 +107,39 @@ size_flags_vertical = 3
 alignment = 1
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
-custom_minimum_size = Vector2(150, 70)
+custom_minimum_size = Vector2(150, 60)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("5_hvipv")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
-custom_minimum_size = Vector2(150, 70)
+custom_minimum_size = Vector2(150, 60)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("6_rsjwq")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 ID = 1
 
 [node name="TextureButton2" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
-custom_minimum_size = Vector2(150, 70)
+custom_minimum_size = Vector2(150, 60)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("7_tp1gl")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")
 ID = 2
 
 [node name="MakeupButtons" type="ScrollContainer" parent="Buttons"]
-custom_minimum_size = Vector2(0, 200)
+custom_minimum_size = Vector2(0, 220)
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Buttons/MakeupButtons"]
@@ -159,5 +153,5 @@ custom_minimum_size = Vector2(150, 200)
 layout_mode = 2
 texture_normal = ExtResource("11_u2ru5")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_7hrsy")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://bh547r7w1k0k8"]
 
-[ext_resource type="Texture2D" uid="uid://cogcooi5fnb0m" path="res://assets/closet/Closet.png" id="1_7j5ra"]
 [ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scripts/closet.gd" id="1_l4o33"]
+[ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_8i737"]
 [ext_resource type="Script" uid="uid://cf6l4i7n3jvm" path="res://scripts/toolScroll.gd" id="3_hys0x"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_4c2qv"]
 [ext_resource type="Texture2D" uid="uid://dfgyrriljlims" path="res://assets/closet/hat/lunette_hippie.png" id="4_tvq3x"]
@@ -26,32 +26,28 @@ offset_right = 640.0
 offset_bottom = 940.0
 script = ExtResource("1_l4o33")
 
-[node name="ARETIRER" type="ColorRect" parent="."]
+[node name="tableRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 50.0
+offset_right = 50.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.5609549, 0.5609549, 0.5609549, 1)
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_7j5ra")
+texture = ExtResource("2_8i737")
 expand_mode = 1
+stretch_mode = 4
 
 [node name="Buttons" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -11.0
-offset_bottom = 11.0
+offset_left = 98.0
+offset_top = 81.0
+offset_right = -102.0
+offset_bottom = -59.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
@@ -75,7 +71,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("4_tvq3x")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons/glassesScroll/hat"]
@@ -85,7 +81,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("6_iv81w")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 1
 
@@ -96,7 +92,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("7_3wuxl")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 2
 
@@ -119,7 +115,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("8_iv81w")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons/topScroll/top"]
@@ -129,7 +125,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("9_3wuxl")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 1
 
@@ -140,7 +136,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("10_8i737")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 2
 
@@ -151,7 +147,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("11_1obfd")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 3
 
@@ -174,7 +170,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("12_8i737")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
@@ -184,7 +180,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("13_1obfd")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 1
 
@@ -195,7 +191,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("14_fwo5k")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 2
 
@@ -206,12 +202,12 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("15_g8h4w")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 3
 
 [node name="shoeScroll" type="ScrollContainer" parent="Buttons"]
-custom_minimum_size = Vector2(0, 100)
+custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 script = ExtResource("3_hys0x")
 clothingID = 3
@@ -229,7 +225,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("16_7t2wy")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
@@ -239,7 +235,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("17_sgxkq")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 1
 
@@ -250,6 +246,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("18_c0xl4")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 2
