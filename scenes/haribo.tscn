@@ -345,7 +345,7 @@ texture = ExtResource("34_1hn23")
 [node name="Motard" type="Sprite2D" parent="Haut"]
 visible = false
 z_index = 3
-position = Vector2(-3, -191)
+position = Vector2(-3, -199)
 texture = ExtResource("35_keawo")
 
 [node name="Maquillage" type="Node2D" parent="."]

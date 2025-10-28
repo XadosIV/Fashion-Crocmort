@@ -5,7 +5,8 @@ var toolsID = -1
 var name_selected = "oui"
 
 func _ready() -> void:
-	Input.set_custom_mouse_cursor(mouse)
+	pass
+	#Input.set_custom_mouse_cursor(mouse)
 
 func _input(event):
 	if event.is_action_pressed("au_secours"):
