@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://rd46st71405r"]
 
-[ext_resource type="Texture2D" uid="uid://p161rkltqv7w" path="res://assets/table/la TABLE.png" id="1_jd0nb"]
 [ext_resource type="Script" uid="uid://eowo04fs30tm" path="res://scripts/table.gd" id="1_ormek"]
 [ext_resource type="Texture2D" uid="uid://dgj4h283xdryj" path="res://assets/table/scissors.png" id="2_64sdq"]
+[ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_docs3"]
 [ext_resource type="Script" uid="uid://osbft1cnd1if" path="res://scripts/button.gd" id="4_xnpc2"]
-[ext_resource type="Texture2D" uid="uid://dk4i8vgcgu5w4" path="res://assets/table/Scotch.png" id="6_docs3"]
-[ext_resource type="Texture2D" uid="uid://dadxn3gwse73i" path="res://assets/table/dough.png" id="6_urxxv"]
+[ext_resource type="Texture2D" uid="uid://c8bhs33ha2vfd" path="res://assets/table/SkinClay.png" id="5_docs3"]
+[ext_resource type="Texture2D" uid="uid://mlp2n6cjaj1p" path="res://assets/table/Scotch.png" id="6_docs3"]
 [ext_resource type="Texture2D" uid="uid://bo4vpiyrgxcbm" path="res://assets/table/limbs.png" id="7_docs3"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="8_e1moh"]
 
@@ -16,30 +16,18 @@ offset_right = 640.0
 offset_bottom = 940.0
 script = ExtResource("1_ormek")
 
-[node name="ARETIRER" type="ColorRect" parent="."]
+[node name="tableRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 50.0
+offset_right = 50.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.5716493, 0.5716493, 0.57164925, 1)
-
-[node name="tableRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -192.25
-offset_top = -463.46576
-offset_right = 192.25
-offset_bottom = 463.46576
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_jd0nb")
+texture = ExtResource("2_docs3")
 expand_mode = 1
+stretch_mode = 4
 
 [node name="Buttons" type="GridContainer" parent="."]
 layout_mode = 1
@@ -49,9 +37,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -242.0
-offset_top = -303.0
+offset_top = -245.0
 offset_right = 209.0
-offset_bottom = 350.0
+offset_bottom = 408.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 2
@@ -62,16 +50,16 @@ layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("2_64sdq")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_xnpc2")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons"]
-custom_minimum_size = Vector2(220, 200)
+custom_minimum_size = Vector2(80, 120)
 layout_mode = 2
 size_flags_horizontal = 3
-texture_normal = ExtResource("6_urxxv")
+texture_normal = ExtResource("5_docs3")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_xnpc2")
 ID = 1
 
@@ -81,7 +69,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("6_docs3")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("4_xnpc2")
 ID = 2
 
@@ -92,6 +80,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("7_docs3")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = ExtResource("8_e1moh")
 ID = 3

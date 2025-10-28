@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dadxn3gwse73i"
-path="res://.godot/imported/dough.png-3c187dccf096eff658047462e9ec5176.ctex"
+uid="uid://bpwvignivbpih"
+path="res://.godot/imported/tier_droite_transparent.png-2d27bc0da33d762170be38da45ad15c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/dough.png"
-dest_files=["res://.godot/imported/dough.png-3c187dccf096eff658047462e9ec5176.ctex"]
+source_file="res://assets/UI/tier_droite_transparent.png"
+dest_files=["res://.godot/imported/tier_droite_transparent.png-2d27bc0da33d762170be38da45ad15c3.ctex"]
 
 [params]
 

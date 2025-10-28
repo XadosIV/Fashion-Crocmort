@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mlp2n6cjaj1p"
-path="res://.godot/imported/scotch.png-3440abb0a4aeab06fb61d73e2cd869a3.ctex"
+uid="uid://c8bhs33ha2vfd"
+path="res://.godot/imported/SkinClay.png-32dc722d3fc41a31038f45aab94abe79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/scotch.png"
-dest_files=["res://.godot/imported/scotch.png-3440abb0a4aeab06fb61d73e2cd869a3.ctex"]
+source_file="res://assets/table/SkinClay.png"
+dest_files=["res://.godot/imported/SkinClay.png-32dc722d3fc41a31038f45aab94abe79.ctex"]
 
 [params]
 
