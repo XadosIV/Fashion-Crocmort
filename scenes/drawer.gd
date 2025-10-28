@@ -16,11 +16,7 @@ func _process(delta: float) -> void:
 func _on_tool_pressed(newID: int) -> void:
 	if newID == toolsID : 
 		for childBtn in $Buttons.get_children() :
-			if childBtn.get_child_count() > 0 : 
-				for lilchildBtn in childBtn.get_children() :
-					if lilchildBtn.ID == newID :
-						lilchildBtn.set_self_modulate(Color(1, 1, 1, 1))
-				continue
+			if childBtn.get_child_count() > 0 : continue
 			if childBtn.ID == newID :
 				childBtn.set_self_modulate(Color(1, 1, 1, 1))
 				break
@@ -29,13 +25,7 @@ func _on_tool_pressed(newID: int) -> void:
 	else :
 		toolsID = newID
 		for childBtn in $Buttons.get_children() :
-			if childBtn.get_child_count() > 0 : 
-				for lilchildBtn in childBtn.get_children() :
-					if lilchildBtn.ID == newID :
-						lilchildBtn.set_self_modulate(Color(1, 1, 1, 0.5))
-					else :
-						lilchildBtn.set_self_modulate(Color(1, 1, 1, 1))
-				continue
+			if childBtn.get_child_count() > 0 : continue
 			if childBtn.ID == newID :
 				childBtn.set_self_modulate(Color(1, 1, 1, 0.5))
 			else :

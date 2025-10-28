@@ -14,15 +14,26 @@ func _process(delta: float) -> void:
 func _on_table_button_pressed() -> void:
 	$Control/table.visible = true
 	$Control/drawer.visible = false
+	$Control/closet.visible = false
 	$Control/drawer._init_button()
 
 func _on_drawer_button_pressed() -> void:
 	$Control/table.visible = false
 	$Control/drawer.visible = true
+	$Control/closet.visible = false
 	$Control/table._init_button()
+
+func _on_closet_button_pressed() -> void:
+	$Control/table.visible = false
+	$Control/drawer.visible = false
+	$Control/closet.visible = true
+	$Control/closet._init_button()
 
 func _on_drawer_drawer_clic(accessoriesID: Variant) -> void:
 	toolsClic.emit(1, accessoriesID)
 
 func _on_table_table_clic(IDtool: Variant) -> void:
 	toolsClic.emit(0, IDtool)
+
+func _on_closet_closet_clic(clothesID: Variant) -> void:
+	toolsClic.emit(2, clothesID)

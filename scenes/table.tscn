@@ -20,7 +20,7 @@ offset_right = 640.0
 offset_bottom = 940.0
 script = ExtResource("1_ormek")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ARETIRER" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
