@@ -12,6 +12,10 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_tool_pressed(newID: int) -> void:
+	if (toolsID == newID) :
+		toolsID = -1
+	else :
+		toolsID = newID
 	closetClic.emit(toolsID)
 
 func _init_button() -> void :
