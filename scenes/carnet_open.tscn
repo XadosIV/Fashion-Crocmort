@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1hme20pyi0mf"]
+[gd_scene load_steps=7 format=3 uid="uid://d1hme20pyi0mf"]
 
 [ext_resource type="Texture2D" uid="uid://dkkxp07fdxtr1" path="res://PlaceHolderImage/fond noir.png" id="1_coafs"]
 [ext_resource type="Script" uid="uid://bxm7mkmju5htb" path="res://scripts/carnet_open.gd" id="1_tealh"]
 [ext_resource type="Texture2D" uid="uid://dmcsc27uexjr1" path="res://PlaceHolderImage/FondBlanc.png" id="2_tealh"]
 [ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://PlaceHolderImage/PhotoPierre.png" id="3_10s37"]
+[ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="5_10s37"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6knx6"]
 blend_mode = 3
@@ -61,6 +62,7 @@ offset_bottom = 88.00006
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 30
 text = "Description de la commande"
 horizontal_alignment = 1
@@ -75,6 +77,7 @@ offset_bottom = 357.99994
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 30
 text = "Commande"
 horizontal_alignment = 1
@@ -90,6 +93,7 @@ offset_bottom = 299.0
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 20
 text = "Pierre"
 horizontal_alignment = 1
@@ -105,6 +109,7 @@ offset_bottom = 431.81802
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 20
 text = "Pierre"
 vertical_alignment = 1
@@ -120,6 +125,7 @@ offset_bottom = 468.15384
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 20
 text = "Mari"
 vertical_alignment = 1
@@ -135,6 +141,7 @@ offset_bottom = 723.1403
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 20
 text = "résumé/description"
 autowrap_mode = 3
@@ -149,6 +156,7 @@ offset_bottom = 326.3294
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
 theme_override_font_sizes/font_size = 20
 autowrap_mode = 3
 

@@ -16,8 +16,7 @@ var commande = "commande"
 
 @onready var commande_list := $CommandeList
 
-
-
+var typewriter_font: FontFile = preload("res://assets/Font/SpecialElite-Regular.ttf") 
 
 
 func _ready() -> void:
@@ -32,22 +31,6 @@ func start():
 	select_id_and_attribute_value()
 	charge_text()
 	
-#func charge_text():
-#	
-#	var replacements = {
-#		"prenom":prenom ,
-#		"lien": lien
-#	}
-#	var resume_formate = resume.format(replacements)
-#	var commande_formatee = "- " + commande.format(replacements).replace("\\n", "\n- ")
-#	
-#	$ch_Name2.text = "Prénom : %s" % prenom
-#	$ch_Name.text = prenom
-#	$ch_Lien.text = "Lien avec le client : %s" % lien.capitalize()
-#	
-#	$ch_Resume.text = resume_formate
-#	$ch_Elem_Commande.text = commande_formatee
-
 func charge_text():
 	var repl := {"prenom": prenom, "lien": lien}
 
@@ -74,7 +57,7 @@ func charge_text():
 	_populate_command_buttons(lines)
 
 func _populate_command_buttons(lines: Array[String]) -> void:
-
+	
 	for child in commande_list.get_children():
 		child.queue_free()
 
@@ -83,7 +66,8 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 		commande_list.add_child(row)
 
 		var bullet := Label.new()
-		bullet.text = "•"
+		bullet.text = "- "
+		bullet.add_theme_font_override("font", typewriter_font)
 		row.add_child(bullet)
 
 		var btn := Button.new()
@@ -92,7 +76,6 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 		btn.flat = true
 		btn.add_theme_color_override("font_color", Color.BLACK)
 		row.add_child(btn)
-
 
 		btn.pressed.connect(_on_command_pressed.bind(i, lines[i]))
 
