@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bh547r7w1k0k8"]
+[gd_scene load_steps=21 format=3 uid="uid://bh547r7w1k0k8"]
 
 [ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scripts/closet.gd" id="1_l4o33"]
 [ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_8i737"]
@@ -12,9 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://dntpiik5fnteq" path="res://assets/closet/top/motard_haut.png" id="10_8i737"]
 [ext_resource type="Texture2D" uid="uid://cn1gg0y2qsapa" path="res://assets/closet/top/disco_haut.png" id="11_1obfd"]
 [ext_resource type="Texture2D" uid="uid://b2kqmsfvu5nxa" path="res://assets/closet/bottom/clown_bas.png" id="12_8i737"]
+[ext_resource type="Texture2D" uid="uid://chnjpf25kkskb" path="res://assets/closet/top/naruto_top.png" id="12_fwo5k"]
 [ext_resource type="Texture2D" uid="uid://bilmd6w16q7as" path="res://assets/closet/bottom/costard_bas.png" id="13_1obfd"]
 [ext_resource type="Texture2D" uid="uid://m6f1imbt3uaa" path="res://assets/closet/bottom/motard_bas.png" id="14_fwo5k"]
 [ext_resource type="Texture2D" uid="uid://bru2bi1vl5ut" path="res://assets/closet/bottom/disco_bas.png" id="15_g8h4w"]
+[ext_resource type="Texture2D" uid="uid://ch7udn4ybe00c" path="res://assets/closet/bottom/naruto.png" id="16_1obfd"]
 [ext_resource type="Texture2D" uid="uid://cubfmnur6k1vu" path="res://assets/closet/shoes/costard_chaussures.png" id="16_7t2wy"]
 [ext_resource type="Texture2D" uid="uid://dghhlcumyl8y6" path="res://assets/closet/shoes/motard_chaussures.png" id="17_sgxkq"]
 [ext_resource type="Texture2D" uid="uid://dqu6sbni6v1xn" path="res://assets/closet/shoes/naruto_sandales.png" id="18_c0xl4"]
@@ -53,7 +55,7 @@ grow_vertical = 2
 alignment = 1
 
 [node name="glassesScroll" type="ScrollContainer" parent="Buttons"]
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 170)
 layout_mode = 2
 size_flags_vertical = 0
 script = ExtResource("3_hys0x")
@@ -151,8 +153,19 @@ stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 3
 
+[node name="TextureButton4" type="TextureButton" parent="Buttons/topScroll/top"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("12_fwo5k")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 4
+
 [node name="bottomScroll" type="ScrollContainer" parent="Buttons"]
-custom_minimum_size = Vector2(0, 250)
+custom_minimum_size = Vector2(0, 260)
 layout_mode = 2
 script = ExtResource("3_hys0x")
 clothingID = 2
@@ -205,6 +218,17 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 3
+
+[node name="TextureButton4" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("16_1obfd")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 4
 
 [node name="shoeScroll" type="ScrollContainer" parent="Buttons"]
 custom_minimum_size = Vector2(0, 150)
