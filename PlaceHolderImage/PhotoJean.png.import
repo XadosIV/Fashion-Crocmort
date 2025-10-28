@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u7ru1safmsw0"
-path="res://.godot/imported/PhotoJean.png-3a849e736ca99176589acc821c1d24ef.ctex"
+path="res://.godot/imported/PhotoJean.png-7962a591c064dceb8bf7ebfc89ab45f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PlaceHolderImage/PhotoJean.png"
-dest_files=["res://.godot/imported/PhotoJean.png-3a849e736ca99176589acc821c1d24ef.ctex"]
+source_file="res://placeHolderImage/PhotoJean.png"
+dest_files=["res://.godot/imported/PhotoJean.png-7962a591c064dceb8bf7ebfc89ab45f0.ctex"]
 
 [params]
 

@@ -6,10 +6,10 @@ uid="uid://dawqgclp5ucik"
 
 [deps]
 
-files=["res://CSV/Histoire.masculin.translation"]
+files=["res://csv/Histoire.masculin.translation"]
 
-source_file="res://CSV/Histoire.csv"
-dest_files=["res://CSV/Histoire.masculin.translation"]
+source_file="res://csv/Histoire.csv"
+dest_files=["res://csv/Histoire.masculin.translation"]
 
 [params]
 

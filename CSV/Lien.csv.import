@@ -6,10 +6,10 @@ uid="uid://ciqfn6trtuj2x"
 
 [deps]
 
-files=["res://CSV/Lien.masculin.translation"]
+files=["res://csv/Lien.masculin.translation"]
 
-source_file="res://CSV/Lien.csv"
-dest_files=["res://CSV/Lien.masculin.translation"]
+source_file="res://csv/Lien.csv"
+dest_files=["res://csv/Lien.masculin.translation"]
 
 [params]
 

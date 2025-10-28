@@ -41,6 +41,5 @@ func add_hair(pos: Vector2, dir: Vector2):
 	
 	hair.set_script(scriptPoils)
 	
-	hair.z_index = 100
+	hair.z_index = 4
 	add_child.call_deferred(hair)
-	
