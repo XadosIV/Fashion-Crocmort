@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk4i8vgcgu5w4"
-path="res://.godot/imported/Scotch.png-708ab79db7de7694e9e80db97ce19584.ctex"
+uid="uid://bk6315hi6hven"
+path="res://.godot/imported/tier_milieu_transparent.png-ffd3f143b1ed2e6e3b6e4f2b01b78adb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/Scotch.png"
-dest_files=["res://.godot/imported/Scotch.png-708ab79db7de7694e9e80db97ce19584.ctex"]
+source_file="res://assets/UI/tier_milieu_transparent.png"
+dest_files=["res://.godot/imported/tier_milieu_transparent.png-ffd3f143b1ed2e6e3b6e4f2b01b78adb.ctex"]
 
 [params]
 

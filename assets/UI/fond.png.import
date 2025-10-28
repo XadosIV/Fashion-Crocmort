@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk4i8vgcgu5w4"
-path="res://.godot/imported/Scotch.png-708ab79db7de7694e9e80db97ce19584.ctex"
+uid="uid://dbc8qdmoes8t1"
+path="res://.godot/imported/fond.png-69f32c05e555fb6d3925c242b64c48ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/Scotch.png"
-dest_files=["res://.godot/imported/Scotch.png-708ab79db7de7694e9e80db97ce19584.ctex"]
+source_file="res://assets/UI/fond.png"
+dest_files=["res://.godot/imported/fond.png-69f32c05e555fb6d3925c242b64c48ba.ctex"]
 
 [params]
 

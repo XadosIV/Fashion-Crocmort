@@ -1,8 +1,6 @@
 extends Control
 
 var toolsID = -1
-var wPen = load("res://assets/UI/whitePen.png")
-var bPen = load("res://assets/UI/blackPen.png")
 signal drawerClic(accessoriesID)
 
 # Called when the node enters the scene tree for the first time.
