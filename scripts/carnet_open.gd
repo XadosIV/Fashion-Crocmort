@@ -14,6 +14,8 @@ var lien = "Mamie"
 var resume = "test"
 var commande = "commande"
 
+var line_texts: Array[String] = []
+
 @onready var commande_list := $CommandeList
 
 
@@ -70,6 +72,7 @@ func charge_text():
 		s = s.strip_edges()
 		if s != "":
 			lines.append(s)
+			line_texts.append(s)
 
 
 
@@ -98,10 +101,10 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 		row.add_child(btn)
 
 
-		btn.pressed.connect(_on_command_pressed.bind(i, lines[i]))
+		btn.pressed.connect(_on_command_pressed.bind(i))
 
-func _on_command_pressed(index: int, text: String) -> void:
-	print("Clique sur la ligne", index, ":", text)
+func _on_command_pressed(index: int) -> void:
+	print("Clique sur la ligne", index, ":", line_texts[index])
 
 
 func select_id_and_attribute_value():

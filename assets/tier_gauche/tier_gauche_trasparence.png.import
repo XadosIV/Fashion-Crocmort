@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cks8j6lpx0r5p"
-path="res://.godot/imported/tier_gauche.png-6249509f3e32239958b580217c033aa8.ctex"
+uid="uid://174tg2fv6286"
+path="res://.godot/imported/tier_gauche_trasparence.png-cbaca42f02360adb000fa7871c6a922c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tier_gauche/tier_gauche.png"
-dest_files=["res://.godot/imported/tier_gauche.png-6249509f3e32239958b580217c033aa8.ctex"]
+source_file="res://assets/tier_gauche/tier_gauche_trasparence.png"
+dest_files=["res://.godot/imported/tier_gauche_trasparence.png-cbaca42f02360adb000fa7871c6a922c.ctex"]
 
 [params]
 
