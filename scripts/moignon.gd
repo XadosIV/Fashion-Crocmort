@@ -14,10 +14,12 @@ func _on_mouse_entered():
 func _on_mouse_exited():
 	hover = false
 
-
-
 func _input(event):
 	if event is InputEventMouseButton and not event.pressed:
 		if hover and global.toolsID == 3 and global.toolTab == 0:
 			visible = false
-			get_node("../../Attaché/"+name).visible = true
+			var membre = get_node("../../Attaché/"+name)
+			membre.visible = true
+			for child in membre.get_children():
+				child.visible = false
+			get_node("../../..").membres.set(name, true)

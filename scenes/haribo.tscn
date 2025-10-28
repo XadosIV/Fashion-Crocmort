@@ -398,37 +398,37 @@ paire = true
 [node name="CostardG" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-3, 599)
+position = Vector2(-3, 580)
 texture = ExtResource("28_tbyw1")
 
 [node name="CostardD" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-3, 599)
+position = Vector2(-3, 580)
 texture = ExtResource("29_d5nyt")
 
 [node name="MotardG" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-7, 574)
+position = Vector2(-5, 591)
 texture = ExtResource("30_d5nyt")
 
 [node name="MotardD" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-7, 574)
+position = Vector2(-5, 591)
 texture = ExtResource("31_u8l80")
 
 [node name="NarutoG" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-7, 574)
+position = Vector2(-7, 576)
 texture = ExtResource("35_36jj5")
 
 [node name="NarutoD" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-7, 574)
+position = Vector2(-7, 576)
 texture = ExtResource("36_6tpb1")
 
 [node name="ClownG" type="Sprite2D" parent="Chaussure"]
@@ -446,13 +446,13 @@ texture = ExtResource("32_u8l80")
 [node name="DiscoG" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-7, 574)
+position = Vector2(-7, 584)
 texture = ExtResource("36_d5nyt")
 
 [node name="DiscoD" type="Sprite2D" parent="Chaussure"]
 visible = false
 z_index = 3
-position = Vector2(-7, 574)
+position = Vector2(0, 580)
 texture = ExtResource("34_keawo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Chaussure"]
