@@ -104,12 +104,6 @@ func _on_command_pressed(index: int, text: String) -> void:
 	print("Clique sur la ligne", index, ":", text)
 
 
-
-
-
-
-
-
 func select_id_and_attribute_value():
 	
 	resume_id = randi() % example_dict_story.size()

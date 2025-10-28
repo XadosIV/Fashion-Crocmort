@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bhxq78cchur7p"]
 
-[ext_resource type="Script" uid="uid://dx50jy6v3n27p" path="res://scripts/drawer.gd" id="1_8qpdu"]
+[ext_resource type="Script" path="res://scripts/drawer.gd" id="1_8wanr"]
 [ext_resource type="Texture2D" uid="uid://df51nlp4d475c" path="res://assets/drawer/wig/clown_perruque.png" id="3_8wanr"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_7hrsy"]
 [ext_resource type="Texture2D" uid="uid://d1evg1qleyri1" path="res://assets/drawer/eyes/eyes1.png" id="5_hvipv"]
@@ -20,7 +20,7 @@ anchors_preset = 0
 offset_left = 1.0
 offset_right = 641.0
 offset_bottom = 940.0
-script = ExtResource("1_8qpdu")
+script = ExtResource("1_8wanr")
 
 [node name="ARETIRER" type="ColorRect" parent="."]
 layout_mode = 1
