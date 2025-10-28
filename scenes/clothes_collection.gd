@@ -2,6 +2,7 @@ extends Area2D
 
 @export var dizaine : int
 @export var toolTab = 2
+@export var paire = false
 var global
 var hover = false
 var lastToolId = -1
@@ -29,4 +30,12 @@ func show_child(number):
 	for child in get_children():
 		if child is Sprite2D:
 			child.visible = false
-	get_child(number).visible = true 
+	if not paire:
+		get_child(number).visible = true 
+	else:
+		var henry = get_parent()
+		var gauche = get_child(number*2)
+		var droite = get_child(number*2+1)
+		
+		gauche.visible = henry.membres["JambeGauche"]
+		droite.visible = henry.membres["JambeDroite"]

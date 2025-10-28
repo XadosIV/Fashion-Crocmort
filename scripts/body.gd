@@ -5,6 +5,13 @@ extends Node2D
 @export_range(0.0, 1.0) var difficulty := 0.5
 @export var chances = {"default":0.5}
 
+var membres = {
+	"BrasGauche":true,
+	"BrasDroit":true,
+	"JambeGauche":true,
+	"JambeDroite":true
+}
+
 @export var create_dictionnary := false:
 	set(value):
 		if value and Engine.is_editor_hint():
@@ -59,6 +66,8 @@ func randomizeHenry():
 			# quand il est montré, contrairement aux hématomes genre
 			var rand = randf()
 			child.visible = rand < 1-chance
+			
+			membres.set(child.name, child.visible)
 			
 			if child.visible:
 				$"Membres/Coupés".get_node_or_null(str(child.name)).visible = false
