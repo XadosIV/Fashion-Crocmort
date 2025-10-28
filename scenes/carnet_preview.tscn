@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://qoxr2777yvsl"]
 
 [ext_resource type="Script" uid="uid://dtrn8ha5xkmaa" path="res://scripts/carnet_preview.gd" id="1_fnd2r"]
-[ext_resource type="Texture2D" uid="uid://dkkxp07fdxtr1" path="res://placeHolderImage/fond noir.png" id="2_1c4e3"]
-[ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://placeHolderImage/PhotoPierre.png" id="2_30o4c"]
+[ext_resource type="Texture2D" uid="uid://dkkxp07fdxtr1" path="res://PlaceHolderImage/fond noir.png" id="2_1c4e3"]
+[ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://PlaceHolderImage/PhotoPierre.png" id="2_30o4c"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ix2d5"]
 blend_mode = 3
