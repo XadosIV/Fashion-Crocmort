@@ -2,6 +2,7 @@ extends Node
 var mouse = load("res://assets/UI/mouse.png")
 var toolTab = 0
 var toolsID = -1
+var name_selected = "oui"
 
 func _ready() -> void:
 	Input.set_custom_mouse_cursor(mouse)

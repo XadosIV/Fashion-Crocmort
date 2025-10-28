@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dfkqg5ehmp8v5"
+
+[deps]
+
+files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation"]
+
+source_file="res://CSV/Description.csv"
+dest_files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation"]
+
+[params]
+
+compress=true
+delimiter=0
