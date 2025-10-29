@@ -27,7 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://mbq2c4h776rk" path="res://assets/bodies/clothes/clown_perruque.png" id="20_d8bkp"]
 [ext_resource type="Texture2D" uid="uid://ciuf0vp0lc3tu" path="res://assets/bodies/clothes/lunette_hippie.png" id="21_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://bb185f7km166g" path="res://assets/bodies/clothes/motard_bandeau.png" id="22_jkad2"]
-[ext_resource type="Script" uid="uid://hw5ysuqya6qv" path="res://scripts/attributs.gd" id="22_utm7u"]
+[ext_resource type="Script" path="res://scripts/attributs.gd" id="22_utm7u"]
 [ext_resource type="Texture2D" uid="uid://c7ympl3pxrp5q" path="res://assets/bodies/clothes/naruto_perruque.png" id="23_bqyqd"]
 [ext_resource type="Texture2D" uid="uid://dwnjbbi154n3u" path="res://assets/bodies/clothes/perruque_affro.png" id="24_y64vu"]
 [ext_resource type="Texture2D" uid="uid://2v3cv2p2ifau" path="res://assets/bodies/clothes/perruque_hippie.png" id="25_k6b4l"]
