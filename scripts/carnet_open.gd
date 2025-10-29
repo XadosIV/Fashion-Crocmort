@@ -143,6 +143,8 @@ func select_id_and_attribute_value():
 	
 	if (resume_id == 5):
 		photo_exemple.visible = true
+	else:
+		photo_exemple.visible = false
 	
 
 func import_link():

@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://btol3tbwgq66r"
-path="res://.godot/imported/plug membre.wav-fee47897e67e55c552e4bc889e44d78e.sample"
+uid="uid://bjk4k6ja4jrbd"
+path="res://.godot/imported/cracos.wav-1564604115877a02b37fb4bd34dd7b8d.sample"
 
 [deps]
 
-source_file="res://assets/sfx/plug membre.wav"
-dest_files=["res://.godot/imported/plug membre.wav-fee47897e67e55c552e4bc889e44d78e.sample"]
+source_file="res://assets/sfx/cracos.wav"
+dest_files=["res://.godot/imported/cracos.wav-1564604115877a02b37fb4bd34dd7b8d.sample"]
 
 [params]
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwt4kr6fe6724"]
+[gd_scene load_steps=9 format=3 uid="uid://cwt4kr6fe6724"]
 
 [ext_resource type="Script" uid="uid://7talpjupwv0i" path="res://scripts/main_menu.gd" id="1_8ln24"]
 [ext_resource type="Script" uid="uid://dtgyk7borubnf" path="res://scripts/play_button.gd" id="1_ekxnf"]
 [ext_resource type="Script" uid="uid://ceuhi35c6efo3" path="res://scripts/quit.gd" id="1_l6cm7"]
 [ext_resource type="PackedScene" uid="uid://5ij60s7vok3p" path="res://scenes/game.tscn" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bjvotpmty1bot" path="res://assets/UI/logo.png" id="2_oa1go"]
 [ext_resource type="AudioStream" uid="uid://dkvanaywxpt6x" path="res://assets/music/[Intro]Lior Soltz - Glistening Ripples Lullaby.mp3" id="3_bqqt6"]
 [ext_resource type="AudioStream" uid="uid://opqt25dddogk" path="res://assets/sfx/Onglet Change.wav" id="4_wu84c"]
 
@@ -19,16 +20,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8ln24")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 542.13745
-offset_top = 263.0
-offset_right = 1392.1084
-offset_bottom = 540.0
-theme_override_font_sizes/font_size = 91
-text = "       Deadly
-                Dressed"
-vertical_alignment = 1
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -89.0
+offset_bottom = -89.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oa1go")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1

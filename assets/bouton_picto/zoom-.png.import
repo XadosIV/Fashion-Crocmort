@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dftijoeg3g6o3"
-path="res://.godot/imported/mouse.png-dda9ae03395f8ba697c884dc34803654.ctex"
+uid="uid://bxncsvwinew7a"
+path="res://.godot/imported/zoom-.png-d1cf848a32f973b7831897a820e2826c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/mouse.png"
-dest_files=["res://.godot/imported/mouse.png-dda9ae03395f8ba697c884dc34803654.ctex"]
+source_file="res://assets/bouton_picto/zoom-.png"
+dest_files=["res://.godot/imported/zoom-.png-d1cf848a32f973b7831897a820e2826c.ctex"]
 
 [params]
 

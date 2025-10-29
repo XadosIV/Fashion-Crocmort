@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_docs3"]
 [ext_resource type="Script" uid="uid://osbft1cnd1if" path="res://scripts/button.gd" id="4_xnpc2"]
 [ext_resource type="Texture2D" uid="uid://c8bhs33ha2vfd" path="res://assets/table/SkinClay.png" id="5_docs3"]
-[ext_resource type="Texture2D" uid="uid://mlp2n6cjaj1p" path="res://assets/table/Scotch.png" id="6_docs3"]
+[ext_resource type="Texture2D" uid="uid://dk4i8vgcgu5w4" path="res://assets/table/Scotch.png" id="6_docs3"]
 [ext_resource type="Texture2D" uid="uid://bo4vpiyrgxcbm" path="res://assets/table/limbs.png" id="7_docs3"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="8_e1moh"]
 
@@ -45,7 +45,7 @@ grow_vertical = 2
 columns = 2
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons"]
-custom_minimum_size = Vector2(220, 0)
+custom_minimum_size = Vector2(220, 200)
 layout_mode = 2
 size_flags_horizontal = 3
 texture_normal = ExtResource("2_64sdq")
@@ -54,9 +54,10 @@ stretch_mode = 5
 script = ExtResource("4_xnpc2")
 
 [node name="TextureButton1" type="TextureButton" parent="Buttons"]
-custom_minimum_size = Vector2(80, 120)
+custom_minimum_size = Vector2(180, 180)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture_normal = ExtResource("5_docs3")
 ignore_texture_size = true
 stretch_mode = 5
@@ -64,9 +65,10 @@ script = ExtResource("4_xnpc2")
 ID = 1
 
 [node name="TextureButton2" type="TextureButton" parent="Buttons"]
-custom_minimum_size = Vector2(220, 0)
+custom_minimum_size = Vector2(220, 180)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture_normal = ExtResource("6_docs3")
 ignore_texture_size = true
 stretch_mode = 5
@@ -74,7 +76,7 @@ script = ExtResource("4_xnpc2")
 ID = 2
 
 [node name="TextureButton3" type="TextureButton" parent="Buttons"]
-custom_minimum_size = Vector2(150, 350)
+custom_minimum_size = Vector2(200, 410)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
