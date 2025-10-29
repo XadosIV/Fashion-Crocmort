@@ -1,20 +1,27 @@
-[gd_scene load_steps=12 format=3 uid="uid://cwt4kr6fe6724"]
+[gd_scene load_steps=21 format=3 uid="uid://cwt4kr6fe6724"]
 
 [ext_resource type="Script" uid="uid://7talpjupwv0i" path="res://scripts/main_menu.gd" id="1_8ln24"]
 [ext_resource type="Script" uid="uid://dtgyk7borubnf" path="res://scripts/play_button.gd" id="1_ekxnf"]
 [ext_resource type="Script" uid="uid://ceuhi35c6efo3" path="res://scripts/quit.gd" id="1_l6cm7"]
 [ext_resource type="PackedScene" uid="uid://5ij60s7vok3p" path="res://scenes/game.tscn" id="2_bqqt6"]
-[ext_resource type="Texture2D" uid="uid://bjvotpmty1bot" path="res://assets/UI/logo.png" id="2_oa1go"]
+[ext_resource type="Texture2D" uid="uid://vdiaoewoe447" path="res://assets/menu/fond_debut.png" id="2_flqon"]
 [ext_resource type="AudioStream" uid="uid://dkvanaywxpt6x" path="res://assets/music/[Intro]Lior Soltz - Glistening Ripples Lullaby.mp3" id="3_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bk6315hi6hven" path="res://assets/UI/tier_milieu_transparent.png" id="3_rcqid"]
+[ext_resource type="Texture2D" uid="uid://d23lik7xyxyvq" path="res://assets/menu/logo_Plan_de_travail_1_Plan_de_travail_1_Plan_de_travail_1.png" id="4_1ajci"]
 [ext_resource type="AudioStream" uid="uid://opqt25dddogk" path="res://assets/sfx/Onglet Change.wav" id="4_wu84c"]
+[ext_resource type="Texture2D" uid="uid://kgihsa0fea3" path="res://assets/UI/bouton1.png" id="5_7b55j"]
+[ext_resource type="Texture2D" uid="uid://f3pmw20a44f3" path="res://assets/UI/bouton2.png" id="6_5pajh"]
+[ext_resource type="Texture2D" uid="uid://cr70bk3x65vds" path="res://assets/UI/bouton1 3.png" id="6_a8gd2"]
+[ext_resource type="Texture2D" uid="uid://s04mx5gm2rqd" path="res://assets/UI/bouton3.png" id="7_j7ex8"]
 [ext_resource type="Texture2D" uid="uid://bqpkcuwqw0o58" path="res://assets/bouton_picto/pictosSonActif.png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://mp6xth5jikm8" path="res://assets/UI/bouton2 2.png" id="8_hstxw"]
 [ext_resource type="Script" uid="uid://mnrkygc1vm8m" path="res://sound_button.gd" id="9_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://cmy2lb05laems" path="res://assets/UI/bouton3 2.png" id="10_8egab"]
 [ext_resource type="Texture2D" uid="uid://bw73uihonpxhh" path="res://assets/bouton_picto/pictosSonCoupe.png" id="10_flqon"]
+[ext_resource type="FontFile" uid="uid://iadlw7c7mgm6" path="res://assets/Font/ReenieBeanie-Regular.ttf" id="19_hstxw"]
+[ext_resource type="Texture2D" uid="uid://db243jm3mv2v4" path="res://assets/bouton_picto/pictosCroix.png" id="20_8egab"]
 
-[sub_resource type="Theme" id="Theme_ekxnf"]
-default_font_size = 45
-
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" node_paths=PackedStringArray("credits", "buttons")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,46 +29,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8ln24")
+credits = NodePath("Label")
+buttons = NodePath("ALL")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="bgRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -89.0
-offset_bottom = -89.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_oa1go")
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -200.0
-offset_top = 712.0
-offset_right = 200.0
-offset_bottom = -289.0
-theme = SubResource("Theme_ekxnf")
-text = "Play"
-script = ExtResource("1_ekxnf")
-GameScene = ExtResource("2_bqqt6")
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -200.0
-offset_top = 850.0
-offset_right = 200.0
-offset_bottom = -151.0
-theme = SubResource("Theme_ekxnf")
-text = "Quit Game"
-script = ExtResource("1_l6cm7")
+texture = ExtResource("2_flqon")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_bqqt6")
@@ -88,5 +66,110 @@ script = ExtResource("9_lgwnu")
 soundOn = ExtResource("8_5dd4i")
 soundOff = ExtResource("10_flqon")
 
-[connection signal="mouse_entered" from="Button" to="." method="_btnSfxPlay"]
-[connection signal="mouse_entered" from="Button2" to="." method="_btnSfxPlay"]
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_right = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_rcqid")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 742.0
+offset_top = 45.0
+offset_right = 1149.0
+offset_bottom = 1022.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("19_hstxw")
+theme_override_font_sizes/font_size = 60
+text = "Réalisé par :
+
+Félix Vandamme,
+Andrea Bastet, Lilou Alidor, Joris Dubois, Christopher Banzet, Bryan Albani Van-Fouques
+
+GAMAGORA Game Jam oct. 2025"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Label"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("20_8egab")
+stretch_mode = 5
+
+[node name="ALL" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ALL"]
+custom_minimum_size = Vector2(0, 1000)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -982.0
+offset_top = -245.0
+offset_right = 1018.0
+offset_bottom = 755.0
+grow_horizontal = 2
+texture = ExtResource("4_1ajci")
+stretch_mode = 5
+
+[node name="playButton" type="TextureButton" parent="ALL"]
+layout_mode = 0
+offset_left = 703.0
+offset_top = 390.0
+offset_right = 1155.0
+offset_bottom = 709.0
+texture_normal = ExtResource("5_7b55j")
+texture_hover = ExtResource("6_a8gd2")
+stretch_mode = 5
+script = ExtResource("1_ekxnf")
+GameScene = ExtResource("2_bqqt6")
+
+[node name="QuitButton" type="TextureButton" parent="ALL"]
+layout_mode = 0
+offset_left = 686.0
+offset_top = 568.0
+offset_right = 1195.0
+offset_bottom = 818.0
+texture_normal = ExtResource("6_5pajh")
+texture_hover = ExtResource("8_hstxw")
+stretch_mode = 5
+script = ExtResource("1_l6cm7")
+
+[node name="CreditsButton" type="TextureButton" parent="ALL"]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 763.0
+offset_right = 1188.0
+offset_bottom = 991.0
+texture_normal = ExtResource("7_j7ex8")
+texture_hover = ExtResource("10_8egab")
+stretch_mode = 5
+
+[connection signal="pressed" from="Label/TextureButton" to="." method="_hideCredits"]
+[connection signal="mouse_entered" from="ALL/playButton" to="." method="_btnSfxPlay"]
+[connection signal="mouse_entered" from="ALL/QuitButton" to="." method="_btnSfxPlay"]
+[connection signal="mouse_entered" from="ALL/CreditsButton" to="." method="_btnSfxPlay"]
+[connection signal="pressed" from="ALL/CreditsButton" to="." method="_showCredits"]
