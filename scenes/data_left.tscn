@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://stc24fpildg6"]
+[gd_scene load_steps=10 format=3 uid="uid://stc24fpildg6"]
 
 [ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
 [ext_resource type="Script" uid="uid://18ds2r57ily2" path="res://scripts/data_left.gd" id="1_ys4et"]
@@ -7,23 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://d1hme20pyi0mf" path="res://scenes/carnet_open.tscn" id="4_ftyl4"]
 [ext_resource type="FontFile" uid="uid://iadlw7c7mgm6" path="res://assets/Font/ReenieBeanie-Regular.ttf" id="6_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://drq1xapdumwus" path="res://assets/bouton_picto/pictosValider.png" id="6_yxf5x"]
-[ext_resource type="Script" uid="uid://cv6ftd0cl43ld" path="res://scenes/valid_button.gd" id="7_w5uu7"]
+[ext_resource type="Script" path="res://scenes/valid_button.gd" id="7_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://db243jm3mv2v4" path="res://assets/bouton_picto/pictosCroix.png" id="8_w5uu7"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxf5x"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yxf5x"]
-bg_color = Color(0.772247, 0.7722471, 0.772247, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5uu7"]
 
 [node name="carnetUi" type="Control"]
 layout_mode = 3
@@ -124,9 +109,8 @@ offset_top = 971.04004
 offset_right = 380.00006
 offset_bottom = 1116.04
 scale = Vector2(0.705, 0.705)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_yxf5x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_yxf5x")
 icon = ExtResource("6_yxf5x")
+flat = true
 script = ExtResource("7_w5uu7")
 
 [node name="Label" type="Label" parent="."]
@@ -166,7 +150,6 @@ offset_top = 132.0
 offset_right = 286.0
 offset_bottom = 277.0
 scale = Vector2(0.71, 0.71)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_w5uu7")
 icon = ExtResource("8_w5uu7")
 flat = true
 

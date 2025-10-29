@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cwt4kr6fe6724"]
+[gd_scene load_steps=12 format=3 uid="uid://cwt4kr6fe6724"]
 
 [ext_resource type="Script" uid="uid://7talpjupwv0i" path="res://scripts/main_menu.gd" id="1_8ln24"]
 [ext_resource type="Script" uid="uid://dtgyk7borubnf" path="res://scripts/play_button.gd" id="1_ekxnf"]
@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bjvotpmty1bot" path="res://assets/UI/logo.png" id="2_oa1go"]
 [ext_resource type="AudioStream" uid="uid://dkvanaywxpt6x" path="res://assets/music/[Intro]Lior Soltz - Glistening Ripples Lullaby.mp3" id="3_bqqt6"]
 [ext_resource type="AudioStream" uid="uid://opqt25dddogk" path="res://assets/sfx/Onglet Change.wav" id="4_wu84c"]
+[ext_resource type="Texture2D" uid="uid://bqpkcuwqw0o58" path="res://assets/bouton_picto/pictosSonActif.png" id="8_5dd4i"]
+[ext_resource type="Script" uid="uid://mnrkygc1vm8m" path="res://sound_button.gd" id="9_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://bw73uihonpxhh" path="res://assets/bouton_picto/pictosSonCoupe.png" id="10_flqon"]
 
 [sub_resource type="Theme" id="Theme_ekxnf"]
 default_font_size = 45
@@ -69,6 +72,21 @@ parameters/looping = true
 [node name="btnSfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wu84c")
 volume_db = -10.0
+
+[node name="soundButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -140.0
+offset_bottom = 140.0
+grow_horizontal = 0
+texture_normal = ExtResource("8_5dd4i")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("9_lgwnu")
+soundOn = ExtResource("8_5dd4i")
+soundOff = ExtResource("10_flqon")
 
 [connection signal="mouse_entered" from="Button" to="." method="_btnSfxPlay"]
 [connection signal="mouse_entered" from="Button2" to="." method="_btnSfxPlay"]

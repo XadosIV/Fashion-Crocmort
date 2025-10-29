@@ -1,9 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://bh547r7w1k0k8"]
+[gd_scene load_steps=24 format=3 uid="uid://bh547r7w1k0k8"]
 
 [ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scripts/closet.gd" id="1_l4o33"]
 [ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_8i737"]
 [ext_resource type="Script" uid="uid://cf6l4i7n3jvm" path="res://scripts/toolScroll.gd" id="3_hys0x"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_4c2qv"]
+[ext_resource type="Texture2D" uid="uid://ogw5hy2fvt36" path="res://assets/bouton_picto/pictosVide.png" id="4_sgxkq"]
 [ext_resource type="Texture2D" uid="uid://dfgyrriljlims" path="res://assets/closet/hat/lunette_hippie.png" id="4_tvq3x"]
 [ext_resource type="Texture2D" uid="uid://db4rcj2lm3x4j" path="res://assets/closet/hat/bandeau_hippie.png" id="6_iv81w"]
 [ext_resource type="Texture2D" uid="uid://bfoatblhvmekf" path="res://assets/closet/hat/motard_bandeau.png" id="7_3wuxl"]
@@ -20,8 +21,8 @@
 [ext_resource type="Texture2D" uid="uid://cubfmnur6k1vu" path="res://assets/closet/shoes/costard_chaussures.png" id="16_7t2wy"]
 [ext_resource type="Texture2D" uid="uid://dghhlcumyl8y6" path="res://assets/closet/shoes/motard_chaussures.png" id="17_sgxkq"]
 [ext_resource type="Texture2D" uid="uid://dqu6sbni6v1xn" path="res://assets/closet/shoes/naruto_sandales.png" id="18_c0xl4"]
-[ext_resource type="Texture2D" uid="uid://drunx1i0xnn8x" path="res://assets/closet/shoes/pieds_clown.png" id="21_7t2wy"]
-[ext_resource type="Texture2D" uid="uid://10ea2auuyk23" path="res://assets/closet/shoes/pieds_disco.png" id="22_sgxkq"]
+[ext_resource type="Texture2D" uid="uid://dja0ldbvai7po" path="res://assets/closet/shoes/pieds_clown.png" id="21_7t2wy"]
+[ext_resource type="Texture2D" uid="uid://c413fdudc306u" path="res://assets/closet/shoes/pieds_disco.png" id="22_sgxkq"]
 
 [node name="closet" type="Control"]
 layout_mode = 3
@@ -68,6 +69,17 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
+[node name="TextureButton9" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+custom_minimum_size = Vector2(50, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_sgxkq")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 100
+
 [node name="TextureButton0" type="TextureButton" parent="Buttons/glassesScroll/hat"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
@@ -111,6 +123,17 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
+
+[node name="TextureButton9" type="TextureButton" parent="Buttons/topScroll/top"]
+custom_minimum_size = Vector2(50, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_sgxkq")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 100
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/topScroll/top"]
 custom_minimum_size = Vector2(200, 200)
@@ -178,6 +201,17 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
+[node name="TextureButton9" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+custom_minimum_size = Vector2(50, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_sgxkq")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 100
+
 [node name="TextureButton0" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
 custom_minimum_size = Vector2(150, 250)
 layout_mode = 2
@@ -243,6 +277,17 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
+
+[node name="TextureButton9" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
+custom_minimum_size = Vector2(50, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_sgxkq")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 100
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
 custom_minimum_size = Vector2(200, 100)

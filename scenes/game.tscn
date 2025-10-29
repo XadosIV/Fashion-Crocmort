@@ -98,7 +98,7 @@ chances = {
 "poilu": 0.28841127264499666
 }
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="bgMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_u5sy4")
 volume_db = -18.0
 autoplay = true

@@ -14,10 +14,17 @@ var lien = "Mamie"
 var resume = "test"
 var commande = "commande"
 
+var tips1 = true
+var tips2 = false
+
 
 
 @onready var commande_list := $CommandeList
 @onready var photo_exemple := $Photo_exemple
+@onready var pin1 := $Pin1
+@onready var pin2 := $Pin2
+@onready var pin3 := $Pin3
+@onready var pin4 := $Pin4
 
 
 func _ready() -> void:
@@ -77,7 +84,7 @@ func _apply_hover_style(btn : Button)->void:
 	btn.add_theme_stylebox_override("hover", sb_hover)
 	
 	var sb_pressed := StyleBoxFlat.new()
-	sb_pressed.bg_color = Color(0, 0, 0, 0.12)
+	sb_pressed.bg_color =Color(0, 0, 0, 0.12)
 	sb_pressed.corner_radius_top_left = 6
 	sb_pressed.corner_radius_top_right = 6
 	sb_pressed.corner_radius_bottom_left = 6
@@ -118,17 +125,47 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 
 func _on_command_pressed(index: int, lines: Array[String]) -> void:
 	
-	if (index == 0):
-		get_node("/root/Global").pb_1 = lines[index]
+
+	
+	if(lines.size() <= 2):
+
+		if(index==0):
+			get_node("/root/Global").pb_1 = lines[index]
+			pin1.visible = true
+		elif (index == 1):	
+			get_node("/root/Global").pb_2 = lines[index]
+			pin2.visible = true
+	else:
+
+		if (tips1):
+			tips1 = false
+			tips2 = true
+			get_node("/root/Global").pb_1 = lines[index]
+			
+			if(index == 0):
+				pin1.visible = true
+			elif(index == 1):
+				pin2.visible = true
+			elif(index == 3):
+				pin3.visible = true
+			elif(index == 4):
+				pin4.visible = true
+				
+			
+		elif (tips2):
+			tips1 = true
+			tips2 = false
+			get_node("/root/Global").pb_2 = lines[index]
+			if(index == 0):
+				pin1.visible = true
+			elif(index == 1):
+				pin2.visible = true
+			elif(index == 3):
+				pin3.visible = true
+			elif(index == 4):
+				pin4.visible = true
 		
-	elif (index == 1):
-		get_node("/root/Global").pb_2 = lines[index]
-		
-	elif (index == 2):
-		get_node("/root/Global").pb_3 = lines[index]
-		
-	elif (index == 3):
-		get_node("/root/Global").pb_4 = lines[index]
+
 		
 
 
