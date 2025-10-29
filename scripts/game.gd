@@ -8,6 +8,9 @@ extends Node2D
 @export var objectSfx: AudioStream
 @export var clotheSfx: AudioStream
 
+@export var uifin : Control
+@export var menuScene : PackedScene
+
 @export_range(0,1) var difficulty = 0.5
 
 @export var debug = false
@@ -22,14 +25,23 @@ var body : Henry
 func _ready():
 	debug = false
 	difficulty = global.difficulty
+	uifin.visible = false
 	loadLevel(0)
 
-func nextLevel(win):
-	if win:
+func menu():
+	get_tree().change_scene_to_packed(menuScene)
+
+func nextLevel(wini):
+	if wini:
 		nb_de_corps += 1
-		loadLevel(0)
+		uifin.msg = "Bien joué !"
+		uifin.score += 1000
 	else:
-		pass
+		uifin.msg = "Dommage..."
+	uifin.nb_corps = nb_de_corps
+	uifin.win = wini
+	uifin.affiche()
+	uifin.visible = true
 
 func endGame():
 	var attributs = body.calcul_attribut()

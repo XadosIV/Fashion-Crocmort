@@ -9,17 +9,22 @@ extends Control
 var score = 0
 var msg = "Bien joué"
 var nb_corps = 5
+var win
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	affiche()
 	next_button.pressed.connect(_next_pressed)
 
 
 func affiche():
 	NB_value_label.text = str(nb_corps)
 	msg_fin_label.text = msg
-	score_label.text = str(nb_corps)
+	score_label.text = str(score)
 	
 func _next_pressed():
-	pass
+	var game = get_node("../..")
+	if win:
+		game.loadLevel(0)
+	else:
+		game.menu()
+	visible = false
