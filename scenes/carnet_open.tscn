@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1hme20pyi0mf"]
+[gd_scene load_steps=7 format=3 uid="uid://d1hme20pyi0mf"]
 
 [ext_resource type="Script" uid="uid://bxm7mkmju5htb" path="res://scripts/carnet_open.gd" id="1_tealh"]
 [ext_resource type="Texture2D" uid="uid://dyjcf8gpdwcf" path="res://assets/tier_gauche/fond_carnet.png" id="2_10s37"]
 [ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://PlaceHolderImage/PhotoPierre.png" id="3_10s37"]
 [ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="5_10s37"]
 [ext_resource type="Texture2D" uid="uid://4g365yx6a7ak" path="res://assets/tier_gauche/Naruto.png" id="6_6knx6"]
+[ext_resource type="Texture2D" uid="uid://bchaq2ebpu7xn" path="res://PlaceHolderImage/pin.png" id="6_uprym"]
 
 [node name="carnet_open" type="Control"]
 layout_mode = 3
@@ -170,3 +171,43 @@ offset_right = 1525.0
 offset_bottom = 1058.0
 texture = ExtResource("6_6knx6")
 expand_mode = 1
+
+[node name="Pin1" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 282.0
+offset_right = 1369.0
+offset_bottom = 601.0
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("6_uprym")
+
+[node name="Pin2" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 312.0
+offset_right = 1078.0
+offset_bottom = 334.0
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("6_uprym")
+
+[node name="Pin3" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 343.0
+offset_right = 1369.0
+offset_bottom = 662.0
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("6_uprym")
+
+[node name="Pin4" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 373.0
+offset_right = 1369.0
+offset_bottom = 692.0
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("6_uprym")
