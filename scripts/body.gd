@@ -46,9 +46,11 @@ func calcul_attribut():
 			for c in child.get_children():
 				if c.visible:
 					add_attrib("hideux")
+	return attributs
+
 	
 func get_attrib_from_node(nodename):
-	var node = get_child(nodename)
+	var node = find_child(nodename)
 	if node.paire:
 		for child in node.get_children():
 			if child is Sprite2D:
@@ -123,15 +125,16 @@ func fullHenry():
 
 func randomizeHenry(reset=false):
 	if reset:
-		myRand.seed = seed
+		myRand.seed = mySeed
 		myRand.state = 0
 	else:
 		myRand.randomize()
 		mySeed = myRand.seed
+		myRand.state = 0
 	
 	for child in $Plaies.get_children():
 		var chance = chances.get(child.name, 0.5)
-		var rand = randf()
+		var rand = myRand.randf()
 		child.visible = rand < chance
 	
 	for child in $"Membres/Attaché".get_children():
@@ -140,7 +143,7 @@ func randomizeHenry(reset=false):
 			# On inverse la chance pour les bras, sachant
 			# que c'est le seul sprite à être "pas blessé"
 			# quand il est montré, contrairement aux hématomes genre
-			var rand = randf()
+			var rand = myRand.randf()
 			child.visible = rand < 1-chance
 			
 			membres.set(child.name, child.visible)
@@ -149,7 +152,7 @@ func randomizeHenry(reset=false):
 				$"Membres/Coupés".get_node_or_null(str(child.name)).visible = false
 				var polygonPoils = $"Poils".get_node_or_null(str(child.name))
 				polygonPoils.visible = true
-				polygonPoils.generate_poils()
+				polygonPoils.generate_poils(myRand)
 				
 			else:
 				$"Membres/Coupés".get_node_or_null(str(child.name)).visible = true
@@ -157,23 +160,23 @@ func randomizeHenry(reset=false):
 				polygonPoils.visible = false
 				polygonPoils.remove_poils()
 		else:
-			var rand = randf()
+			var rand = myRand.randf()
 			child.visible = rand < chance
 
 		if child.get_child_count() > 0 and child.visible:
 			for c in child.get_children():
 				var sub_chance = chances.get(c.name, 0.5)
-				var rand = randf()
+				var rand = myRand.randf()
 				c.visible = rand < sub_chance
 		
 	# Generation Poils Torse et Pubis
 	var _chance = chances.get("poilu", 0.5)
-	var _rand = randf()
+	var _rand = myRand.randf()
 	if _rand < _chance:
 		$Poils/Torse.visible = true
-		$Poils/Torse.generate_poils()
+		$Poils/Torse.generate_poils(myRand)
 		$Poils/Pubis.visible = true
-		$Poils/Pubis.generate_poils()
+		$Poils/Pubis.generate_poils(myRand)
 	else:
 		$Poils/Torse.visible = false
 		$Poils/Torse.remove_poils()

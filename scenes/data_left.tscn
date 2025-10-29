@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://stc24fpildg6"]
+[gd_scene load_steps=13 format=3 uid="uid://stc24fpildg6"]
 
 [ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
 [ext_resource type="Script" uid="uid://18ds2r57ily2" path="res://scripts/data_left.gd" id="1_ys4et"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d1hme20pyi0mf" path="res://scenes/carnet_open.tscn" id="4_ftyl4"]
 [ext_resource type="FontFile" uid="uid://iadlw7c7mgm6" path="res://assets/Font/ReenieBeanie-Regular.ttf" id="6_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://drq1xapdumwus" path="res://assets/bouton_picto/pictosValider.png" id="6_yxf5x"]
+[ext_resource type="Script" uid="uid://cv6ftd0cl43ld" path="res://scenes/valid_button.gd" id="7_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://db243jm3mv2v4" path="res://assets/bouton_picto/pictosCroix.png" id="8_w5uu7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxf5x"]
@@ -126,6 +127,7 @@ scale = Vector2(0.705, 0.705)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_yxf5x")
 theme_override_styles/hover = SubResource("StyleBoxFlat_yxf5x")
 icon = ExtResource("6_yxf5x")
+script = ExtResource("7_w5uu7")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

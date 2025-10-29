@@ -6,12 +6,17 @@ extends Polygon2D
 
 @export var scriptPoils : Script
 
-func generate_poils():
+var myRand = RandomNumberGenerator.new()
+
+func generate_poils(r=null):
+	if r != null:
+		myRand = r
+	
 	remove_poils()
 	var points = polygon
 	for i in range(nb_poils):
 		var pos = random_point_in_polygon(points)
-		var dir = Vector2(randf() - 0.5, -1).normalized()
+		var dir = Vector2(myRand.randf() - 0.5, -1).normalized()
 		add_hair(pos, dir)
 
 func remove_poils():
@@ -25,8 +30,8 @@ func random_point_in_polygon(_polygon: PackedVector2Array) -> Vector2:
 	var point: Vector2
 	while true:
 		point = Vector2(
-			randf_range(aabb.position.x, aabb.end.x),
-			randf_range(aabb.position.y, aabb.end.y)
+			myRand.randf_range(aabb.position.x, aabb.end.x),
+			myRand.randf_range(aabb.position.y, aabb.end.y)
 		)
 		if Geometry2D.is_point_in_polygon(point, _polygon):
 			return point

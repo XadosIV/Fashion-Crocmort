@@ -17,6 +17,12 @@ var body : Henry
 func _ready():
 	loadLevel()
 
+func endGame():
+	print(body.calcul_attribut())
+
+func resetHenry():
+	body.randomizeHenry(true)
+
 func loadLevel(dif=-1):
 	if dif != -1:
 		difficulty = dif
