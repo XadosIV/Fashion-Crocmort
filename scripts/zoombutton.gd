@@ -1,6 +1,10 @@
-extends Button
+extends TextureButton
 
 var camera
+@export var zoomIn: Texture
+@export var zoomOut: Texture
+
+var zoom = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,3 +17,9 @@ func _process(_delta: float) -> void:
 
 func _pressed() -> void:
 	camera.toggleZoom()
+	zoom = !zoom
+	if zoom :
+		texture_normal = zoomOut
+	else :
+		texture_normal = zoomIn
+	

@@ -9,8 +9,8 @@ var pb_3 = " "
 var pb_4 = " "
 
 func _ready() -> void:
-	pass
-	#Input.set_custom_mouse_cursor(mouse)
+	Input.set_custom_mouse_cursor(mouse)
+	Input.set_custom_mouse_cursor(mouse, Input.CURSOR_POINTING_HAND)
 
 func _input(event):
 	if event.is_action_pressed("au_secours"):

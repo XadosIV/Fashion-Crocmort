@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bhxq78cchur7p" path="res://scenes/drawer.tscn" id="1_fve1s"]
 [ext_resource type="PackedScene" uid="uid://rd46st71405r" path="res://scenes/table.tscn" id="1_lskbr"]
 [ext_resource type="Script" uid="uid://bmhws34w3xah1" path="res://scripts/tools_ui.gd" id="1_wu0t8"]
-[ext_resource type="Texture2D" uid="uid://coidiiuv0pnty" path="res://assets/UI/Illustration_sans_titre copie 3.png" id="2_ynyck"]
+[ext_resource type="Texture2D" uid="uid://ca6gmn1gg3ibf" path="res://assets/UI/toolTab.png" id="2_ynyck"]
 [ext_resource type="Texture2D" uid="uid://dp6xrindhvhvr" path="res://assets/UI/makeupTab.png" id="3_mq6p2"]
 [ext_resource type="Texture2D" uid="uid://w65eu3yan0rk" path="res://assets/UI/clothesTab.png" id="4_q6bs6"]
 [ext_resource type="PackedScene" uid="uid://bh547r7w1k0k8" path="res://scenes/closet.tscn" id="7_ynyck"]
@@ -17,47 +17,6 @@ offset_right = -1280.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_wu0t8")
-
-[node name="tableButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 0
-offset_left = 50.0
-offset_top = 40.0
-offset_right = 150.0
-offset_bottom = 140.0
-texture_normal = ExtResource("2_ynyck")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="drawerButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -50.0
-offset_top = 40.0
-offset_right = 50.0
-offset_bottom = 140.0
-grow_horizontal = 2
-texture_normal = ExtResource("3_mq6p2")
-ignore_texture_size = true
-stretch_mode = 4
-
-[node name="closetButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -150.0
-offset_top = 40.0
-offset_right = -50.0
-offset_bottom = 140.0
-grow_horizontal = 0
-texture_normal = ExtResource("4_q6bs6")
-ignore_texture_size = true
-stretch_mode = 4
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 1
@@ -88,9 +47,49 @@ layout_mode = 1
 visible = false
 layout_mode = 0
 
-[connection signal="pressed" from="tableButton" to="." method="_on_table_button_pressed"]
-[connection signal="pressed" from="drawerButton" to="." method="_on_drawer_button_pressed"]
-[connection signal="pressed" from="closetButton" to="." method="_on_closet_button_pressed"]
+[node name="tableButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 1
+offset_top = -35.0
+offset_right = 200.0
+offset_bottom = 215.0
+texture_normal = ExtResource("2_ynyck")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="drawerButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -127.0
+offset_top = -39.0
+offset_right = 73.0
+offset_bottom = 211.0
+grow_horizontal = 2
+texture_normal = ExtResource("3_mq6p2")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="closetButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = -35.0
+offset_right = -50.0
+offset_bottom = 215.0
+grow_horizontal = 0
+texture_normal = ExtResource("4_q6bs6")
+ignore_texture_size = true
+stretch_mode = 5
+
 [connection signal="drawerClic" from="Control/drawer" to="." method="_on_drawer_drawer_clic"]
 [connection signal="tableClic" from="Control/table" to="." method="_on_table_table_clic"]
 [connection signal="closetClic" from="Control/closet" to="." method="_on_closet_closet_clic"]
+[connection signal="pressed" from="tableButton" to="." method="_on_table_button_pressed"]
+[connection signal="pressed" from="drawerButton" to="." method="_on_drawer_button_pressed"]
+[connection signal="pressed" from="closetButton" to="." method="_on_closet_button_pressed"]
