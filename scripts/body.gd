@@ -5,6 +5,10 @@ extends Node2D
 @export_range(0.0, 1.0) var difficulty := 0.5
 @export var chances = {"default":0.5}
 
+signal hairRemoved
+signal limbAdded
+signal injuryCured
+
 var membres = {
 	"BrasGauche":true,
 	"BrasDroit":true,
@@ -121,3 +125,12 @@ func _process(_delta):
 	if not Engine.is_editor_hint():
 		if Input.is_action_just_pressed("ui_accept"):
 			randomizeHenry()
+
+func _hair_sound() -> void: 
+	hairRemoved.emit()
+	
+func _limb_sound() -> void:
+	limbAdded.emit()
+
+func _injury_healed() -> void:
+	injuryCured.emit()

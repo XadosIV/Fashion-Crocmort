@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bfoau86k0c2ee" path="res://PlaceHolderImage/croix.png" id="6_qxndi"]
 [ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="7_etveg"]
 
-[node name="Node2D" type="Control"]
+[node name="carnetUi" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ys4et")
@@ -121,3 +121,5 @@ offset_right = 462.0
 offset_bottom = 470.0
 scale = Vector2(0.325, 0.325)
 icon = ExtResource("6_qxndi")
+
+[connection signal="visibility_changed" from="carnet_open" to="." method="_on_carnet_open_visibility_changed"]

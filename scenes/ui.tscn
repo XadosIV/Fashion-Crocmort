@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://i7vjnp0yx88l"]
+[gd_scene load_steps=6 format=3 uid="uid://i7vjnp0yx88l"]
 
 [ext_resource type="PackedScene" uid="uid://878oabv57gd1" path="res://scenes/tools_ui.tscn" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://dm42tu2lot0do" path="res://scripts/ui.gd" id="1_wm3ai"]
 [ext_resource type="PackedScene" uid="uid://stc24fpildg6" path="res://scenes/data_left.tscn" id="1_x4jx1"]
 [ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="2_gdt2y"]
 [ext_resource type="Script" uid="uid://7ns1xp4nrcgj" path="res://scripts/zoombutton.gd" id="3_yev5y"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wm3ai")
 
 [node name="ToolsUi" parent="." instance=ExtResource("1_fyqef")]
 layout_mode = 1
@@ -28,5 +30,7 @@ theme_override_fonts/font = ExtResource("2_gdt2y")
 text = "Zoom"
 script = ExtResource("3_yev5y")
 
-[node name="Node2D" parent="." instance=ExtResource("1_x4jx1")]
+[node name="carnetUi" parent="." instance=ExtResource("1_x4jx1")]
 layout_mode = 0
+
+[connection signal="clicJournal" from="carnetUi" to="." method="_on_carnet_ui_clic_journal"]

@@ -29,4 +29,5 @@ func _ready():
 
 func _on_mouse_entered():
 	if global.toolsID == 0 and global.toolTab == 0:
+		get_node("../../..")._hair_sound()
 		queue_free()
