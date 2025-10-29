@@ -9,7 +9,6 @@ extends Node2D
 @export var clotheSfx: AudioStream
 
 @export var uifin : Control
-@export var menuScene : PackedScene
 
 @export_range(0,1) var difficulty = 0.5
 
@@ -27,9 +26,6 @@ func _ready():
 	difficulty = global.difficulty
 	uifin.visible = false
 	loadLevel(0)
-
-func menu():
-	get_tree().change_scene_to_packed(menuScene)
 
 func nextLevel(wini):
 	get_node("CanvasLayer/Ui/carnetUi/TextureButton").disabled = true

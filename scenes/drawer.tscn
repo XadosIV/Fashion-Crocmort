@@ -358,23 +358,23 @@ stretch_mode = 5
 script = ExtResource("4_7hrsy")
 ID = 3
 
-[node name="TextureButton4" type="TextureButton" parent="Buttons/EyesScroll/HBoxContainer"]
-custom_minimum_size = Vector2(75, 60)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture_normal = ExtResource("13_7lu4x")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("4_7hrsy")
-ID = 4
-
 [node name="TextureButton5" type="TextureButton" parent="Buttons/EyesScroll/HBoxContainer"]
 custom_minimum_size = Vector2(75, 60)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("14_57mnv")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_7hrsy")
+ID = 4
+
+[node name="TextureButton4" type="TextureButton" parent="Buttons/EyesScroll/HBoxContainer"]
+custom_minimum_size = Vector2(75, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("13_7lu4x")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_7hrsy")
