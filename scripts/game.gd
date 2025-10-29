@@ -19,6 +19,7 @@ func _ready():
 
 func endGame():
 	var attributs = body.calcul_attribut()
+	print(attributs)
 
 func resetHenry():
 	body.randomizeHenry(true)
