@@ -54,7 +54,7 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="Buttons/wigButtons"]
 layout_mode = 2
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
 custom_minimum_size = Vector2(50, 200)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -63,7 +63,7 @@ texture_normal = ExtResource("3_jlc4d")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_7hrsy")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
 custom_minimum_size = Vector2(200, 200)
@@ -118,7 +118,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
 custom_minimum_size = Vector2(50, 60)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -127,7 +127,7 @@ texture_normal = ExtResource("3_jlc4d")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_7hrsy")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
 custom_minimum_size = Vector2(150, 60)
@@ -171,14 +171,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/MakeupButtons/HBoxContainer"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/MakeupButtons/HBoxContainer"]
 custom_minimum_size = Vector2(50, 200)
 layout_mode = 2
 texture_normal = ExtResource("3_jlc4d")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_7hrsy")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/MakeupButtons/HBoxContainer"]
 custom_minimum_size = Vector2(150, 200)

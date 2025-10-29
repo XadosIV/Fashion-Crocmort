@@ -12,4 +12,4 @@ func _process(_delta: float) -> void:
 	pass
 
 func _on_tool_pressed(newID: int) -> void:
-	clothesData.emit(newID + clothingID * 10)
+	clothesData.emit(newID + clothingID * 100)

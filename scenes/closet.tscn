@@ -69,7 +69,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/glassesScroll/hat"]
 custom_minimum_size = Vector2(50, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -78,7 +78,7 @@ texture_normal = ExtResource("4_sgxkq")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/glassesScroll/hat"]
 custom_minimum_size = Vector2(150, 150)
@@ -124,7 +124,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/topScroll/top"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/topScroll/top"]
 custom_minimum_size = Vector2(50, 200)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -133,7 +133,7 @@ texture_normal = ExtResource("4_sgxkq")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/topScroll/top"]
 custom_minimum_size = Vector2(200, 200)
@@ -201,7 +201,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
 custom_minimum_size = Vector2(50, 250)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -210,7 +210,7 @@ texture_normal = ExtResource("4_sgxkq")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/bottomScroll/bottom"]
 custom_minimum_size = Vector2(150, 250)
@@ -278,7 +278,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton9" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
 custom_minimum_size = Vector2(50, 100)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -287,7 +287,7 @@ texture_normal = ExtResource("4_sgxkq")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
-ID = 100
+ID = 1000
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/shoeScroll/shoes"]
 custom_minimum_size = Vector2(200, 100)
