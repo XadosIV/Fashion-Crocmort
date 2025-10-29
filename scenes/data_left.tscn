@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://stc24fpildg6"]
+[gd_scene load_steps=11 format=3 uid="uid://b5i8eml1ojjmj"]
 
 [ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
 [ext_resource type="Script" uid="uid://18ds2r57ily2" path="res://scripts/data_left.gd" id="1_ys4et"]
@@ -49,7 +49,7 @@ offset_bottom = 630.0
 rotation = -0.10471976
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("6_w5uu7")
-theme_override_font_sizes/font_size = 42
+theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -91,7 +91,7 @@ offset_bottom = 619.0
 rotation = -0.10471976
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("6_w5uu7")
-theme_override_font_sizes/font_size = 42
+theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3

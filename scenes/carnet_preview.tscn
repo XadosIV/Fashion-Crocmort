@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://qoxr2777yvsl"]
 
 [ext_resource type="Script" uid="uid://dtrn8ha5xkmaa" path="res://scripts/carnet_preview.gd" id="1_fnd2r"]
-[ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://PlaceHolderImage/PhotoPierre.png" id="2_30o4c"]
+[ext_resource type="Texture2D" uid="uid://dqb8kbfvjjjrr" path="res://assets/mugshot/mugshot_aryen.png" id="2_hjgi8"]
 [ext_resource type="FontFile" uid="uid://iadlw7c7mgm6" path="res://assets/Font/ReenieBeanie-Regular.ttf" id="3_hjgi8"]
 
 [node name="Carnet" type="Control"]
@@ -11,12 +11,13 @@ script = ExtResource("1_fnd2r")
 
 [node name="Photo" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 25.000002
-offset_top = 56.0
-offset_right = 439.6082
-offset_bottom = 444.70142
-rotation = -0.08955256
-texture = ExtResource("2_30o4c")
+offset_left = -121.999985
+offset_top = -155.0
+offset_right = 360.0
+offset_bottom = 457.0
+rotation = 0.015707964
+scale = Vector2(1.51, 1.255)
+texture = ExtResource("2_hjgi8")
 
 [node name="Name" type="Label" parent="."]
 layout_mode = 0
