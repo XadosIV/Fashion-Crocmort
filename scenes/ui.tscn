@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://i7vjnp0yx88l"]
 
 [ext_resource type="PackedScene" uid="uid://878oabv57gd1" path="res://scenes/tools_ui.tscn" id="1_fyqef"]
-[ext_resource type="Script" uid="uid://dm42tu2lot0do" path="res://scripts/ui.gd" id="1_wm3ai"]
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_wm3ai"]
 [ext_resource type="PackedScene" uid="uid://stc24fpildg6" path="res://scenes/data_left.tscn" id="1_x4jx1"]
 [ext_resource type="Texture2D" uid="uid://h1r6wotcso4t" path="res://assets/bouton_picto/zoom.png" id="3_wm3ai"]
 [ext_resource type="Script" uid="uid://7ns1xp4nrcgj" path="res://scripts/zoombutton.gd" id="3_yev5y"]
@@ -35,9 +35,6 @@ script = ExtResource("3_yev5y")
 zoomIn = ExtResource("3_wm3ai")
 zoomOut = ExtResource("5_8dubc")
 
-[node name="carnetUi" parent="." instance=ExtResource("1_x4jx1")]
-layout_mode = 0
-
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 580.0
@@ -47,6 +44,9 @@ offset_bottom = 1077.0
 texture_normal = ExtResource("6_8dubc")
 ignore_texture_size = true
 stretch_mode = 5
+
+[node name="carnetUi" parent="." instance=ExtResource("1_x4jx1")]
+layout_mode = 0
 
 [connection signal="toolsClic" from="ToolsUi" to="." method="_on_tools_ui_tools_clic"]
 [connection signal="clicJournal" from="carnetUi" to="." method="_on_carnet_ui_clic_journal"]
