@@ -230,6 +230,7 @@ func import_desc():
 			
 			if(gender == "male"):
 				example_dict_description[line_index] = data_set[1]
+
 			
 			example_dict_attributs[line_index] = [data_set[2].to_lower(), data_set[3].to_lower()]
 

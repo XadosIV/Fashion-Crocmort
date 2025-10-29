@@ -1,0 +1,96 @@
+[gd_scene load_steps=5 format=3 uid="uid://8jskv8iwnsl8"]
+
+[ext_resource type="Script" uid="uid://b8tr2htjvbcgp" path="res://scripts/score_visu_scene.gd" id="1_4u6an"]
+[ext_resource type="Texture2D" uid="uid://ca5rtolg3qih0" path="res://assets/UI/fin_mission.png" id="1_a12el"]
+[ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="3_4u6an"]
+[ext_resource type="Texture2D" uid="uid://fn2pa850rcpx" path="res://assets/bouton_picto/pictosSuite.png" id="4_q4bvm"]
+
+[node name="Score_Visu_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4u6an")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_a12el")
+
+[node name="msg_fin_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 799.0
+offset_top = 108.0
+offset_right = 1650.0
+offset_bottom = 237.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4u6an")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 801.0
+offset_top = 565.0
+offset_right = 1641.0
+offset_bottom = 668.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4u6an")
+theme_override_font_sizes/font_size = 40
+text = "NB de corps à la suite :"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Score_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 814.0
+offset_top = 932.0
+offset_right = 1648.0
+offset_bottom = 1035.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4u6an")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 811.0
+offset_top = 832.0
+offset_right = 1653.0
+offset_bottom = 935.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4u6an")
+theme_override_font_sizes/font_size = 40
+text = "Score total :"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Nb_value_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 810.0
+offset_top = 655.0
+offset_right = 1648.0
+offset_bottom = 758.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4u6an")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="NextButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1728.0
+offset_top = 910.0
+offset_right = 1893.0
+offset_bottom = 1059.0
+texture_normal = ExtResource("4_q4bvm")

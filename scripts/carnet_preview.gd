@@ -7,9 +7,68 @@ var target_id = 5
 
 var name_selected = ""
 
+var portraits = {}
+
 func _ready() -> void:
 	
-	var photo = load("res://PlaceHolderImage/PhotoPierre.png")
+	var id_desc = 1 #get_node("/root/Global").carnet.resume_id
+	
+	var photo =  load("res://assets/mugshot/mugshot clown.png")
+	
+	portraits = {
+		1 : load("res://assets/mugshot/mugshot clown.png"),
+		2 : load("res://assets/mugshot/mugshot metal.png"),
+		3 : load("res://assets/mugshot/mugshot naruto(5).png"),
+		4 : load("res://assets/mugshot/mugshot_aryen.png"),
+		5 : load("res://assets/mugshot/mugshot_chill_guy (1).png"),
+		6 : load("res://assets/mugshot/mugshot_disco.png"),
+		7 : load("res://assets/mugshot/mugshot_hideux (7).png"),
+		8 : load("res://assets/mugshot/mugshot_papy_classe (6).png")
+		
+	}
+	
+	match id_desc:
+		0 :
+			photo = portraits[7]
+		1 :
+			photo = portraits[5]
+		2 :
+			photo = portraits[6]
+		3 :
+			photo = portraits[4]
+		4 :
+			photo = portraits[4]
+		5 :
+			photo = portraits[3]
+		6 :
+			photo = portraits[2]
+		7 :
+			photo = portraits[5]
+		8 :
+			photo = portraits[8]
+		9 :
+			photo = portraits[8]
+		10 :
+			photo = portraits[2]
+		11 :
+			photo = portraits[5]
+		12:
+			photo = portraits[7]
+		13:
+			photo = portraits[7]
+		14:
+			photo = portraits[3]
+		15:
+			photo = portraits[7]
+		16:
+			photo = portraits[3]
+		17:
+			photo = portraits[4]
+		18:
+			photo = portraits[6]
+
+		
+	
 
 	var texture_rect = $Photo 
 	texture_rect.texture = photo

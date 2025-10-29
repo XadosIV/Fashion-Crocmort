@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://PlaceHolderImage/PhotoPierre.png" id="3_10s37"]
 [ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="5_10s37"]
 [ext_resource type="Texture2D" uid="uid://4g365yx6a7ak" path="res://assets/tier_gauche/Naruto.png" id="6_6knx6"]
-[ext_resource type="Texture2D" uid="uid://bchaq2ebpu7xn" path="res://PlaceHolderImage/pin.png" id="6_uprym"]
+[ext_resource type="Texture2D" uid="uid://ddfy5msrlm8wk" path="res://assets/bouton_picto/pictosPin.png" id="6_uprym"]
 
 [node name="carnet_open" type="Control"]
 layout_mode = 3
@@ -187,8 +187,8 @@ visible = false
 layout_mode = 0
 offset_left = 1056.0
 offset_top = 312.0
-offset_right = 1078.0
-offset_bottom = 334.0
+offset_right = 1389.333
+offset_bottom = 618.6665
 scale = Vector2(0.075, 0.075)
 texture = ExtResource("6_uprym")
 
