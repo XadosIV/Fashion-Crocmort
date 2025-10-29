@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://i7vjnp0yx88l"]
+[gd_scene load_steps=8 format=3 uid="uid://i7vjnp0yx88l"]
 
 [ext_resource type="PackedScene" uid="uid://878oabv57gd1" path="res://scenes/tools_ui.tscn" id="1_fyqef"]
-[ext_resource type="Script" path="res://scripts/ui.gd" id="1_wm3ai"]
+[ext_resource type="Script" uid="uid://dm42tu2lot0do" path="res://scripts/ui.gd" id="1_wm3ai"]
 [ext_resource type="PackedScene" uid="uid://stc24fpildg6" path="res://scenes/data_left.tscn" id="1_x4jx1"]
 [ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="2_gdt2y"]
 [ext_resource type="Script" uid="uid://7ns1xp4nrcgj" path="res://scripts/zoombutton.gd" id="3_yev5y"]
+[ext_resource type="Script" uid="uid://bu5cd8j1bl4cd" path="res://scenes/reset.gd" id="5_p7vwb"]
 [ext_resource type="Texture2D" uid="uid://bi546rdkk18l6" path="res://assets/bouton_picto/pictosReset.png" id="6_8dubc"]
 
 [node name="Ui" type="Control"]
@@ -21,6 +22,18 @@ layout_mode = 1
 offset_left = 1280.0
 offset_right = 0.0
 
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 593.0
+offset_top = 978.0
+offset_right = 759.0
+offset_bottom = 1131.0
+scale = Vector2(0.655, 0.655)
+theme_override_fonts/font = ExtResource("2_gdt2y")
+icon = ExtResource("6_8dubc")
+flat = true
+script = ExtResource("5_p7vwb")
+
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 1189.0
@@ -33,18 +46,6 @@ script = ExtResource("3_yev5y")
 
 [node name="carnetUi" parent="." instance=ExtResource("1_x4jx1")]
 layout_mode = 0
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 593.0
-offset_top = 978.0
-offset_right = 759.0
-offset_bottom = 1131.0
-scale = Vector2(0.655, 0.655)
-theme_override_fonts/font = ExtResource("2_gdt2y")
-icon = ExtResource("6_8dubc")
-flat = true
-script = ExtResource("3_yev5y")
 
 [connection signal="toolsClic" from="ToolsUi" to="." method="_on_tools_ui_tools_clic"]
 [connection signal="clicJournal" from="carnetUi" to="." method="_on_carnet_ui_clic_journal"]
