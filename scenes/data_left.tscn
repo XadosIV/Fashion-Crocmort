@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://stc24fpildg6"]
+[gd_scene load_steps=11 format=3 uid="uid://stc24fpildg6"]
 
 [ext_resource type="PackedScene" uid="uid://cxc3tqrifnuvo" path="res://scenes/pense_bete.tscn" id="1_lfdws"]
 [ext_resource type="Script" uid="uid://18ds2r57ily2" path="res://scripts/data_left.gd" id="1_ys4et"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://drq1xapdumwus" path="res://assets/bouton_picto/pictosValider.png" id="6_yxf5x"]
 [ext_resource type="Script" uid="uid://cv6ftd0cl43ld" path="res://scripts/valid_button.gd" id="7_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://db243jm3mv2v4" path="res://assets/bouton_picto/pictosCroix.png" id="8_w5uu7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0yy1v"]
 
 [node name="carnetUi" type="Control"]
 layout_mode = 3
@@ -100,17 +102,18 @@ offset_left = 1.0
 offset_top = 2.0
 offset_right = 631.0
 offset_bottom = 796.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0yy1v")
 flat = true
 
-[node name="Valid_button" type="Button" parent="."]
+[node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 222.00003
-offset_top = 971.04004
-offset_right = 380.00006
-offset_bottom = 1116.04
-scale = Vector2(0.705, 0.705)
-icon = ExtResource("6_yxf5x")
-flat = true
+offset_left = 222.0
+offset_top = 971.0
+offset_right = 333.14484
+offset_bottom = 1073.0
+texture_normal = ExtResource("6_yxf5x")
+ignore_texture_size = true
+stretch_mode = 5
 script = ExtResource("7_w5uu7")
 
 [node name="Label" type="Label" parent="."]
@@ -142,15 +145,15 @@ grow_horizontal = 1
 grow_vertical = 1
 scale = Vector2(1.005, 1.005)
 
-[node name="Close_Button" type="Button" parent="."]
+[node name="Close_Button" type="TextureButton" parent="."]
 visible = false
 layout_mode = 0
 offset_left = 128.0
 offset_top = 132.0
-offset_right = 286.0
-offset_bottom = 277.0
-scale = Vector2(0.71, 0.71)
-icon = ExtResource("8_w5uu7")
-flat = true
+offset_right = 239.14484
+offset_bottom = 234.0
+texture_normal = ExtResource("8_w5uu7")
+ignore_texture_size = true
+stretch_mode = 5
 
 [connection signal="visibility_changed" from="carnet_open" to="." method="_on_carnet_open_visibility_changed"]
