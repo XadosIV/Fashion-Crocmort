@@ -1,11 +1,17 @@
-feminin,masculin,hiddenCriteria
-Moche,"Ce que je n'aime pas, c'est les poils, met lui en partout.\n",Hideux
-Je veux qu'elle ait un nez rouge.\nElle doit inspirer la peur,Je veux qu'il ai un nez rouge.\nIl doit inspirer la peur,Farfelue
-Globalement disco\nTon coloré,Globalement disco\nTon coloré,Disco
-Belle,Beau,Classe
-"Elle a perdu un membre pendant le déménagement, remettez-lui. ","Il a perdu un membre pendant le déménagement, remettez-lui. ",Basique
-Naruto,Naruto,Elements Naruto
-Elle a perdu ses cheveux à cause d'une leucémie\nElle adorait le maquillage et les piercings.,Il a perdu ses cheveux à cause d'une leucémie\nIl adorait le maquillage et les piercings.,Metal/Disco
-"Son teint est trop pale, Elle doit ressembler à quelqu'un de vivant.","Son teint est trop pale, il doit ressembler à quelqu'un de vivant.",Basique
-Cheveux court\nMoustache courte\nBarbe taillée,Cheveux court\nMoustache courte\nBarbe taillée\nCostard,Classe
-Des vêtements qui évoque la richesse.\nAucun éléments qui la dévalorise.,Des vêtements qui évoque la richesse.\nAucun éléments qui le dévalorise.,Bourge
+feminin,masculin,hiddenCriteria,Difficulté
+Rendez la moche.,"Ce que je n'aime pas, c'est les poils, met lui en partout.",Hideux >= 2,"0,3"
+Je veux qu'elle ait un nez rouge.\nElle doit inspirer la peur.,Je veux qu'il ai un nez rouge.\nIl doit inspirer la peur.,Farfelue >=2,"0,2"
+Globalement disco\nTon coloré.,Globalement disco\nTon coloré,Disco >= 2,"0,1"
+Elle doit être belle.,Il doit être beau.,Classe >= 2,"0,6"
+"Elle a perdu un membre pendant le déménagement, remettez-lui. ","Il a perdu un membre pendant le déménagement, remettez-lui. ",Classe >= 2,"0,8"
+Elle doit ressembler à Naruto.,Il doit ressembler à Naruto.,Naruto >= 2,0
+Elle a perdu ses cheveux à cause d'une leucémie\nElle adorait le maquillage et les piercings.,Il a perdu ses cheveux à cause d'une leucémie\nIl adorait le maquillage et les piercings.,Motard >= 2 OU Disco >= 2,"0,4"
+"Son teint est trop pale, Elle doit ressembler à quelqu'un de vivant.","Son teint est trop pale, il doit ressembler à quelqu'un de vivant.",Farfelue >=2 OU Disco >=2,"0,9"
+Costard,Cheveux court\nMoustache courte\nBarbe taillée\nCostard,Classe >= 2,"0,5"
+Des vêtements qui évoque la richesse.\nAucun élément qui la dévalorise.,Des vêtements qui évoque la richesse.\nAucun élément qui le dévalorise.,Classe >= 2,"0,7"
+Qu'elle soit prête à rider dans l'au delà,Qu'il soit prêt à rider dans l'au delà,Motard >= 2,"0,3"
+"Quelque chose en rapport avec ce ""Krusty"" ?","Quelque chose en rapport avec ce ""Krusty"" ?",Farfelue > 2,"0,5"
+Le plus rapide et le moins cher,Le plus rapide et le moins cher,Hideux >=2 OU Classse >=2,"0,9"
+Des poils\nDu disco,Des poils\nDu disco,Hideux >=2 ET Disco >=2,"0,4"
+Les trucs japonais,Les trucs japonais,Naruto >= 2,"0,2"
+,,Hideux >= 2,

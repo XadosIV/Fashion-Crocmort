@@ -59,6 +59,34 @@ func charge_text():
 
 
 	_populate_command_buttons(lines)
+	
+func _apply_hover_style(btn : Button)->void:
+	btn.focus_mode = Control.FOCUS_NONE
+	#btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	
+	var sb_empty := StyleBoxEmpty.new()
+	btn.add_theme_stylebox_override("normal", sb_empty)
+	btn.add_theme_stylebox_override("focus", sb_empty)
+	
+	var sb_hover := StyleBoxFlat.new()
+	sb_hover.bg_color = Color(0, 0, 0, 0.07)  
+	sb_hover.corner_radius_top_left = 6
+	sb_hover.corner_radius_top_right = 6
+	sb_hover.corner_radius_bottom_left = 6
+	sb_hover.corner_radius_bottom_right = 6
+	btn.add_theme_stylebox_override("hover", sb_hover)
+	
+	var sb_pressed := StyleBoxFlat.new()
+	sb_pressed.bg_color = Color(0, 0, 0, 0.12)
+	sb_pressed.corner_radius_top_left = 6
+	sb_pressed.corner_radius_top_right = 6
+	sb_pressed.corner_radius_bottom_left = 6
+	sb_pressed.corner_radius_bottom_right = 6
+	btn.add_theme_stylebox_override("pressed", sb_pressed)
+	
+	btn.add_theme_color_override("font_color", Color.BLACK)
+	btn.add_theme_color_override("font_hover_color", Color.BLACK)
+	btn.add_theme_color_override("font_pressed_color", Color(0.15, 0.15, 0.15))
 
 func _populate_command_buttons(lines: Array[String]) -> void:
 	
@@ -74,13 +102,14 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 		commande_list.add_child(row)
 
 		var bullet := Label.new()
-		bullet.text = "•"
+		
 		row.add_child(bullet)
 
 		var btn := Button.new()
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		btn.flat = true
+		
 		btn.add_theme_color_override("font_color", Color.BLACK)
+		_apply_hover_style(btn)
 		row.add_child(btn)
 
 

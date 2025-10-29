@@ -1,14 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://d1hme20pyi0mf"]
+[gd_scene load_steps=6 format=3 uid="uid://d1hme20pyi0mf"]
 
-[ext_resource type="Texture2D" uid="uid://dkkxp07fdxtr1" path="res://PlaceHolderImage/fond noir.png" id="1_coafs"]
 [ext_resource type="Script" uid="uid://bxm7mkmju5htb" path="res://scripts/carnet_open.gd" id="1_tealh"]
-[ext_resource type="Texture2D" uid="uid://dmcsc27uexjr1" path="res://PlaceHolderImage/FondBlanc.png" id="2_tealh"]
+[ext_resource type="Texture2D" uid="uid://dyjcf8gpdwcf" path="res://assets/tier_gauche/fond_carnet.png" id="2_10s37"]
 [ext_resource type="Texture2D" uid="uid://dfivgmh25wqi5" path="res://PlaceHolderImage/PhotoPierre.png" id="3_10s37"]
 [ext_resource type="FontFile" uid="uid://ck2ryskc8ojts" path="res://assets/Font/SpecialElite-Regular.ttf" id="5_10s37"]
 [ext_resource type="Texture2D" uid="uid://4g365yx6a7ak" path="res://assets/tier_gauche/Naruto.png" id="6_6knx6"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6knx6"]
-blend_mode = 3
 
 [node name="carnet_open" type="Control"]
 layout_mode = 3
@@ -20,46 +16,27 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tealh")
 
-[node name="CarnetSprite" type="TextureRect" parent="."]
-material = SubResource("CanvasItemMaterial_6knx6")
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 2.0
-offset_top = -4.0
-offset_right = 1485.0
-offset_bottom = 825.0
-texture = ExtResource("1_coafs")
-
-[node name="Page1" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 76.0
-offset_top = 48.0
-offset_right = 709.0
-offset_bottom = 771.0
-texture = ExtResource("2_tealh")
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_10s37")
 
 [node name="Photo" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 298.0
-offset_top = 71.0
-offset_right = 487.0
-offset_bottom = 246.0
+offset_left = 405.0
+offset_top = 205.0
+offset_right = 594.0
+offset_bottom = 380.0
 texture = ExtResource("3_10s37")
 expand_mode = 1
 
-[node name="Page2" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 772.0
-offset_top = 48.0
-offset_right = 1403.0
-offset_bottom = 771.0
-texture = ExtResource("2_tealh")
-
 [node name="DescriptionCommande" type="Label" parent="."]
 layout_mode = 0
-offset_left = 774.99994
-offset_top = 46.00006
-offset_right = 1278.1746
-offset_bottom = 88.00006
+offset_left = 1082.9998
+offset_top = 141.0
+offset_right = 1586.1743
+offset_bottom = 183.0
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -71,10 +48,10 @@ vertical_alignment = 1
 
 [node name="DescriptionCommande2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 77.0
-offset_top = 315.99994
-offset_right = 577.00006
-offset_bottom = 357.99994
+offset_left = 183.99998
+offset_top = 449.99994
+offset_right = 684.00006
+offset_bottom = 491.99994
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -84,13 +61,29 @@ text = "Commande"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="DescriptionCommande3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1081.0
+offset_top = 183.99995
+offset_right = 1578.6189
+offset_bottom = 218.99995
+scale = Vector2(1.26, 1.26)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_10s37")
+theme_override_font_sizes/font_size = 15
+text = "*Vous pouvez sélectionner jusqu'à 2 objectifs de commande en cliquant dessus"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
 [node name="ch_Name" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 76.00001
-offset_top = 257.0
-offset_right = 579.17456
-offset_bottom = 299.0
+offset_left = 183.0
+offset_top = 391.0
+offset_right = 686.17456
+offset_bottom = 433.0
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -103,10 +96,10 @@ vertical_alignment = 1
 [node name="ch_Name2" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 76.840004
-offset_top = 389.72
-offset_right = 708.84906
-offset_bottom = 431.81802
+offset_left = 183.84
+offset_top = 523.72
+offset_right = 815.849
+offset_bottom = 565.818
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -119,10 +112,10 @@ autowrap_mode = 3
 [node name="ch_Lien" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 77.041
-offset_top = 426.78796
-offset_right = 580.54553
-offset_bottom = 468.15384
+offset_left = 184.04099
+offset_top = 560.78796
+offset_right = 687.54553
+offset_bottom = 602.1538
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -135,10 +128,10 @@ autowrap_mode = 3
 [node name="ch_Resume" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 81.038994
-offset_top = 536.99194
-offset_right = 578.1944
-offset_bottom = 723.1403
+offset_left = 188.03897
+offset_top = 670.99194
+offset_right = 685.19434
+offset_bottom = 857.1403
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -150,10 +143,10 @@ autowrap_mode = 3
 [node name="ch_Elem_Commande" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 780.402
-offset_top = 131.24202
-offset_right = 1270.4125
-offset_bottom = 326.3294
+offset_left = 1087.9999
+offset_top = 282.99994
+offset_right = 1578.0103
+offset_bottom = 478.08734
 scale = Vector2(1.26, 1.26)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -163,17 +156,17 @@ autowrap_mode = 3
 
 [node name="CommandeList" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 775.0
-offset_top = 129.0
-offset_right = 1401.0
-offset_bottom = 215.0
+offset_left = 1081.9998
+offset_top = 281.99994
+offset_right = 1707.9998
+offset_bottom = 367.99994
 
 [node name="Photo_exemple" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 948.0
-offset_top = 421.0
-offset_right = 1208.0
-offset_bottom = 749.0
+offset_left = 1265.0
+offset_top = 730.0
+offset_right = 1525.0
+offset_bottom = 1058.0
 texture = ExtResource("6_6knx6")
 expand_mode = 1

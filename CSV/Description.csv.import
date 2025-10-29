@@ -2,14 +2,14 @@
 
 importer="csv_translation"
 type="Translation"
-uid="uid://dfkqg5ehmp8v5"
+uid="uid://in0a8vvm3i5q"
 
 [deps]
 
-files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation"]
+files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation", "res://CSV/Description.Difficulté.translation"]
 
 source_file="res://CSV/Description.csv"
-dest_files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation"]
+dest_files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation", "res://CSV/Description.Difficulté.translation"]
 
 [params]
 
