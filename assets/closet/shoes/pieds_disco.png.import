@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c14em1kg64qfr"
-path="res://.godot/imported/bottom3.png-bc6900107b97337f171edf797954cc27.ctex"
+uid="uid://c413fdudc306u"
+path="res://.godot/imported/pieds_disco.png-2d8874fb3aa7c15f3473d0b77da531b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/closet/bottom/bottom3.png"
-dest_files=["res://.godot/imported/bottom3.png-bc6900107b97337f171edf797954cc27.ctex"]
+source_file="res://assets/closet/shoes/pieds_disco.png"
+dest_files=["res://.godot/imported/pieds_disco.png-2d8874fb3aa7c15f3473d0b77da531b9.ctex"]
 
 [params]
 

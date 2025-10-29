@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p161rkltqv7w"
-path="res://.godot/imported/la TABLE.png-1dce82cef5a92ceae125b766caecad65.ctex"
+uid="uid://dja0ldbvai7po"
+path="res://.godot/imported/pieds_clown.png-0299c271dd2dde5a94ab1311e3ff34a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/table/la TABLE.png"
-dest_files=["res://.godot/imported/la TABLE.png-1dce82cef5a92ceae125b766caecad65.ctex"]
+source_file="res://assets/closet/shoes/pieds_clown.png"
+dest_files=["res://.godot/imported/pieds_clown.png-0299c271dd2dde5a94ab1311e3ff34a9.ctex"]
 
 [params]
 

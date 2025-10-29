@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwt4kr6fe6724"]
+[gd_scene load_steps=8 format=3 uid="uid://cwt4kr6fe6724"]
 
+[ext_resource type="Script" uid="uid://7talpjupwv0i" path="res://scripts/main_menu.gd" id="1_8ln24"]
 [ext_resource type="Script" uid="uid://dtgyk7borubnf" path="res://scripts/play_button.gd" id="1_ekxnf"]
 [ext_resource type="Script" uid="uid://ceuhi35c6efo3" path="res://scripts/quit.gd" id="1_l6cm7"]
 [ext_resource type="PackedScene" uid="uid://5ij60s7vok3p" path="res://scenes/game.tscn" id="2_bqqt6"]
+[ext_resource type="AudioStream" uid="uid://dkvanaywxpt6x" path="res://assets/music/[Intro]Lior Soltz - Glistening Ripples Lullaby.mp3" id="3_bqqt6"]
+[ext_resource type="AudioStream" uid="uid://opqt25dddogk" path="res://assets/sfx/Onglet Change.wav" id="4_wu84c"]
 
 [sub_resource type="Theme" id="Theme_ekxnf"]
 default_font_size = 45
@@ -14,6 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8ln24")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -54,3 +58,16 @@ offset_bottom = -151.0
 theme = SubResource("Theme_ekxnf")
 text = "Quit Game"
 script = ExtResource("1_l6cm7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_bqqt6")
+volume_db = -10.0
+autoplay = true
+parameters/looping = true
+
+[node name="btnSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wu84c")
+volume_db = -10.0
+
+[connection signal="mouse_entered" from="Button" to="." method="_btnSfxPlay"]
+[connection signal="mouse_entered" from="Button2" to="." method="_btnSfxPlay"]

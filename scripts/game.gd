@@ -1,5 +1,10 @@
 extends Node2D
 
+@export var journalSfx: AudioStream
+@export var scissorSfx: AudioStream
+@export var plugSfx: AudioStream
+@export var skinSfx: AudioStream
+
 @export_range(0,1) var difficulty = 0.5
 
 @export var debug = false
@@ -29,3 +34,23 @@ func chooseCorpulence():
 			body = child
 		else:
 			child.visible = false
+
+func _on_ui_clic_journal() -> void:
+	$sfx.set_stream(journalSfx)
+	$sfx.play()
+
+func _on_henry_2_hair_removed() -> void:
+	if $sfx.stream == scissorSfx :
+		if !$sfx.playing :
+			$sfx.play()
+	else :
+		$sfx.set_stream(scissorSfx)
+		$sfx.play()
+
+func _on_henry_2_limb_added() -> void:
+	$sfx.set_stream(plugSfx)
+	$sfx.play()
+
+func _on_henry_2_injury_cured() -> void:
+	$sfx.set_stream(skinSfx)
+	$sfx.play()

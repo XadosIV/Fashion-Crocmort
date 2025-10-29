@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://btol3tbwgq66r"
+path="res://.godot/imported/plug membre.wav-fee47897e67e55c552e4bc889e44d78e.sample"
+
+[deps]
+
+source_file="res://assets/sfx/plug membre.wav"
+dest_files=["res://.godot/imported/plug membre.wav-fee47897e67e55c552e4bc889e44d78e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

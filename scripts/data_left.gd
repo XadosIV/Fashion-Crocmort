@@ -5,8 +5,8 @@ extends Control
 
 @onready var close_carnet_button = $Close_Button
 
-
 var first_click = true
+signal clicJournal
 	
 
 func _ready() -> void:
@@ -46,6 +46,6 @@ func _on_button_close()-> void:
 	$pense_bete_2.text = get_node("/root/Global").pb_2
 	$pense_bete_3.text = get_node("/root/Global").pb_3
 	$pense_bete_4.text = get_node("/root/Global").pb_4
-	
-	
-	
+
+func _on_carnet_open_visibility_changed() -> void:
+	clicJournal.emit()

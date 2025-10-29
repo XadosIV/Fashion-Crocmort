@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=58 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://cpdaft81b4s6u" path="res://assets/bodies/shoes/pied_gauche_clown.png" id="31_utm7u"]
 [ext_resource type="Texture2D" uid="uid://bg1ufmqkomeq3" path="res://assets/bodies/shoes/pied_droit_clown.png" id="32_u8l80"]
 [ext_resource type="Texture2D" uid="uid://b40uoftyg6nbb" path="res://assets/bodies/clothes/clown_haut.png" id="32_utm7u"]
-[ext_resource type="Script" uid="uid://mo2on2l5s5cg" path="res://scripts/clothes_collection.gd" id="33_lyuu2"]
+[ext_resource type="Script" path="res://scripts/clothes_collection.gd" id="33_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://nkauixv40uyb" path="res://assets/bodies/clothes/costard_haut.png" id="33_u8l80"]
 [ext_resource type="Texture2D" uid="uid://cguvovft6cqbw" path="res://assets/bodies/clothes/disco_haut.png" id="34_1hn23"]
 [ext_resource type="Texture2D" uid="uid://bn1ss1demellh" path="res://assets/bodies/clothes/naruto.png" id="34_bqyqd"]
@@ -60,6 +60,23 @@ size = Vector2(161.5, 313)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqyqd"]
 size = Vector2(145, 327)
+
+[sub_resource type="GDScript" id="GDScript_d5nyt"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _hair_sound() -> void:
+	pass
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k6b4l"]
 size = Vector2(181, 236)
@@ -281,6 +298,7 @@ z_index = 1
 texture = ExtResource("15_383x3")
 
 [node name="Poils" type="Node2D" parent="."]
+script = SubResource("GDScript_d5nyt")
 
 [node name="BrasDroit" type="Polygon2D" parent="Poils"]
 visible = false

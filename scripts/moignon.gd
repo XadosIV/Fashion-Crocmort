@@ -23,3 +23,4 @@ func _input(event):
 			for child in membre.get_children():
 				child.visible = false
 			get_node("../../..").membres.set(name, true)
+			get_node("../../..")._limb_sound()
