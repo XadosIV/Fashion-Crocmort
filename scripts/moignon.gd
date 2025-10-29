@@ -3,6 +3,7 @@ extends Sprite2D
 var global
 var hover = false
 var bras_colle = false
+var bras_scotche = false
 
 var sprite
 
@@ -23,6 +24,7 @@ func reset():
 	texture = sprite
 	hover = false
 	bras_colle = false
+	bras_scotche = false
 	find_child("SansOs").visible = false
 	find_child("Scotch").visible = false
 
@@ -42,3 +44,4 @@ func _input(event):
 		elif hover and global.toolsID == 2 and global.toolTab == 0:
 			if bras_colle:
 				find_child("Scotch").visible = true
+				bras_scotche = true

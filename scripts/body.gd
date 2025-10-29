@@ -40,12 +40,16 @@ func calcul_attribut():
 	
 	# Membres
 	for child in $"Membres/Attaché".get_children():
-		if not child.visible:
-			add_attrib("hideux")
-		else:
+		if child.visible:
 			for c in child.get_children():
 				if c.visible:
 					add_attrib("hideux")
+	
+	for child in $"Membres/Coupés".get_children():
+		if child.visible:
+			if not child.bras_scotche:
+				add_attrib("hideux")
+	
 	return attributs
 
 	
@@ -57,7 +61,7 @@ func get_attrib_from_node(nodename):
 				var leftNode
 				if child.name.ends_with("D"):
 					var chaussure_gauche = str(child.name).substr(0,child.name.length()-1)+"G"
-					
+
 					if child.visible:
 						leftNode = node.find_child(chaussure_gauche)
 					if (child.visible and not leftNode.visible) or (not child.visilbe and leftNode.visible):
