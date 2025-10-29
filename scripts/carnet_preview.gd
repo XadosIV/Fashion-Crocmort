@@ -9,11 +9,10 @@ var name_selected = ""
 
 func _ready() -> void:
 	
-	var photo = Image.load_from_file("res://PlaceHolderImage/PhotoPierre.png")
-	var tex = ImageTexture.create_from_image(photo)
-	
+	var photo = load("res://PlaceHolderImage/PhotoPierre.png")
+
 	var texture_rect = $Photo 
-	texture_rect.texture = tex
+	texture_rect.texture = photo
 	
 	#select_gender()
 	
