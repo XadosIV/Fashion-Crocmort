@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=97 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -27,7 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://mbq2c4h776rk" path="res://assets/bodies/clothes/clown_perruque.png" id="20_d8bkp"]
 [ext_resource type="Texture2D" uid="uid://ciuf0vp0lc3tu" path="res://assets/bodies/clothes/lunette_hippie.png" id="21_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://bb185f7km166g" path="res://assets/bodies/clothes/motard_bandeau.png" id="22_jkad2"]
-[ext_resource type="Script" path="res://scripts/attributs.gd" id="22_utm7u"]
+[ext_resource type="Script" uid="uid://hw5ysuqya6qv" path="res://scripts/attributs.gd" id="22_utm7u"]
 [ext_resource type="Texture2D" uid="uid://c7ympl3pxrp5q" path="res://assets/bodies/clothes/naruto_perruque.png" id="23_bqyqd"]
 [ext_resource type="Texture2D" uid="uid://dwnjbbi154n3u" path="res://assets/bodies/clothes/perruque_affro.png" id="24_y64vu"]
 [ext_resource type="Texture2D" uid="uid://2v3cv2p2ifau" path="res://assets/bodies/clothes/perruque_hippie.png" id="25_k6b4l"]
@@ -36,23 +36,57 @@
 [ext_resource type="Texture2D" uid="uid://cmoflsud13uih" path="res://assets/bodies/shoes/pied_droit_costard.png" id="29_d5nyt"]
 [ext_resource type="Texture2D" uid="uid://bxwtwdbk7fnv5" path="res://assets/bodies/clothes/costard_bas.png" id="29_jq74x"]
 [ext_resource type="Texture2D" uid="uid://bky86utcp34mg" path="res://assets/bodies/shoes/pied_gauche_metal.png" id="30_d5nyt"]
+[ext_resource type="Texture2D" uid="uid://c38j6e58gmtkl" path="res://assets/bodies/cheveux/clodo.png" id="30_d7yor"]
 [ext_resource type="Texture2D" uid="uid://3q6xofsre426" path="res://assets/bodies/clothes/disco_bas.png" id="30_tbyw1"]
+[ext_resource type="Texture2D" uid="uid://b6eitaqv4rlpk" path="res://assets/bodies/cheveux/cuenta.png" id="31_0lvok"]
 [ext_resource type="Texture2D" uid="uid://cjm60xrvoslwm" path="res://assets/bodies/clothes/motard_bas.png" id="31_d5nyt"]
 [ext_resource type="Texture2D" uid="uid://dmpvf7net6u2e" path="res://assets/bodies/shoes/pied_droite_metal.png" id="31_u8l80"]
 [ext_resource type="Texture2D" uid="uid://cpdaft81b4s6u" path="res://assets/bodies/shoes/pied_gauche_clown.png" id="31_utm7u"]
+[ext_resource type="Texture2D" uid="uid://jgd3hf4c123r" path="res://assets/bodies/cheveux/curly.png" id="32_7f871"]
 [ext_resource type="Texture2D" uid="uid://bg1ufmqkomeq3" path="res://assets/bodies/shoes/pied_droit_clown.png" id="32_u8l80"]
 [ext_resource type="Texture2D" uid="uid://b40uoftyg6nbb" path="res://assets/bodies/clothes/clown_haut.png" id="32_utm7u"]
 [ext_resource type="Script" uid="uid://mo2on2l5s5cg" path="res://scripts/clothes_collection.gd" id="33_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://nkauixv40uyb" path="res://assets/bodies/clothes/costard_haut.png" id="33_u8l80"]
+[ext_resource type="Texture2D" uid="uid://dnu37rs8jd5k2" path="res://assets/bodies/cheveux/Elyas.png" id="33_voo5f"]
 [ext_resource type="Texture2D" uid="uid://cguvovft6cqbw" path="res://assets/bodies/clothes/disco_haut.png" id="34_1hn23"]
 [ext_resource type="Texture2D" uid="uid://bn1ss1demellh" path="res://assets/bodies/clothes/naruto.png" id="34_bqyqd"]
+[ext_resource type="Texture2D" uid="uid://cnl6pkrp3xu4e" path="res://assets/bodies/cheveux/metal.png" id="34_il3bq"]
 [ext_resource type="Texture2D" uid="uid://cqp7d5jt50e4n" path="res://assets/bodies/shoes/pied_droit_disco.png" id="34_keawo"]
 [ext_resource type="Texture2D" uid="uid://dvmspy7oj84an" path="res://assets/bodies/shoes/pied_gauche_naruto.png" id="35_36jj5"]
 [ext_resource type="Texture2D" uid="uid://b08wwxne73d4p" path="res://assets/bodies/clothes/motard_haut.png" id="35_keawo"]
+[ext_resource type="Texture2D" uid="uid://j5wi2jhw7oev" path="res://assets/bodies/cheveux/mulet.png" id="35_mww54"]
 [ext_resource type="Texture2D" uid="uid://dea1srdff8c5e" path="res://assets/bodies/shoes/pied_droite_naruto.png" id="36_6tpb1"]
 [ext_resource type="Texture2D" uid="uid://ofy4rnqdrsny" path="res://assets/bodies/clothes/makeup_clown.png" id="36_36jj5"]
 [ext_resource type="Texture2D" uid="uid://c0c7ku7gjv4e7" path="res://assets/bodies/shoes/pied_gauche_discopng.png" id="36_d5nyt"]
+[ext_resource type="Texture2D" uid="uid://b3umldsqepblq" path="res://assets/bodies/cheveux/tresse.png" id="36_jqsi7"]
+[ext_resource type="Texture2D" uid="uid://dxm5fef781u4i" path="res://assets/bodies/cheveux/viktor.png" id="37_c8sxb"]
 [ext_resource type="Texture2D" uid="uid://biujshbqjfaei" path="res://assets/bodies/clothes/naruto_top.png" id="39_y64vu"]
+[ext_resource type="Texture2D" uid="uid://evchsro6nrdr" path="res://assets/bodies/makeup/classic_bitch.png" id="62_s27fb"]
+[ext_resource type="Texture2D" uid="uid://cvf8wf3olc3i5" path="res://assets/bodies/makeup/gang_gang.png" id="63_orkqg"]
+[ext_resource type="Texture2D" uid="uid://ntotyr0x78e1" path="res://assets/bodies/makeup/geisha.png" id="64_dut06"]
+[ext_resource type="Texture2D" uid="uid://vygv4ld8iu5i" path="res://assets/bodies/makeup/gribouillage_affiche.png" id="65_r80c0"]
+[ext_resource type="Texture2D" uid="uid://m560ejqrloj2" path="res://assets/bodies/makeup/kim_k.png" id="66_t8g30"]
+[ext_resource type="Texture2D" uid="uid://1j4v7sos284q" path="res://assets/bodies/makeup/metaaaaaalllleu.png" id="67_ldsb8"]
+[ext_resource type="Texture2D" uid="uid://7teu7hngg0rk" path="res://assets/bodies/makeup/pustules.png" id="68_xe521"]
+[ext_resource type="Texture2D" uid="uid://djibkggigpmbk" path="res://assets/bodies/makeup/vielle_bimbo_degueu.png" id="69_7cv4e"]
+[ext_resource type="Texture2D" uid="uid://bhe8500ryivn3" path="res://assets/bodies/eyes/bombastic_side_eye.png" id="70_njo6e"]
+[ext_resource type="Texture2D" uid="uid://dliklhqu3w2lc" path="res://assets/bodies/eyes/goofy_mais_pas_pareil.png" id="71_rtyia"]
+[ext_resource type="Texture2D" uid="uid://cl47fwrraxoxe" path="res://assets/bodies/eyes/gooooofy.png" id="72_khjgn"]
+[ext_resource type="Texture2D" uid="uid://d11fv7k30mb3x" path="res://assets/bodies/eyes/he_gné.png" id="73_1rb6h"]
+[ext_resource type="Texture2D" uid="uid://dhcl1mr4lp7cm" path="res://assets/bodies/eyes/juste_terrifiant.png" id="74_yh4h4"]
+[ext_resource type="Texture2D" uid="uid://blpk4g2bk6o1w" path="res://assets/bodies/eyes/juste_terrifiant_2.png" id="75_5pa3a"]
+[ext_resource type="Texture2D" uid="uid://dhl7ffwmv2xms" path="res://assets/bodies/eyes/pas_content.png" id="76_u8i6t"]
+[ext_resource type="Texture2D" uid="uid://dedh83ic2ohey" path="res://assets/bodies/eyes/yeux_coquing.png" id="77_1mteq"]
+[ext_resource type="Texture2D" uid="uid://dkmh0aaunjbsu" path="res://assets/bodies/eyes/yeu_maxi_strabism.png" id="78_5hios"]
+[ext_resource type="Texture2D" uid="uid://d25kc3ikt1tm2" path="res://assets/bodies/barbes/classique.png" id="79_xa20h"]
+[ext_resource type="Texture2D" uid="uid://ctwuvjdv7jmcg" path="res://assets/bodies/barbes/distingue.png" id="80_plxps"]
+[ext_resource type="Texture2D" uid="uid://bn7kgf7ujyq72" path="res://assets/bodies/barbes/graveStylé.png" id="81_eknud"]
+[ext_resource type="Texture2D" uid="uid://dutaqd2pqut30" path="res://assets/bodies/barbes/Lincoln.png" id="82_hxakc"]
+[ext_resource type="Texture2D" uid="uid://cd1k7h4hohg2c" path="res://assets/bodies/barbes/masqueBouche2.png" id="83_ujpgo"]
+[ext_resource type="Texture2D" uid="uid://bvuu6tc028sak" path="res://assets/bodies/barbes/masqueBouche.png" id="84_emoem"]
+[ext_resource type="Texture2D" uid="uid://b7pbhtb8aydl4" path="res://assets/bodies/barbes/metal.png" id="85_ebof3"]
+[ext_resource type="Texture2D" uid="uid://cr85lurhwqjls" path="res://assets/bodies/barbes/morve.png" id="86_ti3c1"]
+[ext_resource type="Texture2D" uid="uid://kqbi0y82kctn" path="res://assets/bodies/barbes/Sergei.png" id="87_5cj45"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8bkp"]
 size = Vector2(83, 304)
@@ -441,6 +475,70 @@ texture = ExtResource("25_k6b4l")
 script = ExtResource("22_utm7u")
 attribut1 = "disco"
 
+[node name="Hippie2" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-7, -491)
+texture = ExtResource("30_d7yor")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie3" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-7, -491)
+texture = ExtResource("31_0lvok")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie5" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-6, -494)
+texture = ExtResource("33_voo5f")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie4" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-10, -551)
+texture = ExtResource("32_7f871")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie6" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-6, -494)
+texture = ExtResource("34_il3bq")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie7" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-6, -494)
+texture = ExtResource("35_mww54")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie8" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-6, -494)
+texture = ExtResource("36_jqsi7")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
+[node name="Hippie9" type="Sprite2D" parent="Perruque"]
+visible = false
+z_index = 3
+position = Vector2(-6, -494)
+texture = ExtResource("37_c8sxb")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
+
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Perruque"]
 z_index = 10
 position = Vector2(-10.5, -579)
@@ -658,7 +756,8 @@ z_index = 10
 position = Vector2(-16, -268)
 shape = SubResource("RectangleShape2D_y64vu")
 
-[node name="Maquillage" type="Node2D" parent="."]
+[node name="Maquillage" type="Area2D" parent="."]
+script = ExtResource("33_lyuu2")
 
 [node name="Clown" type="Sprite2D" parent="Maquillage"]
 visible = false
@@ -667,3 +766,199 @@ position = Vector2(-6, -558)
 texture = ExtResource("36_36jj5")
 script = ExtResource("22_utm7u")
 attribut1 = "farfelu"
+
+[node name="Clown2" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("62_s27fb")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown3" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("63_orkqg")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown4" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("64_dut06")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown5" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("65_r80c0")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown6" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("66_t8g30")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown7" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("67_ldsb8")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown8" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("68_xe521")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Clown9" type="Sprite2D" parent="Maquillage"]
+visible = false
+z_index = 3
+position = Vector2(-13, -559)
+texture = ExtResource("69_7cv4e")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
+
+[node name="Eyes" type="Area2D" parent="."]
+script = ExtResource("33_lyuu2")
+
+[node name="Clown" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -588)
+texture = ExtResource("70_njo6e")
+script = ExtResource("22_utm7u")
+
+[node name="Clown2" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("71_rtyia")
+script = ExtResource("22_utm7u")
+
+[node name="Clown3" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("72_khjgn")
+script = ExtResource("22_utm7u")
+
+[node name="Clown4" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("73_1rb6h")
+script = ExtResource("22_utm7u")
+
+[node name="Clown5" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("74_yh4h4")
+script = ExtResource("22_utm7u")
+
+[node name="Clown6" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("75_5pa3a")
+script = ExtResource("22_utm7u")
+
+[node name="Clown7" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("76_u8i6t")
+script = ExtResource("22_utm7u")
+
+[node name="Clown8" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("77_1mteq")
+script = ExtResource("22_utm7u")
+
+[node name="Clown9" type="Sprite2D" parent="Eyes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -591)
+texture = ExtResource("78_5hios")
+script = ExtResource("22_utm7u")
+
+[node name="Barbes" type="Area2D" parent="."]
+script = ExtResource("33_lyuu2")
+
+[node name="Clown" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("79_xa20h")
+script = ExtResource("22_utm7u")
+
+[node name="Clown2" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("80_plxps")
+script = ExtResource("22_utm7u")
+
+[node name="Clown3" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("81_eknud")
+script = ExtResource("22_utm7u")
+
+[node name="Clown4" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("82_hxakc")
+script = ExtResource("22_utm7u")
+
+[node name="Clown5" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("83_ujpgo")
+script = ExtResource("22_utm7u")
+
+[node name="Clown6" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("84_emoem")
+script = ExtResource("22_utm7u")
+
+[node name="Clown7" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("85_ebof3")
+script = ExtResource("22_utm7u")
+
+[node name="Clown8" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("86_ti3c1")
+script = ExtResource("22_utm7u")
+
+[node name="Clown9" type="Sprite2D" parent="Barbes"]
+visible = false
+z_index = 3
+position = Vector2(-8, -522)
+texture = ExtResource("87_5cj45")
+script = ExtResource("22_utm7u")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://5ij60s7vok3p"]
+[gd_scene load_steps=18 format=3 uid="uid://5ij60s7vok3p"]
 
 [ext_resource type="Script" uid="uid://bmhxvoo47b51m" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://i7vjnp0yx88l" path="res://scenes/ui.tscn" id="1_lnu2h"]
@@ -14,6 +14,8 @@
 [ext_resource type="AudioStream" uid="uid://qm18gt6a3btj" path="res://assets/sfx/Object Select.wav" id="7_trtic"]
 [ext_resource type="AudioStream" uid="uid://70kcjsfuu7t1" path="res://assets/music/[In-Game]Shira El Ami - Effoliation.mp3" id="7_u5sy4"]
 [ext_resource type="AudioStream" uid="uid://daxujwduehw13" path="res://assets/sfx/Vetements.wav" id="8_trtic"]
+[ext_resource type="Texture2D" uid="uid://bi546rdkk18l6" path="res://assets/bouton_picto/pictosReset.png" id="15_ca42v"]
+[ext_resource type="Script" uid="uid://bu5cd8j1bl4cd" path="res://scripts/reset.gd" id="16_rysoc"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
 size = Vector2(640, 1080)
@@ -67,7 +69,16 @@ texture = SubResource("PlaceholderTexture2D_tg1dk")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Ui" parent="CanvasLayer" instance=ExtResource("1_lnu2h")]
-mouse_filter = 1
+
+[node name="resetButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 580.0
+offset_top = 937.0
+offset_right = 720.0
+offset_bottom = 1077.0
+texture_normal = ExtResource("15_ca42v")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("16_rysoc")
 
 [node name="Corpulence" type="Node2D" parent="."]
 
