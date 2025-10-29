@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1evg1qleyri1"
-path="res://.godot/imported/eyes1.png-2eaada5017e2caaf41da014df3c951e0.ctex"
+uid="uid://d13ny2mwyttai"
+path="res://.godot/imported/metal.png-8d3ed98e26b9c26bfc52751572055ebd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drawer/eyes/eyes1.png"
-dest_files=["res://.godot/imported/eyes1.png-2eaada5017e2caaf41da014df3c951e0.ctex"]
+source_file="res://assets/drawer/wig/metal.png"
+dest_files=["res://.godot/imported/metal.png-8d3ed98e26b9c26bfc52751572055ebd.ctex"]
 
 [params]
 

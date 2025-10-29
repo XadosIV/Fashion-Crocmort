@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bh547r7w1k0k8"]
+[gd_scene load_steps=27 format=3 uid="uid://bh547r7w1k0k8"]
 
 [ext_resource type="Script" uid="uid://celac4nojtb7b" path="res://scripts/closet.gd" id="1_l4o33"]
 [ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_8i737"]
@@ -10,8 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://bfoatblhvmekf" path="res://assets/closet/hat/motard_bandeau.png" id="7_3wuxl"]
 [ext_resource type="Texture2D" uid="uid://dea157wisgwec" path="res://assets/closet/top/clown_haut.png" id="8_iv81w"]
 [ext_resource type="Texture2D" uid="uid://jsqtgqew1ogh" path="res://assets/closet/top/costard_haut.png" id="9_3wuxl"]
+[ext_resource type="Texture2D" uid="uid://cdlk3h1mf2ilt" path="res://assets/closet/hat/masqueBouche2.png" id="9_mxhpg"]
 [ext_resource type="Texture2D" uid="uid://dntpiik5fnteq" path="res://assets/closet/top/motard_haut.png" id="10_8i737"]
+[ext_resource type="Texture2D" uid="uid://kdd8eelswg4w" path="res://assets/closet/hat/masqueBouche.png" id="10_mx4w5"]
 [ext_resource type="Texture2D" uid="uid://cn1gg0y2qsapa" path="res://assets/closet/top/disco_haut.png" id="11_1obfd"]
+[ext_resource type="Texture2D" uid="uid://bwr5tm0ieuhk4" path="res://assets/closet/hat/morve.png" id="11_r1n2i"]
 [ext_resource type="Texture2D" uid="uid://b2kqmsfvu5nxa" path="res://assets/closet/bottom/clown_bas.png" id="12_8i737"]
 [ext_resource type="Texture2D" uid="uid://chnjpf25kkskb" path="res://assets/closet/top/naruto_top.png" id="12_fwo5k"]
 [ext_resource type="Texture2D" uid="uid://bilmd6w16q7as" path="res://assets/closet/bottom/costard_bas.png" id="13_1obfd"]
@@ -57,19 +60,19 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="glassesScroll" type="ScrollContainer" parent="Buttons"]
+[node name="hatScroll" type="ScrollContainer" parent="Buttons"]
 custom_minimum_size = Vector2(0, 170)
 layout_mode = 2
 size_flags_vertical = 0
 script = ExtResource("3_hys0x")
 
-[node name="hat" type="HBoxContainer" parent="Buttons/glassesScroll"]
+[node name="hat" type="HBoxContainer" parent="Buttons/hatScroll"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
-[node name="TextureButton" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+[node name="TextureButton" type="TextureButton" parent="Buttons/hatScroll/hat"]
 custom_minimum_size = Vector2(50, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -80,7 +83,7 @@ stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 1000
 
-[node name="TextureButton0" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+[node name="TextureButton0" type="TextureButton" parent="Buttons/hatScroll/hat"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -90,7 +93,7 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
 
-[node name="TextureButton1" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+[node name="TextureButton1" type="TextureButton" parent="Buttons/hatScroll/hat"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -101,7 +104,7 @@ stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 1
 
-[node name="TextureButton2" type="TextureButton" parent="Buttons/glassesScroll/hat"]
+[node name="TextureButton2" type="TextureButton" parent="Buttons/hatScroll/hat"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -111,6 +114,39 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_4c2qv")
 ID = 2
+
+[node name="TextureButton3" type="TextureButton" parent="Buttons/hatScroll/hat"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_mxhpg")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 3
+
+[node name="TextureButton4" type="TextureButton" parent="Buttons/hatScroll/hat"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("10_mx4w5")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 4
+
+[node name="TextureButton5" type="TextureButton" parent="Buttons/hatScroll/hat"]
+custom_minimum_size = Vector2(100, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("11_r1n2i")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_4c2qv")
+ID = 5
 
 [node name="topScroll" type="ScrollContainer" parent="Buttons"]
 custom_minimum_size = Vector2(0, 210)
