@@ -28,6 +28,8 @@ func calcul_attribut():
 	get_attrib_from_node("Chaussure")
 	get_attrib_from_node("Bas")
 	get_attrib_from_node("Haut")
+	get_attrib_from_node("Maquillage")
+	get_attrib_from_node("Eyes")
 	#Poils
 	# --- coming soon hein ---
 	

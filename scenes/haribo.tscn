@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=99 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -27,7 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://mbq2c4h776rk" path="res://assets/bodies/clothes/clown_perruque.png" id="20_d8bkp"]
 [ext_resource type="Texture2D" uid="uid://ciuf0vp0lc3tu" path="res://assets/bodies/clothes/lunette_hippie.png" id="21_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://bb185f7km166g" path="res://assets/bodies/clothes/motard_bandeau.png" id="22_jkad2"]
-[ext_resource type="Script" uid="uid://hw5ysuqya6qv" path="res://scripts/attributs.gd" id="22_utm7u"]
+[ext_resource type="Script" path="res://scripts/attributs.gd" id="22_utm7u"]
 [ext_resource type="Texture2D" uid="uid://c7ympl3pxrp5q" path="res://assets/bodies/clothes/naruto_perruque.png" id="23_bqyqd"]
 [ext_resource type="Texture2D" uid="uid://dwnjbbi154n3u" path="res://assets/bodies/clothes/perruque_affro.png" id="24_y64vu"]
 [ext_resource type="Texture2D" uid="uid://2v3cv2p2ifau" path="res://assets/bodies/clothes/perruque_hippie.png" id="25_k6b4l"]
@@ -128,6 +128,12 @@ size = Vector2(447, 576)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y64vu"]
 size = Vector2(362, 378)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7yor"]
+size = Vector2(179, 235)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0lvok"]
+size = Vector2(178, 234)
 
 [node name="Henry" type="Node2D"]
 script = ExtResource("1_5unh3")
@@ -822,6 +828,7 @@ shape = SubResource("RectangleShape2D_y64vu")
 [node name="Maquillage" type="Area2D" parent="."]
 script = ExtResource("33_lyuu2")
 dizaine = 2
+toolTab = 1
 
 [node name="Clown" type="Sprite2D" parent="Maquillage"]
 visible = false
@@ -895,14 +902,15 @@ texture = ExtResource("69_7cv4e")
 script = ExtResource("22_utm7u")
 attribut1 = "farfelu"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Maquillage"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Maquillage"]
 z_index = 10
-position = Vector2(-10.5, -579)
-shape = SubResource("RectangleShape2D_k6b4l")
+position = Vector2(-10.5, -579.5)
+shape = SubResource("RectangleShape2D_d7yor")
 
 [node name="Eyes" type="Area2D" parent="."]
 script = ExtResource("33_lyuu2")
 dizaine = 1
+toolTab = 1
 
 [node name="Clown" type="Sprite2D" parent="Eyes"]
 visible = false
@@ -967,7 +975,7 @@ position = Vector2(-8, -591)
 texture = ExtResource("78_5hios")
 script = ExtResource("22_utm7u")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Eyes"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Eyes"]
 z_index = 10
-position = Vector2(-10.5, -579)
-shape = SubResource("RectangleShape2D_k6b4l")
+position = Vector2(-11, -579)
+shape = SubResource("RectangleShape2D_0lvok")

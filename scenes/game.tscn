@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://5ij60s7vok3p"]
+[gd_scene load_steps=17 format=3 uid="uid://5ij60s7vok3p"]
 
 [ext_resource type="Script" uid="uid://bmhxvoo47b51m" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://i7vjnp0yx88l" path="res://scenes/ui.tscn" id="1_lnu2h"]
@@ -14,8 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://qm18gt6a3btj" path="res://assets/sfx/Object Select.wav" id="7_trtic"]
 [ext_resource type="AudioStream" uid="uid://70kcjsfuu7t1" path="res://assets/music/[In-Game]Shira El Ami - Effoliation.mp3" id="7_u5sy4"]
 [ext_resource type="AudioStream" uid="uid://daxujwduehw13" path="res://assets/sfx/Vetements.wav" id="8_trtic"]
-[ext_resource type="PackedScene" uid="uid://cwt4kr6fe6724" path="res://scenes/main_menu.tscn" id="9_ca42v"]
-[ext_resource type="PackedScene" uid="uid://8jskv8iwnsl8" path="res://scenes/score_visu_scene.tscn" id="13_ir15t"]
+[ext_resource type="PackedScene" path="res://scenes/score_visu_scene.tscn" id="13_ir15t"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
 size = Vector2(640, 1080)
@@ -30,7 +29,6 @@ tabSfx = ExtResource("6_kvuet")
 objectSfx = ExtResource("7_trtic")
 clotheSfx = ExtResource("8_trtic")
 uifin = NodePath("CanvasLayer/Score_Visu_scene")
-menuScene = ExtResource("9_ca42v")
 
 [node name="bg" type="TextureRect" parent="."]
 offset_right = 1920.0
@@ -72,6 +70,7 @@ texture = SubResource("PlaceholderTexture2D_tg1dk")
 [node name="Ui" parent="CanvasLayer" instance=ExtResource("1_lnu2h")]
 
 [node name="Score_Visu_scene" parent="CanvasLayer" instance=ExtResource("13_ir15t")]
+visible = false
 
 [node name="Corpulence" type="Node2D" parent="."]
 

@@ -23,8 +23,5 @@ func affiche():
 	
 func _next_pressed():
 	var game = get_node("../..")
-	if win:
-		game.loadLevel(0)
-	else:
-		game.menu()
+	game.loadLevel(0)
 	visible = false
