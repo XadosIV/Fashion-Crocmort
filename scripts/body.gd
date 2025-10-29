@@ -16,6 +16,63 @@ var membres = {
 	"JambeDroite":true
 }
 
+var attributs = {}
+
+func calcul_attribut():
+	attributs = {}
+	#Vetements & Accessoires
+	get_attrib_from_node("Chapeau")
+	get_attrib_from_node("Perruque")
+	get_attrib_from_node("Chaussure")
+	get_attrib_from_node("Bas")
+	get_attrib_from_node("Haut")
+	#get_attrib_from_node("Maquillage")
+	#Poils
+	# --- coming soon hein ---
+	
+	# Plaies
+	for child in $Plaies.get_children():
+		if child.visible:
+			add_attrib("hideux")
+	
+	# Membres
+	for child in $"Membres/Attaché".get_children():
+		if not child.visible:
+			add_attrib("hideux")
+		else:
+			for c in child.get_children():
+				if c.visible:
+					add_attrib("hideux")
+	
+func get_attrib_from_node(nodename):
+	var node = get_child(nodename)
+	if node.paire:
+		for child in node.get_children():
+			if child is Sprite2D and child.visible:
+				var leftNode
+				if child.name.ends_with("D"):
+					var chaussure_gauche = str(child.name).substr(0,child.name.length()-1)+"G"
+					leftNode = node.find_child(chaussure_gauche)
+				else:
+					leftNode = child
+				add_attrib(leftNode.attribut1)
+				add_attrib(leftNode.attribut2)
+				break
+	else:
+		for child in node.get_children():
+			if child is Sprite2D and child.visible:
+				add_attrib(child.attribut1)
+				add_attrib(child.attribut2)
+				break
+
+func add_attrib(attrib):
+	if attrib == "":
+		return
+	if attributs.has(attrib):
+		attributs.set(attrib, attributs.get(attrib)+1)
+	else:
+		attributs.set(attrib,1)
+
 @export var create_dictionnary := false:
 	set(value):
 		if value and Engine.is_editor_hint():
@@ -50,7 +107,6 @@ func fullHenry():
 			$"Membres/Coupés".get_node_or_null(str(child.name)).visible = not child.visible
 		else:
 			child.visible = true
-			
 
 		if child.get_child_count() > 0 and child.visible:
 			for c in child.get_children():
@@ -87,25 +143,37 @@ func randomizeHenry():
 		else:
 			var rand = randf()
 			child.visible = rand < chance
-			
 
 		if child.get_child_count() > 0 and child.visible:
 			for c in child.get_children():
 				var sub_chance = chances.get(c.name, 0.5)
 				var rand = randf()
 				c.visible = rand < sub_chance
+		
+	# Generation Poils Torse et Pubis
+	var _chance = chances.get("poilu", 0.5)
+	var _rand = randf()
+	if _rand < _chance:
+		$Poils/Torse.visible = true
+		$Poils/Torse.generate_poils()
+		$Poils/Pubis.visible = true
+		$Poils/Pubis.generate_poils()
+	else:
+		$Poils/Torse.visible = false
+		$Poils/Torse.remove_poils()
+		$Poils/Pubis.visible = false
+		$Poils/Pubis.remove_poils()
 
 func generateChances():
 	fullHenry()
+	var base_chance = 0.5
 	var global_factor = 0.5 # 0.5 = moitié de chance globale
 	var new_dict = {}
 	for child in $Plaies.get_children():
-		var base_chance = 0.5
 		var adjusted = clamp((base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5)) * global_factor, 0.05, 0.95)
 		new_dict[child.name] = adjusted
 
 	for child in $"Membres/Attaché".get_children():
-		var base_chance = 0.5
 		var adjusted = clamp((base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5)) * global_factor, 0.05, 0.95)
 		new_dict[child.name] = adjusted
 
@@ -113,6 +181,11 @@ func generateChances():
 			for c in child.get_children():
 				var sub_adjusted = clamp((base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5)) * global_factor, 0.05, 0.95)
 				new_dict[c.name] = sub_adjusted
+	
+	# Poilu
+	var _adjusted = clamp((base_chance * (0.5 + difficulty) + randf() * 0.2 * (difficulty - 0.5)) * global_factor, 0.05, 0.95)
+	new_dict["poilu"] = _adjusted
+	
 	chances = new_dict
 
 func loadBody(dif=-1):

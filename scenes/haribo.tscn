@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=59 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://mbq2c4h776rk" path="res://assets/bodies/clothes/clown_perruque.png" id="20_d8bkp"]
 [ext_resource type="Texture2D" uid="uid://ciuf0vp0lc3tu" path="res://assets/bodies/clothes/lunette_hippie.png" id="21_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://bb185f7km166g" path="res://assets/bodies/clothes/motard_bandeau.png" id="22_jkad2"]
+[ext_resource type="Script" uid="uid://hw5ysuqya6qv" path="res://scripts/attributs.gd" id="22_utm7u"]
 [ext_resource type="Texture2D" uid="uid://c7ympl3pxrp5q" path="res://assets/bodies/clothes/naruto_perruque.png" id="23_bqyqd"]
 [ext_resource type="Texture2D" uid="uid://dwnjbbi154n3u" path="res://assets/bodies/clothes/perruque_affro.png" id="24_y64vu"]
 [ext_resource type="Texture2D" uid="uid://2v3cv2p2ifau" path="res://assets/bodies/clothes/perruque_hippie.png" id="25_k6b4l"]
@@ -37,7 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://cpdaft81b4s6u" path="res://assets/bodies/shoes/pied_gauche_clown.png" id="31_utm7u"]
 [ext_resource type="Texture2D" uid="uid://bg1ufmqkomeq3" path="res://assets/bodies/shoes/pied_droit_clown.png" id="32_u8l80"]
 [ext_resource type="Texture2D" uid="uid://b40uoftyg6nbb" path="res://assets/bodies/clothes/clown_haut.png" id="32_utm7u"]
-[ext_resource type="Script" path="res://scripts/clothes_collection.gd" id="33_lyuu2"]
+[ext_resource type="Script" uid="uid://mo2on2l5s5cg" path="res://scripts/clothes_collection.gd" id="33_lyuu2"]
 [ext_resource type="Texture2D" uid="uid://nkauixv40uyb" path="res://assets/bodies/clothes/costard_haut.png" id="33_u8l80"]
 [ext_resource type="Texture2D" uid="uid://cguvovft6cqbw" path="res://assets/bodies/clothes/disco_haut.png" id="34_1hn23"]
 [ext_resource type="Texture2D" uid="uid://bn1ss1demellh" path="res://assets/bodies/clothes/naruto.png" id="34_bqyqd"]
@@ -95,15 +96,15 @@ script = ExtResource("1_5unh3")
 chances = {
 &"B_BD_Bas": 0.25,
 &"B_BG_Haut": 0.25,
+&"B_BasDroite": 0.25,
+&"B_Crane": 0.25,
+&"B_HautGauche": 0.25,
 &"B_JD_Bas": 0.25,
 &"B_JD_Milieu": 0.25,
-&"B_JD_PiedHaut": 0.25,
+&"B_JD_PiedHaut2": 0.25,
 &"B_JG_Bas": 0.25,
 &"B_JG_Haut": 0.25,
 &"B_JG_PiedBas": 0.25,
-&"BalleBasDroite": 0.25,
-&"BalleCrane": 0.25,
-&"BalleHautGauche": 0.25,
 &"BrasDroit": 0.25,
 &"BrasGauche": 0.25,
 &"JambeDroite": 0.25,
@@ -111,7 +112,8 @@ chances = {
 &"PlaieBasseDroite": 0.25,
 &"PlaieBasseGauche": 0.25,
 &"PlaieCranienne": 0.25,
-&"PlaieTorse": 0.25
+&"PlaieTorse": 0.25,
+"poilu": 0.25
 }
 
 [node name="Plaies" type="Node2D" parent="."]
@@ -220,6 +222,7 @@ flip_h = true
 [node name="Coupés" type="Node2D" parent="Membres"]
 
 [node name="BrasDroit" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
 z_index = 2
 position = Vector2(139, -267)
 texture = ExtResource("11_hbqd8")
@@ -236,6 +239,7 @@ position = Vector2(85, 207)
 shape = SubResource("RectangleShape2D_d8bkp")
 
 [node name="BrasGauche" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
 z_index = 2
 position = Vector2(-144, -272)
 texture = ExtResource("12_orvnu")
@@ -252,6 +256,7 @@ position = Vector2(-91, 217)
 shape = SubResource("RectangleShape2D_lyuu2")
 
 [node name="JambeDroite" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
 z_index = 2
 position = Vector2(75, 87)
 texture = ExtResource("13_bf1hk")
@@ -272,6 +277,7 @@ position = Vector2(115, 511)
 shape = SubResource("RectangleShape2D_jkad2")
 
 [node name="JambeGauche" type="Sprite2D" parent="Membres/Coupés"]
+visible = false
 z_index = 2
 position = Vector2(-79, 71)
 texture = ExtResource("14_u1inb")
@@ -358,24 +364,33 @@ visible = false
 z_index = 3
 position = Vector2(-7, -617)
 texture = ExtResource("20_d8bkp")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
 
 [node name="Naruto" type="Sprite2D" parent="Perruque"]
 visible = false
 z_index = 3
 position = Vector2(-17, -630)
 texture = ExtResource("23_bqyqd")
+script = ExtResource("22_utm7u")
+attribut1 = "naruto"
+attribut2 = "farfelu"
 
 [node name="Affro" type="Sprite2D" parent="Perruque"]
 visible = false
 z_index = 3
 position = Vector2(1, -612)
 texture = ExtResource("24_y64vu")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
 
 [node name="Hippie" type="Sprite2D" parent="Perruque"]
 visible = false
 z_index = 3
 position = Vector2(-11, -566)
 texture = ExtResource("25_k6b4l")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Perruque"]
 z_index = 10
@@ -390,18 +405,26 @@ visible = false
 z_index = 3
 position = Vector2(-9, -585)
 texture = ExtResource("21_lyuu2")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
 
 [node name="BandeauHippie" type="Sprite2D" parent="Chapeau"]
 visible = false
 z_index = 3
 position = Vector2(-15, -538)
 texture = ExtResource("19_mfpbq")
+script = ExtResource("22_utm7u")
+attribut1 = "motard"
+attribut2 = "disco"
 
 [node name="BandeauMotard" type="Sprite2D" parent="Chapeau"]
 visible = false
 z_index = 3
 position = Vector2(-13, -572)
 texture = ExtResource("22_jkad2")
+script = ExtResource("22_utm7u")
+attribut1 = "motard"
+attribut2 = "disco"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Chapeau"]
 z_index = 10
@@ -418,6 +441,8 @@ visible = false
 z_index = 3
 position = Vector2(-3, 580)
 texture = ExtResource("28_tbyw1")
+script = ExtResource("22_utm7u")
+attribut1 = "classe"
 
 [node name="CostardD" type="Sprite2D" parent="Chaussure"]
 visible = false
@@ -430,6 +455,8 @@ visible = false
 z_index = 3
 position = Vector2(-5, 591)
 texture = ExtResource("30_d5nyt")
+script = ExtResource("22_utm7u")
+attribut1 = "motard"
 
 [node name="MotardD" type="Sprite2D" parent="Chaussure"]
 visible = false
@@ -442,6 +469,9 @@ visible = false
 z_index = 3
 position = Vector2(-7, 576)
 texture = ExtResource("35_36jj5")
+script = ExtResource("22_utm7u")
+attribut1 = "naruto"
+attribut2 = "hideux"
 
 [node name="NarutoD" type="Sprite2D" parent="Chaussure"]
 visible = false
@@ -454,6 +484,8 @@ visible = false
 z_index = 3
 position = Vector2(-7, 574)
 texture = ExtResource("31_utm7u")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
 
 [node name="ClownD" type="Sprite2D" parent="Chaussure"]
 visible = false
@@ -466,6 +498,8 @@ visible = false
 z_index = 3
 position = Vector2(-7, 584)
 texture = ExtResource("36_d5nyt")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
 
 [node name="DiscoD" type="Sprite2D" parent="Chaussure"]
 visible = false
@@ -483,33 +517,44 @@ dizaine = 2
 
 [node name="Clown" type="Sprite2D" parent="Bas"]
 visible = false
-z_index = 3
+z_index = 5
 position = Vector2(-9, 228)
 texture = ExtResource("28_kp1hk")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
 
 [node name="Costard" type="Sprite2D" parent="Bas"]
 visible = false
-z_index = 3
+z_index = 5
 position = Vector2(-2, 218)
 texture = ExtResource("29_jq74x")
+script = ExtResource("22_utm7u")
+attribut1 = "classe"
 
 [node name="Motard" type="Sprite2D" parent="Bas"]
 visible = false
-z_index = 3
+z_index = 5
 position = Vector2(-7, 227)
 texture = ExtResource("31_d5nyt")
+script = ExtResource("22_utm7u")
+attribut1 = "motard"
 
 [node name="Disco" type="Sprite2D" parent="Bas"]
 visible = false
-z_index = 3
+z_index = 5
 position = Vector2(3, 337)
 scale = Vector2(1.2, 1)
 texture = ExtResource("30_tbyw1")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
 
 [node name="Naruto" type="Sprite2D" parent="Bas"]
 visible = false
-z_index = 3
+z_index = 5
 texture = ExtResource("34_bqyqd")
+script = ExtResource("22_utm7u")
+attribut1 = "naruto"
+attribut2 = "farfelu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bas"]
 z_index = 10
@@ -525,30 +570,41 @@ visible = false
 z_index = 5
 position = Vector2(-13, -307)
 texture = ExtResource("32_utm7u")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"
 
 [node name="Costard" type="Sprite2D" parent="Haut"]
 visible = false
 z_index = 5
 position = Vector2(1, -251)
 texture = ExtResource("33_u8l80")
+script = ExtResource("22_utm7u")
+attribut1 = "classe"
 
 [node name="Motard" type="Sprite2D" parent="Haut"]
 visible = false
 z_index = 5
 position = Vector2(-3, -199)
 texture = ExtResource("35_keawo")
+script = ExtResource("22_utm7u")
+attribut1 = "motard"
 
 [node name="Disco" type="Sprite2D" parent="Haut"]
 visible = false
 z_index = 5
 position = Vector2(-6, -282)
 texture = ExtResource("34_1hn23")
+script = ExtResource("22_utm7u")
+attribut1 = "disco"
 
 [node name="Naruto" type="Sprite2D" parent="Haut"]
 visible = false
-z_index = 3
+z_index = 5
 position = Vector2(-19, -276)
 texture = ExtResource("39_y64vu")
+script = ExtResource("22_utm7u")
+attribut1 = "naruto"
+attribut2 = "farfelu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Haut"]
 z_index = 10
@@ -562,3 +618,5 @@ visible = false
 z_index = 3
 position = Vector2(-6, -558)
 texture = ExtResource("36_36jj5")
+script = ExtResource("22_utm7u")
+attribut1 = "farfelu"

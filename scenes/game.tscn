@@ -68,27 +68,28 @@ mouse_filter = 1
 [node name="Henry2" parent="Corpulence" instance=ExtResource("4_lbhrr")]
 position = Vector2(960, 540)
 scale = Vector2(0.722, 0.722)
-difficulty = 0.686
+difficulty = 0.635
 chances = {
-&"B_BD_Bas": 0.3050650844037533,
-&"B_BG_Haut": 0.29653171153087166,
-&"B_BasDroite": 0.2992162870436907,
-&"B_Crane": 0.31038155438899995,
-&"B_HautGauche": 0.2971057873934507,
-&"B_JD_Bas": 0.3029482294380665,
-&"B_JD_Milieu": 0.30165115972161294,
-&"B_JD_PiedHaut2": 0.3089736000776291,
-&"B_JG_Bas": 0.29807031515985727,
-&"B_JG_Haut": 0.3127710033297539,
-&"B_JG_PiedBas": 0.3079557906270027,
-&"BrasDroit": 0.302812500077486,
-&"BrasGauche": 0.3066687541604042,
-&"JambeDroite": 0.3149023017406464,
-&"JambeGauche": 0.30763153927326203,
-&"PlaieBasseDroite": 0.30494116101860996,
-&"PlaieBasseGauche": 0.30495288828015327,
-&"PlaieCranienne": 0.29704010317809876,
-&"PlaieTorse": 0.30994773883819576
+&"B_BD_Bas": 0.29569616574048996,
+&"B_BG_Haut": 0.28542449544370174,
+&"B_BasDroite": 0.2929210788011551,
+&"B_Crane": 0.285359087228775,
+&"B_HautGauche": 0.2947235272824764,
+&"B_JD_Bas": 0.2936009777486324,
+&"B_JD_Milieu": 0.2902466953992844,
+&"B_JD_PiedHaut2": 0.2939603505730629,
+&"B_JG_Bas": 0.28675130317360165,
+&"B_JG_Haut": 0.2848372709080577,
+&"B_JG_PiedBas": 0.2945628345310688,
+&"BrasDroit": 0.2876000986099243,
+&"BrasGauche": 0.2871769751757383,
+&"JambeDroite": 0.291770166516304,
+&"JambeGauche": 0.2937226314842701,
+&"PlaieBasseDroite": 0.2844014803729951,
+&"PlaieBasseGauche": 0.29406285896897316,
+&"PlaieCranienne": 0.286209322206676,
+&"PlaieTorse": 0.28492188692465426,
+"poilu": 0.28841127264499666
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
