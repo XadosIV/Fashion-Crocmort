@@ -96,7 +96,7 @@ func select_name():
 			
 
 func import_ressource_data():
-	var file = FileAccess.open("res://CSV/Prénom.csv", FileAccess.READ)
+	var file = FileAccess.open("res://CSV/Prenom.csv", FileAccess.READ)
 	if not file:
 		push_error("Impossible d'ouvrir le fichier CSV.")
 		return

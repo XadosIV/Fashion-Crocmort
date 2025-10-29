@@ -105,17 +105,6 @@ offset_bottom = 796.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_0yy1v")
 flat = true
 
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 222.0
-offset_top = 971.0
-offset_right = 333.14484
-offset_bottom = 1073.0
-texture_normal = ExtResource("6_yxf5x")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("7_w5uu7")
-
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 45.245514
@@ -156,4 +145,16 @@ texture_normal = ExtResource("8_w5uu7")
 ignore_texture_size = true
 stretch_mode = 5
 
+[node name="Close_Button2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 972.0
+offset_right = 332.14484
+offset_bottom = 1074.0
+texture_normal = ExtResource("6_yxf5x")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_w5uu7")
+
 [connection signal="visibility_changed" from="carnet_open" to="." method="_on_carnet_open_visibility_changed"]
+[connection signal="end" from="Close_Button2" to="." method="_on_texture_button_end"]

@@ -1,20 +1,21 @@
-feminin,masculin,hiddenCriteria,hiddenCriteriaBis,Difficulté
-Rendez-la moche.,"Ce que je n'aime pas, c'est les poils, met lui en partout.",Hideux ,,"0,3"
-Je veux qu'elle ait un nez rouge.\nElle doit inspirer la peur.,Je veux qu'il ai un nez rouge.\nIl doit inspirer la peur. fait,Farfelu,,"0,2"
-Globalement disco\nTon coloré.,Globalement disco\nTon coloré fait ,Disco ,,"0,1"
-Elle doit être belle.,Il doit être beau. ,Classe ,,"0,6"
-Si on peut en profiter pour lui refaire une beauté.,Si on peut en profiter pour lui refaire une beauté.,Classe,,"0,8"
-Elle doit ressembler à un ninja.,Il doit ressembler à un ninja.,Ninja,,0
-Elle a perdu ses cheveux à cause d'une leucémie\nElle adorait les coupes afros et les bagues.,Il a perdu ses cheveux à cause d'une leucémie\nIl adorait les coupes afros et les bagues.,Motard,disco,"0,4"
-"Son teint est trop pale, elle adorait faire la fête.","Son teint est trop pale, il adorait faire la fête.",Farfelu,disco,"0,9"
-Costard,Costard,Classe ,,"0,5"
-Des vêtements qui évoque la richesse.\nAucun élément qui la dévalorise.,Des vêtements qui évoque la richesse.\nAucun élément qui le dévalorise.,Classe ,,"0,7"
-Qu'elle soit prête à rider dans l'au delà,Qu'il soit prêt à rider dans l'au delà,Motard,,"0,3"
+feminin,masculin,hiddenCriteria,hiddenCriteriaBis
+Rendez-la moche.,"Ce que je n'aime pas, c'est les poils, met lui en partout.",Hideux ,
+Je veux qu'elle ait un nez rouge.\nElle doit inspirer la peur.,Je veux qu'il ai un nez rouge.\nIl doit inspirer la peur.,Farfelu,
+Globalement disco\nTon coloré.,Globalement disco\nTon coloré fait ,Disco ,
+Elle doit être belle.,Il doit être beau. ,Classe ,
+Si on peut en profiter pour lui refaire une beauté.,Si on peut en profiter pour lui refaire une beauté.,Classe,
+Elle doit ressembler à un ninja.,Il doit ressembler à un ninja.,Ninja,
+Elle a perdu ses cheveux à cause d'une leucémie\nElle adorait les coupes afros et les bagues.,Il a perdu ses cheveux à cause d'une leucémie\nIl adorait les coupes afros et les bagues.,Motard,disco
+"Son teint est trop pale, elle adorait faire la fête.","Son teint est trop pale, il adorait faire la fête.",Farfelu,disco
+Costard,Costard,Classe ,
+Des vêtements qui évoque la richesse.\nAucun élément qui la dévalorise.,Des vêtements qui évoque la richesse.\nAucun élément qui le dévalorise.,Classe ,
+Qu'elle soit prête à rider dans l'au delà,Qu'il soit prêt à rider dans l'au delà,Motard,
 "J'aimerais quelque chose en rapport avec ce ""Krusty"" ?","J'aimerais quelque chose en rapport avec ce ""Krusty"" ?
-",Farfelu,,"0,5"
-Le plus rapide et le moins cher,Le plus rapide et le moins cher,Hideux ,classe,"0,9"
-Des poils\nDu disco,Des poils\nDu disco,Hideux,disco,"0,4"
-Les trucs japonais,Les trucs japonais,Ninja,,"0,2"
-Pas besoin de perdre votre temps,Pas besoin de perdre votre temps,Hideux,,"0,1"
-Des bagues\nDes sandales,Des bagues\nDes sandales,Ninja,motard,"0,8"
-Présentable,Présentable,Classe,,"0,9"
+",Farfelu,
+Le plus rapide et le moins cher,Le plus rapide et le moins cher,Hideux ,classe
+Des poils\nDu disco,Des poils\nDu disco,Hideux,disco
+Les trucs japonais,Les trucs japonais,Ninja,
+Pas besoin de perdre votre temps,Pas besoin de perdre votre temps,Hideux,
+Des bagues\nDes sandales,Des bagues\nDes sandales,Ninja,motard
+Présentable,Présentable,Classe,
+"L'hygiène c'est surcôté. Du moment qu'on peut groover, y'a que ça d'important.","L'hygiène c'est surcôté. Du moment qu'on peut groover, y'a que ça d'important.",Disco ,Hideux

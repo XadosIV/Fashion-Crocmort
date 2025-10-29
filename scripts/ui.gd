@@ -1,6 +1,7 @@
 extends Control
 signal clicJournal
 signal clicTool(typeID, toolID)
+signal end
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,3 +19,7 @@ func _on_carnet_ui_clic_journal() -> void:
 
 func _on_tools_ui_tools_clic(typeID: Variant, toolsID: Variant) -> void:
 	clicTool.emit(typeID, toolsID)
+
+
+func _on_carnet_ui_end() -> void:
+	end.emit()

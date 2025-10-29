@@ -22,6 +22,7 @@ var scoreTotal = 0
 var body : Henry
 
 func _ready():
+	uifin = get_node("CanvasLayer/Score_Visu_scene")
 	debug = false
 	difficulty = global.difficulty
 	uifin.visible = false
@@ -73,7 +74,7 @@ func win(body_attributs, w_attributs : Array):
 	return true
 
 func loadLevel(dif=-1):
-	get_node("CanvasLayer/Ui/carnetUi/TextureButton").disabled = false
+	get_node("CanvasLayer/Ui/carnetUi/Close_Button2").disabled = false
 	if dif != -1:
 		nb_de_corps = 1
 		score = 0

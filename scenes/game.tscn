@@ -14,7 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://qm18gt6a3btj" path="res://assets/sfx/Object Select.wav" id="7_trtic"]
 [ext_resource type="AudioStream" uid="uid://70kcjsfuu7t1" path="res://assets/music/[In-Game]Shira El Ami - Effoliation.mp3" id="7_u5sy4"]
 [ext_resource type="AudioStream" uid="uid://daxujwduehw13" path="res://assets/sfx/Vetements.wav" id="8_trtic"]
-[ext_resource type="PackedScene" path="res://scenes/score_visu_scene.tscn" id="13_ir15t"]
+[ext_resource type="PackedScene" uid="uid://8jskv8iwnsl8" path="res://scenes/score_visu_scene.tscn" id="13_ir15t"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
 size = Vector2(640, 1080)
@@ -111,6 +111,7 @@ volume_db = -10.0
 
 [connection signal="clicJournal" from="CanvasLayer/Ui" to="." method="_on_ui_clic_journal"]
 [connection signal="clicTool" from="CanvasLayer/Ui" to="." method="_on_ui_clic_tool"]
+[connection signal="end" from="CanvasLayer/Ui" to="." method="endGame"]
 [connection signal="hairRemoved" from="Corpulence/Henry2" to="." method="_on_henry_2_hair_removed"]
 [connection signal="injuryCured" from="Corpulence/Henry2" to="." method="_on_henry_2_injury_cured"]
 [connection signal="limbAdded" from="Corpulence/Henry2" to="." method="_on_henry_2_limb_added"]

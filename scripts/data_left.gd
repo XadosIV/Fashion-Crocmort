@@ -7,6 +7,7 @@ extends Control
 
 var first_click = true
 signal clicJournal
+signal end
 	
 
 func _ready() -> void:
@@ -49,3 +50,7 @@ func _on_button_close()-> void:
 
 func _on_carnet_open_visibility_changed() -> void:
 	clicJournal.emit()
+
+
+func _on_texture_button_end() -> void:
+	end.emit() # Replace with function body.
