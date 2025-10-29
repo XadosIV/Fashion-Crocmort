@@ -2,7 +2,7 @@ extends Control
 
 var example_dict_name_female = {}
 var example_dict_name_male = {}
-var gender = "female"
+var gender = "male"
 var target_id = 5
 
 var name_selected = ""
@@ -15,7 +15,7 @@ func _ready() -> void:
 	var texture_rect = $Photo 
 	texture_rect.texture = tex
 	
-	select_gender()
+	#select_gender()
 	
 	import_ressource_data()
 	select_name()
