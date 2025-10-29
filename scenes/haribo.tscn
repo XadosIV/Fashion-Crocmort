@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://cqk4einaamnnh"]
+[gd_scene load_steps=63 format=3 uid="uid://cqk4einaamnnh"]
 
 [ext_resource type="Script" uid="uid://dcvmb0qdsgs48" path="res://scripts/body.gd" id="1_5unh3"]
 [ext_resource type="PackedScene" uid="uid://cqd5g5f0c7eil" path="res://scenes/plaie.tscn" id="2_n3rji"]
@@ -15,10 +15,14 @@
 [ext_resource type="Texture2D" uid="uid://b1ctvqnb2w0pr" path="res://assets/bodies/haribo/moignon_bras_gauche.png" id="12_orvnu"]
 [ext_resource type="Texture2D" uid="uid://bonb3msap5v81" path="res://assets/bodies/haribo/moignon_jambe_droite.png" id="13_bf1hk"]
 [ext_resource type="Script" uid="uid://butvaw2488lut" path="res://scripts/moignon.gd" id="13_d8bkp"]
+[ext_resource type="Texture2D" uid="uid://dq8to8pftw02l" path="res://assets/bodies/haribo/scotch_bras.png" id="14_1hn23"]
 [ext_resource type="Texture2D" uid="uid://bx1o74cg2hhtt" path="res://assets/bodies/haribo/moignon_jambe_gauche.png" id="14_u1inb"]
+[ext_resource type="Texture2D" uid="uid://dkmyoq50i7vsx" path="res://assets/bodies/haribo/brasDroitAScotcher.png" id="15_36jj5"]
 [ext_resource type="Texture2D" uid="uid://dq4qq8qs4tuuy" path="res://assets/bodies/haribo/torse_et_tete_de_henry.png" id="15_383x3"]
+[ext_resource type="Texture2D" uid="uid://c0lgvutmqp8xi" path="res://assets/bodies/haribo/scotch_jambe.png" id="17_keawo"]
 [ext_resource type="Script" uid="uid://fn53b1o0gaaq" path="res://scripts/poils.gd" id="17_n3rji"]
 [ext_resource type="Script" uid="uid://dbu8lv3l4hkji" path="res://scripts/poils_removable.gd" id="18_xm0tk"]
+[ext_resource type="Texture2D" uid="uid://7rhqjergjv1t" path="res://assets/bodies/haribo/jambeDroiteAScotcher.png" id="19_6tpb1"]
 [ext_resource type="Texture2D" uid="uid://fc2jqepjf4qw" path="res://assets/bodies/clothes/bandeau_hippie.png" id="19_mfpbq"]
 [ext_resource type="Texture2D" uid="uid://mbq2c4h776rk" path="res://assets/bodies/clothes/clown_perruque.png" id="20_d8bkp"]
 [ext_resource type="Texture2D" uid="uid://ciuf0vp0lc3tu" path="res://assets/bodies/clothes/lunette_hippie.png" id="21_lyuu2"]
@@ -222,7 +226,6 @@ flip_h = true
 [node name="Coupés" type="Node2D" parent="Membres"]
 
 [node name="BrasDroit" type="Sprite2D" parent="Membres/Coupés"]
-visible = false
 z_index = 2
 position = Vector2(139, -267)
 texture = ExtResource("11_hbqd8")
@@ -238,8 +241,18 @@ shape = SubResource("RectangleShape2D_d8bkp")
 position = Vector2(85, 207)
 shape = SubResource("RectangleShape2D_d8bkp")
 
-[node name="BrasGauche" type="Sprite2D" parent="Membres/Coupés"]
+[node name="Scotch" type="Sprite2D" parent="Membres/Coupés/BrasDroit"]
 visible = false
+z_index = 1
+position = Vector2(7, 6)
+texture = ExtResource("14_1hn23")
+
+[node name="SansOs" type="Sprite2D" parent="Membres/Coupés/BrasDroit"]
+visible = false
+position = Vector2(-136, 281)
+texture = ExtResource("15_36jj5")
+
+[node name="BrasGauche" type="Sprite2D" parent="Membres/Coupés"]
 z_index = 2
 position = Vector2(-144, -272)
 texture = ExtResource("12_orvnu")
@@ -255,8 +268,20 @@ shape = SubResource("RectangleShape2D_lyuu2")
 position = Vector2(-91, 217)
 shape = SubResource("RectangleShape2D_lyuu2")
 
-[node name="JambeDroite" type="Sprite2D" parent="Membres/Coupés"]
+[node name="Scotch" type="Sprite2D" parent="Membres/Coupés/BrasGauche"]
 visible = false
+z_index = 1
+position = Vector2(-12, 11)
+texture = ExtResource("14_1hn23")
+flip_h = true
+
+[node name="SansOs" type="Sprite2D" parent="Membres/Coupés/BrasGauche"]
+visible = false
+position = Vector2(131, 280)
+texture = ExtResource("15_36jj5")
+flip_h = true
+
+[node name="JambeDroite" type="Sprite2D" parent="Membres/Coupés"]
 z_index = 2
 position = Vector2(75, 87)
 texture = ExtResource("13_bf1hk")
@@ -276,8 +301,19 @@ shape = SubResource("RectangleShape2D_jkad2")
 position = Vector2(115, 511)
 shape = SubResource("RectangleShape2D_jkad2")
 
-[node name="JambeGauche" type="Sprite2D" parent="Membres/Coupés"]
+[node name="SansOs" type="Sprite2D" parent="Membres/Coupés/JambeDroite"]
 visible = false
+z_index = 1
+position = Vector2(-72, -74)
+texture = ExtResource("19_6tpb1")
+
+[node name="Scotch" type="Sprite2D" parent="Membres/Coupés/JambeDroite"]
+visible = false
+z_index = 1
+position = Vector2(-5, -12)
+texture = ExtResource("17_keawo")
+
+[node name="JambeGauche" type="Sprite2D" parent="Membres/Coupés"]
 z_index = 2
 position = Vector2(-79, 71)
 texture = ExtResource("14_u1inb")
@@ -296,6 +332,20 @@ shape = SubResource("RectangleShape2D_bqyqd")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Membres/Coupés/JambeGauche/Area2D"]
 position = Vector2(-126, 528)
 shape = SubResource("RectangleShape2D_bqyqd")
+
+[node name="SansOs" type="Sprite2D" parent="Membres/Coupés/JambeGauche"]
+visible = false
+z_index = 1
+position = Vector2(66, -69)
+texture = ExtResource("19_6tpb1")
+flip_h = true
+
+[node name="Scotch" type="Sprite2D" parent="Membres/Coupés/JambeGauche"]
+visible = false
+z_index = 1
+position = Vector2(-2, 4)
+texture = ExtResource("17_keawo")
+flip_h = true
 
 [node name="Corps" type="Node2D" parent="."]
 

@@ -16,6 +16,9 @@ var membres = {
 	"JambeDroite":true
 }
 
+var myRand = RandomNumberGenerator.new()
+var mySeed = -1
+
 var attributs = {}
 
 func calcul_attribut():
@@ -48,15 +51,21 @@ func get_attrib_from_node(nodename):
 	var node = get_child(nodename)
 	if node.paire:
 		for child in node.get_children():
-			if child is Sprite2D and child.visible:
+			if child is Sprite2D:
 				var leftNode
 				if child.name.ends_with("D"):
 					var chaussure_gauche = str(child.name).substr(0,child.name.length()-1)+"G"
-					leftNode = node.find_child(chaussure_gauche)
+					
+					if child.visible:
+						leftNode = node.find_child(chaussure_gauche)
+					if (child.visible and not leftNode.visible) or (not child.visilbe and leftNode.visible):
+						add_attrib("hideux")
 				else:
-					leftNode = child
-				add_attrib(leftNode.attribut1)
-				add_attrib(leftNode.attribut2)
+					if child.visible:
+						leftNode = child
+				if leftNode:
+					add_attrib(leftNode.attribut1)
+					add_attrib(leftNode.attribut2)
 				break
 	else:
 		for child in node.get_children():
@@ -112,7 +121,14 @@ func fullHenry():
 			for c in child.get_children():
 				c.visible = true
 
-func randomizeHenry():
+func randomizeHenry(reset=false):
+	if reset:
+		myRand.seed = seed
+		myRand.state = 0
+	else:
+		myRand.randomize()
+		mySeed = myRand.seed
+	
 	for child in $Plaies.get_children():
 		var chance = chances.get(child.name, 0.5)
 		var rand = randf()
