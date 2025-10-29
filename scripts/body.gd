@@ -1,4 +1,3 @@
-@tool
 class_name Henry
 extends Node2D
 
@@ -87,25 +86,6 @@ func add_attrib(attrib):
 		attributs.set(attrib, attributs.get(attrib)+1)
 	else:
 		attributs.set(attrib,1)
-
-@export var create_dictionnary := false:
-	set(value):
-		if value and Engine.is_editor_hint():
-			create_dictionnary = false
-			generateChances()
-			notify_property_list_changed()
-
-@export var randomize_button := false:
-	set(value):
-		if value and Engine.is_editor_hint():
-			randomize_button = false # remet à false pour le re-cliquer
-			randomizeHenry()
-
-@export var reset_button := false:
-	set(value):
-		if value and Engine.is_editor_hint():
-			randomize_button = false # remet à false pour le re-cliquer
-			fullHenry()
 # ------------------------------------- #
 
 func fullHenry():
@@ -134,7 +114,8 @@ func randomizeHenry(reset=false):
 	else:
 		myRand.randomize()
 		mySeed = myRand.seed
-		myRand.state = 0
+	
+	print(mySeed)
 	
 	for child in $"Membres/Coupés".get_children():
 		child.reset()
@@ -197,6 +178,7 @@ func randomizeHenry(reset=false):
 		$Poils/Torse.remove_poils()
 		$Poils/Pubis.visible = false
 		$Poils/Pubis.remove_poils()
+	
 
 func generateChances():
 	fullHenry()
@@ -223,15 +205,8 @@ func generateChances():
 	chances = new_dict
 
 func loadBody(dif=-1):
-	if dif != -1:
-		difficulty = dif
-		generateChances()
+	generateChances()
 	randomizeHenry()
-
-func _process(_delta):
-	if not Engine.is_editor_hint():
-		if Input.is_action_just_pressed("ui_accept"):
-			randomizeHenry()
 
 func _hair_sound() -> void: 
 	hairRemoved.emit()
@@ -241,3 +216,9 @@ func _limb_sound() -> void:
 
 func _injury_healed() -> void:
 	injuryCured.emit()
+
+func _process(_delta):
+	pass
+	#if not Engine.is_editor_hint():
+	#	randomizeHenry()
+	

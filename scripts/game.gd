@@ -12,12 +12,24 @@ extends Node2D
 
 @export var debug = false
 
+var nb_de_corps = 1
+var score = 0
+var scoreTotal = 0
 
 @onready var global = get_node("/root/Global")
 var body : Henry
 
 func _ready():
-	loadLevel()
+	debug = false
+	difficulty = global.difficulty
+	loadLevel(0)
+
+func nextLevel(win):
+	if win:
+		nb_de_corps += 1
+		loadLevel(0)
+	else:
+		pass
 
 func endGame():
 	var attributs = body.calcul_attribut()
@@ -26,9 +38,9 @@ func endGame():
 	var wAttribut = global.carnet.example_dict_attributs[id]
 	
 	if win(attributs, wAttribut):
-		print("yes")
+		nextLevel(true)
 	else:
-		print("noo")
+		nextLevel(false)
 
 func win(body_attributs, w_attributs : Array):
 	var sorted_keys = body_attributs.keys()
@@ -52,23 +64,15 @@ func win(body_attributs, w_attributs : Array):
 			return false
 	return true
 
-
-func resetHenry():
-	body.randomizeHenry(true)
-
 func loadLevel(dif=-1):
 	if dif != -1:
 		difficulty = dif
 
 	chooseCorpulence()
-	if debug:
-		body.loadBody(-1)
-	else:
-		body.loadBody(difficulty)
+	body.loadBody(difficulty)
 
 func chooseCorpulence():
 	var index = randi_range(0, $Corpulence.get_child_count()-1)
-	
 	var i = 0
 	for child in $Corpulence.get_children():
 		if i == index:
