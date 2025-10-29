@@ -18,7 +18,7 @@ func _ready():
 	loadLevel()
 
 func endGame():
-	print(body.calcul_attribut())
+	var attributs = body.calcul_attribut()
 
 func resetHenry():
 	body.randomizeHenry(true)

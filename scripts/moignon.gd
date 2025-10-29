@@ -8,6 +8,7 @@ var sprite
 
 func _ready():
 	sprite = texture
+	reset()
 	global = get_node("/root/Global")
 	$Area2D.connect("mouse_entered", Callable(self, "_on_mouse_entered"))
 	$Area2D.connect("mouse_exited", Callable(self, "_on_mouse_exited"))
@@ -17,6 +18,13 @@ func _on_mouse_entered():
 
 func _on_mouse_exited():
 	hover = false
+
+func reset():
+	texture = sprite
+	hover = false
+	bras_colle = false
+	find_child("SansOs").visible = false
+	find_child("Scotch").visible = false
 
 func _input(event):
 	if event is InputEventMouseButton and not event.pressed:

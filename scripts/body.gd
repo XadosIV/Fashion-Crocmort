@@ -132,6 +132,9 @@ func randomizeHenry(reset=false):
 		mySeed = myRand.seed
 		myRand.state = 0
 	
+	for child in $"Membres/Coupés".get_children():
+		child.reset()
+	
 	for child in $Plaies.get_children():
 		var chance = chances.get(child.name, 0.5)
 		var rand = myRand.randf()
@@ -168,7 +171,9 @@ func randomizeHenry(reset=false):
 				var sub_chance = chances.get(c.name, 0.5)
 				var rand = myRand.randf()
 				c.visible = rand < sub_chance
-		
+	
+	
+	
 	# Generation Poils Torse et Pubis
 	var _chance = chances.get("poilu", 0.5)
 	var _rand = myRand.randf()
