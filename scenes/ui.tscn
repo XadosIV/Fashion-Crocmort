@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://i7vjnp0yx88l"]
+[gd_scene load_steps=9 format=3 uid="uid://i7vjnp0yx88l"]
 
 [ext_resource type="PackedScene" uid="uid://878oabv57gd1" path="res://scenes/tools_ui.tscn" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://dm42tu2lot0do" path="res://scripts/ui.gd" id="1_wm3ai"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://7ns1xp4nrcgj" path="res://scripts/zoombutton.gd" id="3_yev5y"]
 [ext_resource type="Texture2D" uid="uid://bxncsvwinew7a" path="res://assets/bouton_picto/zoom-.png" id="5_8dubc"]
 [ext_resource type="Texture2D" uid="uid://bi546rdkk18l6" path="res://assets/bouton_picto/pictosReset.png" id="6_8dubc"]
+[ext_resource type="Script" uid="uid://bu5cd8j1bl4cd" path="res://scripts/reset.gd" id="7_ktti3"]
 
 [node name="Ui" type="Control"]
 layout_mode = 3
@@ -44,6 +45,7 @@ offset_bottom = 1077.0
 texture_normal = ExtResource("6_8dubc")
 ignore_texture_size = true
 stretch_mode = 5
+script = ExtResource("7_ktti3")
 
 [node name="carnetUi" parent="." instance=ExtResource("1_x4jx1")]
 layout_mode = 0
