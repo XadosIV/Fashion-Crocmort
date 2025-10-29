@@ -43,4 +43,3 @@ func _init_button() -> void :
 	_on_tool_pressed(-2)
 	Input.set_custom_mouse_cursor(get_node("/root/Global").mouse)
 	toolsID = -1
-	tableClic.emit(-1)

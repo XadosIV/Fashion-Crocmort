@@ -21,4 +21,4 @@ func _on_tool_pressed(newID: int) -> void:
 func _init_button() -> void :
 	Input.set_custom_mouse_cursor(get_node("/root/Global").mouse)
 	toolsID = -1
-	closetClic.emit(-1)
+	closetClic.emit(-2)

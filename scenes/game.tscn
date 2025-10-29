@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://5ij60s7vok3p"]
+[gd_scene load_steps=16 format=3 uid="uid://5ij60s7vok3p"]
 
 [ext_resource type="Script" uid="uid://bmhxvoo47b51m" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://i7vjnp0yx88l" path="res://scenes/ui.tscn" id="1_lnu2h"]
@@ -10,7 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://cqk4einaamnnh" path="res://scenes/haribo.tscn" id="4_lbhrr"]
 [ext_resource type="AudioStream" uid="uid://bg584cftapu6d" path="res://assets/sfx/crac os.wav" id="4_vtaks"]
 [ext_resource type="AudioStream" uid="uid://cu35t8ix232e5" path="res://assets/sfx/Pate à peau.wav" id="5_kvpfn"]
+[ext_resource type="AudioStream" uid="uid://opqt25dddogk" path="res://assets/sfx/Onglet Change.wav" id="6_kvuet"]
+[ext_resource type="AudioStream" uid="uid://qm18gt6a3btj" path="res://assets/sfx/Object Select.wav" id="7_trtic"]
 [ext_resource type="AudioStream" uid="uid://70kcjsfuu7t1" path="res://assets/music/[In-Game]Shira El Ami - Effoliation.mp3" id="7_u5sy4"]
+[ext_resource type="AudioStream" uid="uid://daxujwduehw13" path="res://assets/sfx/Vetements.wav" id="8_trtic"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tg1dk"]
 size = Vector2(640, 1080)
@@ -21,6 +24,9 @@ journalSfx = ExtResource("2_gee14")
 scissorSfx = ExtResource("3_0tnpc")
 plugSfx = ExtResource("4_vtaks")
 skinSfx = ExtResource("5_kvpfn")
+tabSfx = ExtResource("6_kvuet")
+objectSfx = ExtResource("7_trtic")
+clotheSfx = ExtResource("8_trtic")
 difficulty = 1.0
 
 [node name="bg" type="TextureRect" parent="."]
@@ -93,13 +99,15 @@ chances = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_u5sy4")
-volume_db = -10.0
+volume_db = -18.0
 autoplay = true
 parameters/looping = true
 
 [node name="sfx" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
 
 [connection signal="clicJournal" from="CanvasLayer/Ui" to="." method="_on_ui_clic_journal"]
+[connection signal="clicTool" from="CanvasLayer/Ui" to="." method="_on_ui_clic_tool"]
 [connection signal="hairRemoved" from="Corpulence/Henry2" to="." method="_on_henry_2_hair_removed"]
 [connection signal="injuryCured" from="Corpulence/Henry2" to="." method="_on_henry_2_injury_cured"]
 [connection signal="limbAdded" from="Corpulence/Henry2" to="." method="_on_henry_2_limb_added"]

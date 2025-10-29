@@ -4,6 +4,9 @@ extends Node2D
 @export var scissorSfx: AudioStream
 @export var plugSfx: AudioStream
 @export var skinSfx: AudioStream
+@export var tabSfx: AudioStream
+@export var objectSfx: AudioStream
+@export var clotheSfx: AudioStream
 
 @export_range(0,1) var difficulty = 0.5
 
@@ -53,4 +56,15 @@ func _on_henry_2_limb_added() -> void:
 
 func _on_henry_2_injury_cured() -> void:
 	$sfx.set_stream(skinSfx)
+	$sfx.play()
+
+func _on_ui_clic_tool(typeID: Variant, toolID: Variant) -> void:
+	if $sfx.playing && toolID == -1:
+		return
+	if toolID == -1 && typeID != 0:
+		$sfx.set_stream(clotheSfx)
+	elif toolID <= -1 :
+		$sfx.set_stream(tabSfx)
+	else :
+		$sfx.set_stream(objectSfx)
 	$sfx.play()
