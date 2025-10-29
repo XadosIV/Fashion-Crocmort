@@ -33,4 +33,5 @@ script = ExtResource("3_yev5y")
 [node name="carnetUi" parent="." instance=ExtResource("1_x4jx1")]
 layout_mode = 0
 
+[connection signal="toolsClic" from="ToolsUi" to="." method="_on_tools_ui_tools_clic"]
 [connection signal="clicJournal" from="carnetUi" to="." method="_on_carnet_ui_clic_journal"]
