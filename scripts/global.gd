@@ -9,6 +9,7 @@ var pb_3 = " "
 var pb_4 = " "
 var sound = true
 var carnet
+var difficulty
 
 func _ready() -> void:
 	Input.set_custom_mouse_cursor(mouse)

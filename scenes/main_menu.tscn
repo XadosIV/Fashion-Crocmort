@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://s04mx5gm2rqd" path="res://assets/UI/bouton3.png" id="7_j7ex8"]
 [ext_resource type="Texture2D" uid="uid://bqpkcuwqw0o58" path="res://assets/bouton_picto/pictosSonActif.png" id="8_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://mp6xth5jikm8" path="res://assets/UI/bouton2 2.png" id="8_hstxw"]
-[ext_resource type="Script" uid="uid://mnrkygc1vm8m" path="res://sound_button.gd" id="9_lgwnu"]
+[ext_resource type="Script" path="res://sound_button.gd" id="9_lgwnu"]
 [ext_resource type="Texture2D" uid="uid://cmy2lb05laems" path="res://assets/UI/bouton3 2.png" id="10_8egab"]
 [ext_resource type="Texture2D" uid="uid://bw73uihonpxhh" path="res://assets/bouton_picto/pictosSonCoupe.png" id="10_flqon"]
 [ext_resource type="FontFile" uid="uid://iadlw7c7mgm6" path="res://assets/Font/ReenieBeanie-Regular.ttf" id="19_hstxw"]
