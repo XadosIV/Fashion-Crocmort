@@ -26,5 +26,6 @@ func _next_pressed():
 	if win:
 		game.loadLevel(0)
 	else:
-		game.menu()
+		game.loadLevel(-1)
+		#game.menu()
 	visible = false

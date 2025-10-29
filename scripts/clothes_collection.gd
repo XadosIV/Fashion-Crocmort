@@ -20,8 +20,6 @@ func _on_mouse_exited():
 
 func _input(event):
 	if event is InputEventMouseButton and not event.pressed:
-		if get_parent().name == "Eyes":
-			print(hover)
 		if hover and global.toolTab == toolTab:
 			if global.toolsID >= 1000 :
 				show_child(-1)

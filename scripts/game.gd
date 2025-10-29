@@ -32,8 +32,8 @@ func menu():
 	get_tree().change_scene_to_packed(menuScene)
 
 func nextLevel(wini):
+	get_node("CanvasLayer/Ui/carnetUi/TextureButton").disabled = true
 	if wini:
-		nb_de_corps += 1
 		uifin.msg = "Bien joué !"
 		uifin.score += 1000
 	else:
@@ -77,8 +77,16 @@ func win(body_attributs, w_attributs : Array):
 	return true
 
 func loadLevel(dif=-1):
+	get_node("CanvasLayer/Ui/carnetUi/TextureButton").disabled = false
 	if dif != -1:
-		difficulty = dif
+		nb_de_corps = 1
+		score = 0
+		scoreTotal = 0
+	else:
+		nb_de_corps += 1
+		
+	
+	get_node("CanvasLayer/Ui/carnetUi/carnet_open").start()
 
 	chooseCorpulence()
 	body.loadBody(difficulty)
