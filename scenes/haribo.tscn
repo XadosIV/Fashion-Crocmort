@@ -424,7 +424,6 @@ position = Vector2(-17, -630)
 texture = ExtResource("23_bqyqd")
 script = ExtResource("22_utm7u")
 attribut1 = "ninja"
-attribut2 = "farfelu"
 
 [node name="Affro" type="Sprite2D" parent="Perruque"]
 visible = false
@@ -604,7 +603,6 @@ z_index = 5
 texture = ExtResource("34_bqyqd")
 script = ExtResource("22_utm7u")
 attribut1 = "ninja"
-attribut2 = "farfelu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bas"]
 z_index = 10
@@ -654,7 +652,6 @@ position = Vector2(-19, -276)
 texture = ExtResource("39_y64vu")
 script = ExtResource("22_utm7u")
 attribut1 = "ninja"
-attribut2 = "farfelu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Haut"]
 z_index = 10

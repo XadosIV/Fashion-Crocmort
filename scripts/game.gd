@@ -12,6 +12,8 @@ extends Node2D
 
 @export var debug = false
 
+
+@onready var global = get_node("/root/Global")
 var body : Henry
 
 func _ready():
@@ -19,7 +21,37 @@ func _ready():
 
 func endGame():
 	var attributs = body.calcul_attribut()
-	print(attributs)
+	#print(attributs)
+	var id = global.carnet.resume_id
+	var wAttribut = global.carnet.example_dict_attributs[id]
+	
+	if win(attributs, wAttribut):
+		print("yes")
+	else:
+		print("noo")
+
+func win(body_attributs, w_attributs : Array):
+	var sorted_keys = body_attributs.keys()
+	sorted_keys.sort_custom(func(a, b): return body_attributs[a] > body_attributs[b])
+	var top2_keys: Array = sorted_keys.slice(0, 2)
+	
+	for i in range(top2_keys.size()):
+		top2_keys[i] = top2_keys[i].to_lower().strip_edges()
+	for i in range(w_attributs.size()):
+		w_attributs[i] = w_attributs[i].to_lower().strip_edges()
+	
+	if len(w_attributs) == 2:
+		if w_attributs[1] == "":
+			w_attributs.remove_at(1)
+	
+	if len(top2_keys) != len(w_attributs):
+		return false
+	
+	for attr in top2_keys:
+		if not w_attributs.has(attr):
+			return false
+	return true
+
 
 func resetHenry():
 	body.randomizeHenry(true)

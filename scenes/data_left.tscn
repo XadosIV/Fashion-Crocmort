@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d1hme20pyi0mf" path="res://scenes/carnet_open.tscn" id="4_ftyl4"]
 [ext_resource type="FontFile" uid="uid://iadlw7c7mgm6" path="res://assets/Font/ReenieBeanie-Regular.ttf" id="6_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://drq1xapdumwus" path="res://assets/bouton_picto/pictosValider.png" id="6_yxf5x"]
-[ext_resource type="Script" path="res://scenes/valid_button.gd" id="7_w5uu7"]
+[ext_resource type="Script" uid="uid://cv6ftd0cl43ld" path="res://scripts/valid_button.gd" id="7_w5uu7"]
 [ext_resource type="Texture2D" uid="uid://db243jm3mv2v4" path="res://assets/bouton_picto/pictosCroix.png" id="8_w5uu7"]
 
 [node name="carnetUi" type="Control"]

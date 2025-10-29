@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _pressed():
-	get_node("/root/Game").resetHenry()
+	get_node("../../..").resetHenry()

@@ -3,6 +3,7 @@ extends Control
 
 var example_dict_story= {}
 var example_dict_description = {}
+var example_dict_attributs = {}
 var example_dict_link = {}
 
 var gender = "male"
@@ -31,8 +32,7 @@ func _ready() -> void:
 	prenom = get_node("/root/Global").name_selected
 	import_all_data()
 	
-	select_id_and_attribute_value()
-	charge_text()
+	get_node("/root/Global").carnet = self
 	
 	
 func start():
@@ -104,7 +104,6 @@ func _populate_command_buttons(lines: Array[String]) -> void:
 		child.queue_free()
 	
 	for i in lines.size():
-		
 		var row := HBoxContainer.new()
 		commande_list.add_child(row)
 
@@ -178,11 +177,7 @@ func select_id_and_attribute_value():
 	commande = example_dict_description[resume_id]
 	lien = example_dict_link[lien_id]
 	
-	if (resume_id == 5):
-		photo_exemple.visible = true
-	else:
-		photo_exemple.visible = false
-	
+	photo_exemple.visible = false
 
 func import_link():
 	var file_lien = FileAccess.open("res://CSV/Lien.csv", FileAccess.READ)
@@ -235,7 +230,8 @@ func import_desc():
 			
 			if(gender == "male"):
 				example_dict_description[line_index] = data_set[1]
-				
+			
+			example_dict_attributs[line_index] = [data_set[2].to_lower(), data_set[3].to_lower()]
 
 			line_index += 1
 	

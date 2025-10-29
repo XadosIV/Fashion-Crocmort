@@ -7,9 +7,9 @@
 [ext_resource type="Script" uid="uid://7ns1xp4nrcgj" path="res://scripts/zoombutton.gd" id="3_yev5y"]
 [ext_resource type="Texture2D" uid="uid://bxncsvwinew7a" path="res://assets/bouton_picto/zoom-.png" id="5_8dubc"]
 [ext_resource type="Texture2D" uid="uid://bi546rdkk18l6" path="res://assets/bouton_picto/pictosReset.png" id="6_8dubc"]
-[ext_resource type="Script" uid="uid://bu5cd8j1bl4cd" path="res://scripts/reset.gd" id="7_ktti3"]
-[ext_resource type="Script" uid="uid://mnrkygc1vm8m" path="res://sound_button.gd" id="8_7dvkv"]
 [ext_resource type="Texture2D" uid="uid://bqpkcuwqw0o58" path="res://assets/bouton_picto/pictosSonActif.png" id="7_cgfq5"]
+[ext_resource type="Script" uid="uid://bu5cd8j1bl4cd" path="res://scripts/reset.gd" id="7_ktti3"]
+[ext_resource type="Script" path="res://sound_button.gd" id="8_7dvkv"]
 [ext_resource type="Texture2D" uid="uid://bw73uihonpxhh" path="res://assets/bouton_picto/pictosSonCoupe.png" id="9_7dvkv"]
 
 [node name="Ui" type="Control"]

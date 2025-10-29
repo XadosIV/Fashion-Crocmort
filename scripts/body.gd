@@ -139,6 +139,12 @@ func randomizeHenry(reset=false):
 	for child in $"Membres/Coupés".get_children():
 		child.reset()
 	
+	for child in get_children():
+		if child is Area2D:
+			for c in child.get_children():
+				if c is Sprite2D:
+					c.visible = false
+	
 	for child in $Plaies.get_children():
 		var chance = chances.get(child.name, 0.5)
 		var rand = myRand.randf()
