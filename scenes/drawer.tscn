@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://bhxq78cchur7p"]
+[gd_scene load_steps=13 format=3 uid="uid://bhxq78cchur7p"]
 
 [ext_resource type="Script" uid="uid://dx50jy6v3n27p" path="res://scripts/drawer.gd" id="1_8wanr"]
 [ext_resource type="Texture2D" uid="uid://bpwvignivbpih" path="res://assets/UI/tier_droite_transparent.png" id="2_x262c"]
 [ext_resource type="Texture2D" uid="uid://df51nlp4d475c" path="res://assets/drawer/wig/clown_perruque.png" id="3_8wanr"]
+[ext_resource type="Texture2D" uid="uid://ogw5hy2fvt36" path="res://assets/bouton_picto/pictosVide.png" id="3_jlc4d"]
 [ext_resource type="Script" uid="uid://4yvrrel6xqva" path="res://scripts/draggButton.gd" id="4_7hrsy"]
 [ext_resource type="Texture2D" uid="uid://d1evg1qleyri1" path="res://assets/drawer/eyes/eyes1.png" id="5_hvipv"]
 [ext_resource type="Texture2D" uid="uid://cqxncnjc5hvyf" path="res://assets/drawer/wig/naruto_perruque.png" id="5_x262c"]
@@ -52,6 +53,17 @@ layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Buttons/wigButtons"]
 layout_mode = 2
+
+[node name="TextureButton9" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
+custom_minimum_size = Vector2(50, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_jlc4d")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_7hrsy")
+ID = 100
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/wigButtons/HBoxContainer"]
 custom_minimum_size = Vector2(200, 200)
@@ -106,6 +118,17 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
+[node name="TextureButton9" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_jlc4d")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_7hrsy")
+ID = 100
+
 [node name="TextureButton0" type="TextureButton" parent="Buttons/EyesButtons/HBoxContainer"]
 custom_minimum_size = Vector2(150, 60)
 layout_mode = 2
@@ -147,6 +170,15 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
+
+[node name="TextureButton9" type="TextureButton" parent="Buttons/MakeupButtons/HBoxContainer"]
+custom_minimum_size = Vector2(50, 200)
+layout_mode = 2
+texture_normal = ExtResource("3_jlc4d")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_7hrsy")
+ID = 100
 
 [node name="TextureButton0" type="TextureButton" parent="Buttons/MakeupButtons/HBoxContainer"]
 custom_minimum_size = Vector2(150, 200)

@@ -7,6 +7,7 @@ var pb_1 = " "
 var pb_2 = " "
 var pb_3 = " "
 var pb_4 = " "
+var sound = true
 
 func _ready() -> void:
 	Input.set_custom_mouse_cursor(mouse)
@@ -19,3 +20,12 @@ func _input(event):
 func _tool_changed(tab: int, tool: int) -> void :
 	toolTab = tab
 	toolsID = tool
+
+func _update_sound_volume(on: bool) -> void:
+	var bus_idx = AudioServer.get_bus_index("Master")
+	if (on) :
+		AudioServer.set_bus_mute(bus_idx, false)
+		sound = true
+	else :
+		AudioServer.set_bus_mute(bus_idx, true)
+		sound = false
