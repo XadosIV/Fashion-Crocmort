@@ -94,3 +94,9 @@ offset_top = 910.0
 offset_right = 1893.0
 offset_bottom = 1059.0
 texture_normal = ExtResource("4_q4bvm")
+
+[node name="Corpulence" type="Node2D" parent="."]
+
+[node name="FinalCorpse" type="Node2D" parent="Corpulence"]
+position = Vector2(422, 540.00006)
+scale = Vector2(0.722, 0.722)

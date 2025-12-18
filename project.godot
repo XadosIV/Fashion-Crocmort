@@ -23,7 +23,6 @@ Global="*res://scenes/global.tscn"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=4
 window/size/borderless=true
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="uid://dftijoeg3g6o3"

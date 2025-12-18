@@ -7,9 +7,10 @@ extends Control
 @onready var next_button = $NextButton
 
 var score = 0
-var msg = "Bien joué"
-var nb_corps = 5
+var msg = ""
+var nb_corps = 0
 var win
+var finalCorpse : Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,8 +21,13 @@ func affiche():
 	NB_value_label.text = str(nb_corps)
 	msg_fin_label.text = msg
 	score_label.text = str(score)
+	finalCorpse.position = Vector2(0, 0)
+	finalCorpse.scale = Vector2(1, 1)
+	$Corpulence/FinalCorpse.add_child(finalCorpse)
 	
 func _next_pressed():
+	$Corpulence/FinalCorpse.remove_child(finalCorpse)
+	finalCorpse.queue_free()
 	var game = get_node("../..")
 	if win:
 		game.loadLevel(0)

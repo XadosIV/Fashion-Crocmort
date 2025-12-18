@@ -8,7 +8,7 @@ uid="uid://btx41tucwoqu0"
 
 files=["res://CSV/Prenom.masculin.translation"]
 
-source_file="res://CSV/Prenom.csv"
+source_file="res://Build/web/CSV/Prenom.csv"
 dest_files=["res://CSV/Prenom.masculin.translation"]
 
 [params]

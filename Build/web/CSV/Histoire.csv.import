@@ -8,7 +8,7 @@ uid="uid://cu4241hf1606g"
 
 files=["res://CSV/Histoire.masculin.translation"]
 
-source_file="res://CSV/Histoire.csv"
+source_file="res://Build/web/CSV/Histoire.csv"
 dest_files=["res://CSV/Histoire.masculin.translation"]
 
 [params]

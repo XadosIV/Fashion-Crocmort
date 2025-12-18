@@ -14,7 +14,7 @@ extends Node2D
 
 @export var debug = false
 
-var nb_de_corps = 1
+var nb_de_corps = 0
 var score = 0
 var scoreTotal = 0
 
@@ -29,13 +29,16 @@ func _ready():
 	loadLevel(0)
 
 func nextLevel(wini):
-	get_node("CanvasLayer/Ui/carnetUi/TextureButton").disabled = true
+	get_node("CanvasLayer/Ui/carnetUi/Close_Button2").disabled = true
 	if wini:
 		uifin.msg = "Bien joué !"
-		uifin.score += 1000
+		score += 1000
+		uifin.score = score
+		nb_de_corps += 1
+		uifin.nb_corps = nb_de_corps
 	else:
 		uifin.msg = "Dommage..."
-	uifin.nb_corps = nb_de_corps
+	uifin.finalCorpse = $Corpulence/Henry2.duplicate()
 	uifin.win = wini
 	uifin.affiche()
 	uifin.visible = true
@@ -75,13 +78,8 @@ func win(body_attributs, w_attributs : Array):
 
 func loadLevel(dif=-1):
 	get_node("CanvasLayer/Ui/carnetUi/Close_Button2").disabled = false
-	if dif != -1:
-		nb_de_corps = 1
-		score = 0
-		scoreTotal = 0
-	else:
-		nb_de_corps += 1
-		
+	if dif == -1:
+		nb_de_corps = 0
 	
 	get_node("CanvasLayer/Ui/carnetUi/carnet_open").start()
 

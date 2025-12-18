@@ -8,7 +8,7 @@ uid="uid://11hkixhtyxsm"
 
 files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation", "res://CSV/Description.hiddenCriteriaBis.translation"]
 
-source_file="res://CSV/Description.csv"
+source_file="res://Build/web/CSV/Description.csv"
 dest_files=["res://CSV/Description.masculin.translation", "res://CSV/Description.hiddenCriteria.translation", "res://CSV/Description.hiddenCriteriaBis.translation"]
 
 [params]

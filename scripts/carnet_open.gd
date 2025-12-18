@@ -27,12 +27,74 @@ var tips2 = false
 @onready var pin3 := $Pin3
 @onready var pin4 := $Pin4
 
+var portraits = {}
 
 func _ready() -> void:
 	prenom = get_node("/root/Global").name_selected
 	import_all_data()
 	
 	get_node("/root/Global").carnet = self
+	
+	var id_desc = 1 #get_node("/root/Global").carnet.resume_id
+	
+	var photo =  load("res://assets/mugshot/pic clown.png")
+	
+	portraits = {
+		1 : load("res://assets/mugshot/pic clown.png"),
+		2 : load("res://assets/mugshot/pic metal.png"),
+		3 : load("res://assets/mugshot/pic naruto(5).png"),
+		4 : load("res://assets/mugshot/pic_aryen.png"),
+		5 : load("res://assets/mugshot/pic_chill_guy (1).png"),
+		6 : load("res://assets/mugshot/pic_disco.png"),
+		7 : load("res://assets/mugshot/pic_hideux (7).png"),
+		8 : load("res://assets/mugshot/pic_papy_classe (6).png")
+		
+	}
+	
+	match id_desc:
+		0 :
+			photo = portraits[7]
+		1 :
+			photo = portraits[5]
+		2 :
+			photo = portraits[6]
+		3 :
+			photo = portraits[4]
+		4 :
+			photo = portraits[4]
+		5 :
+			photo = portraits[3]
+		6 :
+			photo = portraits[2]
+		7 :
+			photo = portraits[5]
+		8 :
+			photo = portraits[8]
+		9 :
+			photo = portraits[8]
+		10 :
+			photo = portraits[2]
+		11 :
+			photo = portraits[5]
+		12:
+			photo = portraits[7]
+		13:
+			photo = portraits[7]
+		14:
+			photo = portraits[3]
+		15:
+			photo = portraits[7]
+		16:
+			photo = portraits[3]
+		17:
+			photo = portraits[4]
+		18:
+			photo = portraits[6]
+			
+	var texture_rect = $Photo 
+	texture_rect.texture = photo
+	
+	#select_gender()
 	
 	
 func start():
@@ -169,7 +231,6 @@ func _on_command_pressed(index: int, lines: Array[String]) -> void:
 
 
 func select_id_and_attribute_value():
-	
 	resume_id = randi() % example_dict_story.size()
 	lien_id = randi() % example_dict_link.size()
 
@@ -231,7 +292,6 @@ func import_desc():
 			if(gender == "male"):
 				example_dict_description[line_index] = data_set[1]
 
-			
 			example_dict_attributs[line_index] = [data_set[2].to_lower(), data_set[3].to_lower()]
 
 			line_index += 1

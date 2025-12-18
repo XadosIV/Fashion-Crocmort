@@ -120,6 +120,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
+[node name="Close_Button2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 972.0
+offset_right = 332.14484
+offset_bottom = 1074.0
+texture_normal = ExtResource("6_yxf5x")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("7_w5uu7")
+
 [node name="carnet_open" parent="." instance=ExtResource("4_ftyl4")]
 visible = false
 layout_mode = 0
@@ -145,16 +156,5 @@ texture_normal = ExtResource("8_w5uu7")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Close_Button2" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 221.0
-offset_top = 972.0
-offset_right = 332.14484
-offset_bottom = 1074.0
-texture_normal = ExtResource("6_yxf5x")
-ignore_texture_size = true
-stretch_mode = 5
-script = ExtResource("7_w5uu7")
-
-[connection signal="visibility_changed" from="carnet_open" to="." method="_on_carnet_open_visibility_changed"]
 [connection signal="end" from="Close_Button2" to="." method="_on_texture_button_end"]
+[connection signal="visibility_changed" from="carnet_open" to="." method="_on_carnet_open_visibility_changed"]
